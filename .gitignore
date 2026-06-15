@@ -39,6 +39,8 @@ yarn-error.log*
 # dev server scratch logs
 dev-out.log
 dev-err.log
+*-out.log
+*-err.log
 
 # typescript
 *.tsbuildinfo
