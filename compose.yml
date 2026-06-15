@@ -1,9 +1,11 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: homepage:latest
+    image: ghcr.io/shenxianovo/homepage:latest
+    # For local builds instead of pulling from GHCR, comment out `image` above
+    # and uncomment the build block below:
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     container_name: homepage
     restart: unless-stopped
     # Host nginx reverse-proxies to this port. Bind to localhost only so the
@@ -32,7 +34,7 @@ services:
   #       condition: service_healthy
 
   # umami-db:
-  #   image: postgres:17-alpine
+  #   image: postgres:18-alpine
   #   container_name: umami-db
   #   restart: unless-stopped
   #   environment:
