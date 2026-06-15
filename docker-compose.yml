@@ -1,0 +1,51 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+    # Host nginx reverse-proxies to this port. Bind to localhost only so the
+    # container is not exposed directly on the public interface.
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      NODE_ENV: production
+      # When Umami is enabled, point the client at the public analytics URL:
+      # NEXT_PUBLIC_UMAMI_URL: https://analytics.example.com
+      # NEXT_PUBLIC_UMAMI_WEBSITE_ID: 00000000-0000-0000-0000-000000000000
+
+  # --- Analytics (self-hosted Umami). Uncomment to enable. ---
+  # umami:
+  #   image: ghcr.io/umami-software/umami:postgresql-latest
+  #   container_name: umami
+  #   restart: unless-stopped
+  #   ports:
+  #     - "127.0.0.1:3001:3000"
+  #   environment:
+  #     DATABASE_URL: postgresql://umami:${UMAMI_DB_PASSWORD}@umami-db:5432/umami
+  #     DATABASE_TYPE: postgresql
+  #     APP_SECRET: ${UMAMI_APP_SECRET}
+  #   depends_on:
+  #     umami-db:
+  #       condition: service_healthy
+
+  # umami-db:
+  #   image: postgres:17-alpine
+  #   container_name: umami-db
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_DB: umami
+  #     POSTGRES_USER: umami
+  #     POSTGRES_PASSWORD: ${UMAMI_DB_PASSWORD}
+  #   volumes:
+  #     - umami-db-data:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U umami -d umami"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+# volumes:
+#   umami-db-data:
