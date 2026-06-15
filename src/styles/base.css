@@ -1,0 +1,28 @@
+/* ============================================================
+   Base layer — resets and element defaults
+   ============================================================ */
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply text-foreground;
+    background-color: var(--background);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+}
