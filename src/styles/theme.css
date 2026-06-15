@@ -7,16 +7,6 @@
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
 
-  /* --- type scale (rem; respects user font-size) --- */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-md: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.5rem;
-  --text-2xl: 2rem;
-  --text-3xl: 3rem;
-  --text-4xl: 4rem;
-
   /* --- semantic colors (shadcn) --- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);

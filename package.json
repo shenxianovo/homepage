@@ -10,7 +10,8 @@
     "typecheck": "velite build && tsc --noEmit",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "shoot": "node scripts/shoot.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
@@ -33,6 +34,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "concurrently": "10.0.3",
+    "playwright": "^1.60.0",
     "rehype-autolink-headings": "7.1.0",
     "rehype-pretty-code": "0.14.3",
     "rehype-slug": "6.0.0",

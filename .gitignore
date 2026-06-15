@@ -36,6 +36,9 @@ yarn-error.log*
 # content layer (velite generated output)
 /.velite/
 
+# design refs + screenshot scratch (not part of the app)
+/temp/
+
 # dev server scratch logs
 dev-out.log
 dev-err.log
