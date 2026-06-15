@@ -2,6 +2,7 @@
   "name": "homepage",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@11.1.3",
   "scripts": {
     "dev": "concurrently -n velite,next -c blue,green \"velite dev\" \"next dev\"",
     "build": "velite build && next build",
