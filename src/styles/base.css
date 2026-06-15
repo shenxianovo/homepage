@@ -26,3 +26,26 @@
     @apply font-display;
   }
 }
+
+/* ============================================================
+   Hero image feather mask
+   Masks the image to transparent on the left so the card
+   background shows through — no overlay color needed.
+   The mask is a blurred, rotatable SVG ellipse defined inline in
+   page.tsx (#hero-feather-mask). Tweak its position / radii / angle /
+   blur there; this rule just wires the image up to it.
+   ============================================================ */
+.hero-feather {
+  -webkit-mask-image: url(#hero-feather-mask);
+  mask-image: url(#hero-feather-mask);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/* Mobile: feather from the top down instead of left-right */
+@media (max-width: 767px) {
+  .hero-feather {
+    -webkit-mask-image: linear-gradient(to bottom, #000 32%, transparent 82%);
+    mask-image: linear-gradient(to bottom, #000 32%, transparent 82%);
+  }
+}

@@ -1,13 +1,13 @@
 "use client"
 
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { navLinks, socials } from "@/data/site"
 import { cn } from "@/lib/utils"
-import { MascotLogo } from "./mascot-logo"
 
 export function SiteHeader() {
   const pathname = usePathname()
@@ -16,7 +16,14 @@ export function SiteHeader() {
   return (
     <header className="relative z-20 flex items-center justify-between px-6 py-5 sm:px-10">
       <Link href="/" className="flex items-center" aria-label="Home">
-        <MascotLogo className="size-11" />
+        <Image
+          src="/images/profile.jpg"
+          alt="Avatar"
+          width={44}
+          height={44}
+          priority
+          className="size-11 rounded-full object-cover ring-1 ring-border"
+        />
       </Link>
 
       <nav className="-translate-x-1/2 absolute left-1/2 hidden items-center gap-1 md:flex">
@@ -48,7 +55,7 @@ export function SiteHeader() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={s.label}
-              className="flex size-9 items-center justify-center rounded-full bg-foreground text-background transition-transform hover:-translate-y-0.5"
+              className="flex size-9 items-center justify-center rounded-full border border-border text-foreground transition-transform hover:-translate-y-0.5 hover:bg-muted"
             >
               <s.icon className="size-4" />
             </a>

@@ -1,30 +1,11 @@
 import { ArrowRight, Download, MapPin } from "lucide-react"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { site } from "@/data/site"
 
 export function Hero() {
   return (
-    <section className="relative grid items-center gap-8 md:grid-cols-[1fr_1.1fr]">
-      {/* Mascot image — sits behind on mobile, right column on desktop */}
-      <div className="-z-0 absolute inset-0 md:relative md:col-start-2 md:h-full">
-        <div className="relative h-full min-h-[320px] w-full md:min-h-[560px]">
-          <Image
-            src={site.hero.image}
-            alt={site.hero.alt}
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 55vw"
-            className="object-cover object-center"
-          />
-          {/* fade the left edge into the page background */}
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent md:via-background/20 md:to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent md:hidden" />
-        </div>
-      </div>
-
-      {/* Text */}
-      <div className="relative z-10 px-6 py-10 sm:px-10 md:col-start-1 md:row-start-1 md:py-16">
+    <section className="px-6 py-10 sm:px-10 md:py-16">
+      <div className="max-w-xl md:max-w-[46%]">
         <p className="font-medium text-primary text-xl">{site.greeting}</p>
         <h1 className="mt-1 font-display font-extrabold text-6xl leading-[0.95] tracking-tight lg:text-7xl">
           {site.name}

@@ -2,7 +2,7 @@ import { features } from "@/data/site"
 
 export function FeatureCards() {
   return (
-    <section className="relative z-10 mx-6 -mt-16 rounded-3xl border border-glass-border bg-glass shadow-md backdrop-blur-glass sm:mx-10">
+    <section className="relative z-10 mx-6 mt-8 rounded-3xl border border-glass-border bg-glass shadow-md backdrop-blur-glass sm:mx-10">
       <ul className="grid grid-cols-2 gap-y-10 p-8 sm:p-10 md:grid-cols-4 md:gap-y-0">
         {features.map((f) => (
           <li

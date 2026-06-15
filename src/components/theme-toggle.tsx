@@ -4,7 +4,6 @@ import { Moon, Sun } from "lucide-react"
 import { motion } from "motion/react"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -15,11 +14,11 @@ export function ThemeToggle() {
   const isDark = resolvedTheme === "dark"
 
   return (
-    <Button
-      variant="outline"
-      size="icon"
+    <button
+      type="button"
       aria-label="Toggle theme"
       onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="flex size-9 items-center justify-center rounded-full border border-border text-foreground transition-transform hover:-translate-y-0.5 hover:bg-muted"
     >
       {mounted ? (
         <motion.span
@@ -33,6 +32,6 @@ export function ThemeToggle() {
       ) : (
         <Sun className="size-4" />
       )}
-    </Button>
+    </button>
   )
 }

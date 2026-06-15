@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from "@/components/site/brand-icons"
 type IconType = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 
 export const site = {
-  name: "YOUR NAME",
+  name: "shenxianovo",
   greeting: "Hi, I'm",
   taglineCn: "热爱技术，喜欢创造",
   taglineCnRest: "，追求极致体验。",
