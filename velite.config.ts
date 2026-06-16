@@ -27,6 +27,30 @@ const posts = defineCollection({
     }),
 })
 
+const projects = defineCollection({
+  name: "Project",
+  pattern: "projects/**/*.mdx",
+  schema: s
+    .object({
+      title: s.string().max(120),
+      path: s.path(),
+      description: s.string().max(280),
+      category: s.string(),
+      tags: s.array(s.string()).default([]),
+      cover: s.image().optional(),
+      live: s.string().url().optional(),
+      github: s.string().url().optional(),
+      featured: s.boolean().default(false),
+      order: s.number().default(0),
+      draft: s.boolean().default(false),
+      content: s.mdx(),
+    })
+    .transform((data) => {
+      const slug = data.path.replace(/^projects\//, "")
+      return { ...data, slug }
+    }),
+})
+
 export default defineConfig({
   root: "content",
   output: {
@@ -36,7 +60,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { posts },
+  collections: { posts, projects },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
