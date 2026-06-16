@@ -1,9 +1,9 @@
 import Image from "next/image"
-import { FeatureCards } from "@/components/site/feature-cards"
-import { Hero } from "@/components/site/hero"
-import { SiteFooter } from "@/components/site/site-footer"
-import { SiteHeader } from "@/components/site/site-header"
+import { SiteFooter } from "@/components/layout/site-footer"
+import { SiteHeader } from "@/components/layout/site-header"
 import { site } from "@/data/site"
+import { FeatureCards } from "./_components/feature-cards"
+import { Hero } from "./_components/hero"
 
 export default function Home() {
   return (
@@ -19,13 +19,7 @@ export default function Home() {
             hero the visual tilt looks shallower than the raw angle — tune by eye. */}
         <svg aria-hidden="true" focusable="false" className="absolute h-0 w-0">
           <defs>
-            <filter
-              id="hero-feather-blur"
-              x="-50%"
-              y="-50%"
-              width="200%"
-              height="200%"
-            >
+            <filter id="hero-feather-blur" x="-50%" y="-50%" width="200%" height="200%">
               <feGaussianBlur stdDeviation="0.07" />
             </filter>
             <mask

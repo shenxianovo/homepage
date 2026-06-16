@@ -1,10 +1,8 @@
 import Link from "next/link"
-import { posts } from "#site/content"
+import { getPublishedPosts } from "@/lib/posts"
 
 export default function BlogIndex() {
-  const published = posts
-    .filter((p) => !p.draft)
-    .sort((a, b) => +new Date(b.date) - +new Date(a.date))
+  const published = getPublishedPosts()
 
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-col gap-6 p-8">

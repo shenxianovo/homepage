@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import { BookOpen, Code2, Mail, Palette, Zap } from "lucide-react"
 import type { ComponentType, SVGProps } from "react"
-import { GithubIcon, LinkedinIcon } from "@/components/site/brand-icons"
+import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
 
 type IconType = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation"
 import { posts } from "#site/content"
 import { MDXContent } from "@/components/mdx-content"
+import { getPostBySlug } from "@/lib/posts"
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }))
@@ -8,9 +9,9 @@ export function generateStaticParams() {
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
-  const post = posts.find((p) => p.slug === slug)
+  const post = getPostBySlug(slug)
 
-  if (!post || post.draft) notFound()
+  if (!post) notFound()
 
   return (
     <main className="mx-auto flex w-full max-w-2xl flex-col gap-6 p-8">
