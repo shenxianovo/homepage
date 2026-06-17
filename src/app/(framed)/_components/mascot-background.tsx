@@ -5,11 +5,14 @@ import Image from "next/image"
 import { site } from "@/data/site"
 
 /**
- * Home-only backdrop: the masked mascot scene behind the PageShell card.
+ * Home-only backdrop: the masked mascot scene behind the FramedShell card.
  *
  * The image sits *under* the card's backdrop-blur, so the entrance is
  * opacity-only — animating transforms here would re-rasterise the blur
  * every frame. A one-time fade on mount, no replay on route changes.
+ *
+ * Hidden below `md`: on narrow screens the mascot is cropped to a sliver on
+ * the right and reads as visual noise, so mobile drops the backdrop entirely.
  */
 export function MascotBackground() {
   return (
@@ -45,9 +48,10 @@ export function MascotBackground() {
         </defs>
       </svg>
 
-      {/* Mascot scene, feathered to transparent on the left via the SVG mask */}
+      {/* Mascot scene, feathered to transparent on the left via the SVG mask.
+          Hidden on mobile — see component note. */}
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 hidden md:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

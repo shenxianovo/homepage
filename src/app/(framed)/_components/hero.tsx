@@ -8,7 +8,7 @@ export function Hero() {
     <section className="px-6 py-10 sm:px-10 md:py-16">
       <div className="max-w-xl md:max-w-[46%]">
         <p className="font-medium text-primary text-xl">{site.greeting}</p>
-        <h1 className="mt-1 font-display font-extrabold text-6xl leading-[0.95] tracking-tight lg:text-7xl">
+        <h1 className="mt-1 break-words font-display font-extrabold text-5xl leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
           {site.name}
           <span className="text-primary">.</span>
         </h1>

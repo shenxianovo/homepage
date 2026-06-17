@@ -1,5 +1,4 @@
 import { PageHeading } from "@/components/layout/page-heading"
-import { PageShell } from "@/components/layout/page-shell"
 import { getProjects, getProjectTypes } from "@/lib/projects"
 import { ProjectGrid } from "./_components/project-grid"
 
@@ -13,7 +12,7 @@ export default function ProjectsPage() {
   const types = getProjectTypes()
 
   return (
-    <PageShell>
+    <>
       <div className="flex flex-col gap-3">
         <PageHeading eyebrow="My" title="Projects" />
         <p className="max-w-xl text-muted-foreground leading-relaxed">
@@ -24,6 +23,6 @@ export default function ProjectsPage() {
       <div className="mt-10">
         <ProjectGrid projects={projects} types={types} />
       </div>
-    </PageShell>
+    </>
   )
 }
