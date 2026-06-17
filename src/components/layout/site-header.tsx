@@ -1,6 +1,7 @@
 "use client"
 
 import { Menu, X } from "lucide-react"
+import { motion } from "motion/react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -34,13 +35,18 @@ export function SiteHeader() {
               key={link.href}
               href={link.href}
               className={cn(
-                "rounded-full px-4 py-2 font-medium text-sm transition-colors",
-                active
-                  ? "bg-primary-soft text-foreground"
-                  : "text-muted-foreground hover:text-foreground",
+                "relative rounded-full px-4 py-2 font-medium text-sm transition-colors",
+                active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
               )}
             >
-              {link.label}
+              {active ? (
+                <motion.span
+                  layoutId="nav-pill"
+                  className="absolute inset-0 rounded-full bg-primary-soft"
+                  transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                />
+              ) : null}
+              <span className="relative z-10">{link.label}</span>
             </Link>
           )
         })}
