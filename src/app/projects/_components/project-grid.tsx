@@ -7,18 +7,12 @@ import { ProjectCard } from "./project-card"
 
 const ALL = "All"
 
-export function ProjectGrid({
-  projects,
-  categories,
-}: {
-  projects: Project[]
-  categories: string[]
-}) {
+export function ProjectGrid({ projects, types }: { projects: Project[]; types: string[] }) {
   const [active, setActive] = useState(ALL)
-  const tabs = [ALL, ...categories]
+  const tabs = [ALL, ...types]
 
   const visible = useMemo(
-    () => (active === ALL ? projects : projects.filter((p) => p.category === active)),
+    () => (active === ALL ? projects : projects.filter((p) => p.types.includes(active))),
     [active, projects],
   )
 

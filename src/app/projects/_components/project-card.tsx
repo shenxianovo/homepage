@@ -4,7 +4,7 @@ import type { Project } from "#site/content"
 import { GithubIcon } from "@/components/brand-icons"
 
 export function ProjectCard({ project }: { project: Project }) {
-  const { title, description, category, tags, cover, live, github } = project
+  const { title, description, types, tags, cover, live, github } = project
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow hover:shadow-md">
@@ -23,9 +23,16 @@ export function ProjectCard({ project }: { project: Project }) {
             <span className="font-display font-semibold text-2xl text-primary/40">{title}</span>
           </div>
         )}
-        <span className="absolute top-3 left-3 rounded-full bg-background/80 px-3 py-1 font-medium text-foreground text-xs backdrop-blur-sm">
-          {category}
-        </span>
+        <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
+          {types.map((type) => (
+            <span
+              key={type}
+              className="rounded-full bg-background/80 px-3 py-1 font-medium text-foreground text-xs backdrop-blur-sm"
+            >
+              {type}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-1 flex-col p-5">

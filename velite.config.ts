@@ -35,7 +35,7 @@ const projects = defineCollection({
       title: s.string().max(120),
       path: s.path(),
       description: s.string().max(280),
-      category: s.string(),
+      types: s.array(s.string()).default([]),
       tags: s.array(s.string()).default([]),
       cover: s.image().optional(),
       live: s.string().url().optional(),

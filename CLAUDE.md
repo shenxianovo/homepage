@@ -52,7 +52,7 @@ scripts/shoot.ts   # Playwright screenshot harness
 
 Blog posts and projects are MDX files compiled by Velite (schemas in `velite.config.ts`), queried via `lib/posts.ts` / `lib/projects.ts`.
 
-**Adding a project:** create `content/projects/<slug>.mdx` with frontmatter — `title`, `description`, `category` (drives the filter tabs, which are auto-generated), `tags`, optional `cover`, optional `live` + `github` URLs, `order`. Filter tabs and cards update automatically.
+**Adding a project:** create `content/projects/<slug>.mdx` with frontmatter — `title`, `description`, `types` (array; drives the filter tabs, which are auto-generated; a project can have several), `tags` (tech stack pills), optional `cover`, optional `live` + `github` URLs, `order`. Filter tabs and cards update automatically.
 
 **Cover images:** the `cover` field uses Velite's `s.image()`. Drop the image *beside the mdx* in `content/projects/` and reference it relatively (`cover: ./echo-flow.png`). Velite copies it to `public/static/` with a content hash and generates dimensions + a blur placeholder. **`public/static/` is generated output (gitignored, `clean: true` wipes it each build)** — commit the source image in `content/projects/`, never the hashed file in `public/static/`.
 

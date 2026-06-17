@@ -1,6 +1,6 @@
 import { PageHeading } from "@/components/layout/page-heading"
 import { PageShell } from "@/components/layout/page-shell"
-import { getProjectCategories, getProjects } from "@/lib/projects"
+import { getProjects, getProjectTypes } from "@/lib/projects"
 import { ProjectGrid } from "./_components/project-grid"
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function ProjectsPage() {
   const projects = getProjects()
-  const categories = getProjectCategories()
+  const types = getProjectTypes()
 
   return (
     <PageShell>
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className="mt-10">
-        <ProjectGrid projects={projects} categories={categories} />
+        <ProjectGrid projects={projects} types={types} />
       </div>
     </PageShell>
   )

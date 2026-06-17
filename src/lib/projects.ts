@@ -10,10 +10,12 @@ export function getProjects() {
 }
 
 /**
- * Unique category names in display order, for the filter tabs.
+ * Unique type names across all projects, in first-seen order, for the filter tabs.
  */
-export function getProjectCategories() {
+export function getProjectTypes() {
   const seen = new Set<string>()
-  for (const p of getProjects()) seen.add(p.category)
+  for (const p of getProjects()) {
+    for (const t of p.types) seen.add(t)
+  }
   return [...seen]
 }
