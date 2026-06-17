@@ -38,7 +38,7 @@ export const features: { title: string; description: string; icon: IconType }[] 
 ]
 
 export const socials: { label: string; href: string; icon: IconType }[] = [
-  { label: "GitHub", href: "https://github.com", icon: GithubIcon },
+  { label: "GitHub", href: "https://github.com/shenxianovo", icon: GithubIcon },
   { label: "LinkedIn", href: "https://linkedin.com", icon: LinkedinIcon },
   { label: "Email", href: "mailto:hello@example.com", icon: Mail },
 ]

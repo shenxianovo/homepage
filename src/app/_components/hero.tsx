@@ -1,4 +1,5 @@
-import { ArrowRight, Download, MapPin } from "lucide-react"
+import { ArrowRight, MapPin } from "lucide-react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { site } from "@/data/site"
 
@@ -20,7 +21,12 @@ export function Hero() {
         <p className="mt-5 max-w-md text-muted-foreground leading-relaxed">{site.description}</p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <Button size="lg" className="h-12 rounded-full px-6 shadow-glow">
+          <Button
+            size="lg"
+            className="h-12 rounded-full px-6 shadow-glow"
+            nativeButton={false}
+            render={<Link href="/projects" />}
+          >
             Explore Projects
             <ArrowRight className="size-4" />
           </Button>
@@ -28,9 +34,10 @@ export function Hero() {
             size="lg"
             variant="outline"
             className="h-12 rounded-full px-6 backdrop-blur-glass"
+            nativeButton={false}
+            render={<Link href="/contact" />}
           >
-            <Download className="size-4" />
-            Download CV
+            Get in Touch
           </Button>
         </div>
 
