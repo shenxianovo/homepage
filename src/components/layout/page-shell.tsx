@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import { PageTransition } from "@/components/layout/page-transition"
 import { SiteFooter } from "@/components/layout/site-footer"
 import { SiteHeader } from "@/components/layout/site-header"
 import { cn } from "@/lib/utils"
@@ -28,7 +29,7 @@ export function PageShell({
         <div className="relative z-10 flex flex-1 flex-col">
           <SiteHeader />
           <main className={cn("flex flex-1 flex-col", padded && "px-6 py-10 sm:px-10 md:py-14")}>
-            {children}
+            <PageTransition>{children}</PageTransition>
           </main>
           <SiteFooter />
         </div>

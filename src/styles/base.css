@@ -11,6 +11,10 @@
 
   html {
     @apply font-sans;
+    /* Always reserve the scrollbar gutter so pages with/without a scrollbar
+       keep the same content width — stops the centered card shifting left
+       and right when switching between short and tall pages. */
+    scrollbar-gutter: stable;
   }
 
   body {
