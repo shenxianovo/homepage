@@ -15,3 +15,11 @@ export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
+export function BilibiliIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" {...props}>
+      <path d="M18.2 4.4c.6.6.6 1.6 0 2.2L17 7.8h1.9A3.1 3.1 0 0 1 22 10.9v6.7a3.1 3.1 0 0 1-3.1 3.1H5.1A3.1 3.1 0 0 1 2 17.6v-6.7a3.1 3.1 0 0 1 3.1-3.1H7L5.8 6.6a1.6 1.6 0 0 1 2.2-2.2l2.4 2.4c.1.1.2.3.3.4h2.6c.1-.1.2-.3.3-.4L16 4.4c.6-.6 1.6-.6 2.2 0ZM5.1 10.3a.6.6 0 0 0-.6.6v6.7c0 .3.3.6.6.6h13.8c.3 0 .6-.3.6-.6v-6.7a.6.6 0 0 0-.6-.6H5.1Zm3 2.4c.7 0 1.2.6 1.2 1.3v1.2a1.2 1.2 0 1 1-2.5 0V14c0-.7.6-1.3 1.3-1.3Zm7.8 0c.7 0 1.3.6 1.3 1.3v1.2a1.2 1.2 0 1 1-2.5 0V14c0-.7.5-1.3 1.2-1.3Z" />
+    </svg>
+  )
+}

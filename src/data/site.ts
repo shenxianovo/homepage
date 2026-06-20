@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import { BookOpen, Code2, Mail, Palette, Zap } from "lucide-react"
 import type { ComponentType, SVGProps } from "react"
-import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
+import { BilibiliIcon, GithubIcon, LinkedinIcon } from "@/components/brand-icons"
 
 type IconType = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 
@@ -18,7 +18,8 @@ export const site = {
   },
   info: [
     { label: "Currently", value: "Open to opportunities" },
-    { label: "Location", value: "Earth" },
+    { label: "Studying", value: "AI @ Wuhan University" },
+    { label: "Location", value: "Wuhan, China" },
   ],
 } as const
 
@@ -27,7 +28,6 @@ export const navLinks: { label: string; href: string }[] = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Blog", href: "https://blog.shenxianovo.com" },
-  { label: "Contact", href: "/contact" },
 ]
 
 export const features: { title: string; description: string; icon: IconType }[] = [
@@ -39,6 +39,12 @@ export const features: { title: string; description: string; icon: IconType }[] 
 
 export const socials: { label: string; href: string; icon: IconType }[] = [
   { label: "GitHub", href: "https://github.com/shenxianovo", icon: GithubIcon },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: LinkedinIcon },
-  { label: "Email", href: "mailto:hello@example.com", icon: Mail },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shenxianovo", icon: LinkedinIcon },
+  { label: "Bilibili", href: "https://space.bilibili.com/446305918", icon: BilibiliIcon },
+  { label: "Email", href: "mailto:shenxianovo@outlook.com", icon: Mail },
 ]
+
+// Future: a curated "Currently into" list (anime / music / vocaloid) for the
+// About page. Start static here when ready; consider Bangumi / Last.fm sync
+// only once manual upkeep gets annoying.
+// export const nowPlaying = [...]

@@ -35,7 +35,7 @@ export function Hero() {
             variant="outline"
             className="h-12 rounded-full px-6 backdrop-blur-glass"
             nativeButton={false}
-            render={<Link href="/contact" />}
+            render={<Link href="/about#contact" />}
           >
             Get in Touch
           </Button>
