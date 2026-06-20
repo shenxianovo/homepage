@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin } from "lucide-react"
+import { ArrowRight, BookOpen, MapPin } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { site } from "@/data/site"
@@ -41,12 +41,14 @@ export function Hero() {
           </Button>
         </div>
 
-        <dl className="mt-12 flex max-w-md gap-12 border-border border-t pt-6">
-          {site.info.map((item, i) => (
+        <dl className="mt-12 flex max-w-md flex-wrap gap-x-8 gap-y-4 border-border border-t pt-6 sm:gap-12">
+          {site.info.map((item) => (
             <div key={item.label} className="flex gap-3">
               <span className="mt-1 text-primary">
-                {i === 0 ? (
+                {item.label === "Currently" ? (
                   <span className="block size-2.5 rounded-full bg-primary" />
+                ) : item.label === "Studying" ? (
+                  <BookOpen className="size-4" />
                 ) : (
                   <MapPin className="size-4" />
                 )}

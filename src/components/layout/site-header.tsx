@@ -7,7 +7,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
-import { navLinks, socials } from "@/data/site"
+import { navLinks } from "@/data/site"
 import { cn } from "@/lib/utils"
 
 export function SiteHeader() {
@@ -69,20 +69,6 @@ export function SiteHeader() {
       </nav>
 
       <div className="flex items-center gap-2">
-        <div className="hidden items-center gap-2 sm:flex">
-          {socials.slice(0, 2).map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={s.label}
-              className="flex size-9 items-center justify-center rounded-full border border-border text-foreground transition-transform hover:-translate-y-0.5 hover:bg-muted"
-            >
-              <s.icon className="size-4" />
-            </a>
-          ))}
-        </div>
         <ThemeToggle />
         <button
           type="button"

@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react"
 import { PageHeading } from "@/components/layout/page-heading"
 import { site, socials } from "@/data/site"
 
@@ -26,24 +25,6 @@ export default function AboutPage() {
             它们是我审美和"想做点好东西"这股劲的来源。
           </p>
         </div>
-
-        <dl className="flex max-w-md flex-wrap gap-x-10 gap-y-4 border-border border-t pt-6">
-          {site.info.map((item, i) => (
-            <div key={item.label} className="flex gap-3">
-              <span className="mt-1 text-primary">
-                {i === 0 ? (
-                  <span className="block size-2.5 rounded-full bg-primary" />
-                ) : (
-                  <MapPin className="size-4" />
-                )}
-              </span>
-              <div>
-                <dt className="font-semibold text-sm">{item.label}</dt>
-                <dd className="mt-0.5 text-muted-foreground text-sm">{item.value}</dd>
-              </div>
-            </div>
-          ))}
-        </dl>
       </section>
 
       {/* Future: a "Currently into" block (anime / music) goes here — see the
