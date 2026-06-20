@@ -4,29 +4,6 @@ import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
 import { defineCollection, defineConfig, s } from "velite"
 
-const posts = defineCollection({
-  name: "Post",
-  pattern: "posts/**/*.mdx",
-  schema: s
-    .object({
-      title: s.string().max(120),
-      path: s.path(),
-      date: s.isodate(),
-      updated: s.isodate().optional(),
-      description: s.string().max(280).optional(),
-      tags: s.array(s.string()).default([]),
-      draft: s.boolean().default(false),
-      cover: s.image().optional(),
-      toc: s.toc(),
-      metadata: s.metadata(),
-      content: s.mdx(),
-    })
-    .transform((data) => {
-      const slug = data.path.replace(/^posts\//, "")
-      return { ...data, slug, permalink: `/blog/${slug}` }
-    }),
-})
-
 const projects = defineCollection({
   name: "Project",
   pattern: "projects/**/*.mdx",
@@ -60,7 +37,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { posts, projects },
+  collections: { projects },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

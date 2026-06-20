@@ -26,7 +26,7 @@ export const navLinks: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "https://blog.shenxianovo.com" },
   { label: "Contact", href: "/contact" },
 ]
 

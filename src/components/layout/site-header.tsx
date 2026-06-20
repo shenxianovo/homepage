@@ -29,16 +29,16 @@ export function SiteHeader() {
 
       <nav className="-translate-x-1/2 absolute left-1/2 hidden items-center gap-1 md:flex">
         {navLinks.map((link) => {
+          const isExternal = link.href.startsWith("http")
           const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)
-          return (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={cn(
-                "relative rounded-full px-4 py-2 font-medium text-sm transition-colors",
-                active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
-              )}
-            >
+
+          const className = cn(
+            "relative rounded-full px-4 py-2 font-medium text-sm transition-colors",
+            active ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+          )
+
+          const content = (
+            <>
               {active ? (
                 <motion.span
                   layoutId="nav-pill"
@@ -47,6 +47,22 @@ export function SiteHeader() {
                 />
               ) : null}
               <span className="relative z-10">{link.label}</span>
+            </>
+          )
+
+          return isExternal ? (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={className}
+            >
+              {content}
+            </a>
+          ) : (
+            <Link key={link.href} href={link.href} className={className}>
+              {content}
             </Link>
           )
         })}
@@ -80,16 +96,32 @@ export function SiteHeader() {
 
       {open ? (
         <div className="absolute inset-x-4 top-full z-30 mt-2 flex flex-col gap-1 rounded-2xl border border-border bg-popover p-3 shadow-md md:hidden">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isExternal = link.href.startsWith("http")
+            const className = "rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
+
+            return isExternal ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className={className}
+              >
+                {link.label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className={className}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
         </div>
       ) : null}
     </header>
