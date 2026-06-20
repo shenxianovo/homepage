@@ -1,7 +1,9 @@
 services:
   web:
-    image: ghcr.io/shenxianovo/homepage:latest
-    # For local builds instead of pulling from GHCR, comment out `image` above
+    # 拉取走 Azure 上的 ghcr.io pull-through cache（阿里云直连 ghcr 不稳）。
+    # 镜像源头仍是 ghcr.io/shenxianovo/homepage，由 registry.shenxianovo.com 回源缓存。
+    image: registry.shenxianovo.com/shenxianovo/homepage:latest
+    # For local builds instead of pulling from the cache, comment out `image` above
     # and uncomment the build block below:
     # build:
     #   context: .
