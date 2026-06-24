@@ -4,7 +4,7 @@ Guidance for AI agents working in this repo. Keep it accurate — update it when
 
 ## What this is
 
-Personal website for shenxianovo.com. Next.js App Router landing page + MDX blog. Currently only the Home page is built; **Projects** and **Contact** pages are planned next.
+Personal website for shenxianovo.com. Next.js App Router site with **Home**, **About**, and **Projects** pages, all sharing one persistent framed shell. Projects are MDX-driven via Velite. The blog is a separate Astro site (`blog.shenxianovo.com`), linked externally from the nav — it does **not** live in this repo.
 
 ## Commands
 
@@ -25,32 +25,43 @@ Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4 (`@t
 
 ## Structure
 
+The page routes live in a single `(framed)` route group whose layout wraps every
+page in the persistent shell (rounded card + header + footer). The shell is **not**
+remounted on navigation — only the inner page content swaps — which is what lets
+the header's `layoutId` nav pill slide between tabs.
+
 ```
 src/
   app/
-    _components/   # Home-only sections: hero, feature-cards (colocated with route)
-    page.tsx       # Home: assembles background + header + sections + footer
-    layout.tsx     # Root layout, fonts, ThemeProvider
-    globals.css    # Imports tailwind + the 3 style files below
-    blog/          # Blog index + [slug] post page
+    (framed)/
+      _components/        # Shell + Home-only sections: framed-shell, mascot-background,
+                          #   hero, feature-cards
+      page.tsx            # Home: hero + feature cards over the masked mascot backdrop
+      layout.tsx          # Group layout — wraps pages in FramedShell
+      about/page.tsx      # About + "Get in touch" (socials), #contact anchor
+      projects/
+        page.tsx          # Projects index (filter tabs + grid)
+        _components/       # project-card, project-grid
+    layout.tsx            # Root layout, fonts, ThemeProvider, site metadata
+    globals.css           # Imports tailwind + the 3 style files below
   components/
-    layout/        # Shared chrome used by every page: site-header, site-footer
-    ui/            # shadcn primitives: button, theme-toggle
-    brand-icons.tsx    # Hand-drawn GitHub/LinkedIn SVGs (see note)
-    theme-provider.tsx, mdx-content.tsx
-  data/site.ts     # All copy, nav links, features, socials — edit content here
-  lib/             # fonts.ts (Sora+Inter), utils.ts (cn), posts.ts + projects.ts (content queries)
-  styles/          # tokens.css, theme.css, base.css (see Styling)
-content/posts/     # Blog MDX files
-content/projects/  # Project MDX files (+ their cover images alongside)
-scripts/shoot.ts   # Playwright screenshot harness
+    layout/               # Shared chrome: site-header, site-footer, page-heading,
+                          #   page-transition
+    ui/                   # shadcn primitives: button, theme-toggle
+    brand-icons.tsx       # Hand-drawn GitHub/LinkedIn/Bilibili SVGs (see note)
+    theme-provider.tsx
+  data/site.ts            # All copy, nav links, features, socials — edit content here
+  lib/                    # fonts.ts (Sora+Inter), utils.ts (cn), projects.ts (content queries)
+  styles/                 # tokens.css, theme.css, base.css (see Styling)
+content/projects/         # Project MDX files (+ their cover images alongside)
+scripts/shoot.ts          # Playwright screenshot harness
 ```
 
-**Convention:** page-specific sections go in `app/<page>/_components/` (colocated). Shared-across-pages components go in `components/`. When building Projects/Contact, follow this — put their sections in `app/projects/_components/` etc.
+**Convention:** page-specific sections go in `app/(framed)/<page>/_components/` (colocated). Shared-across-pages components go in `components/`.
 
 ## Content (Velite)
 
-Blog posts and projects are MDX files compiled by Velite (schemas in `velite.config.ts`), queried via `lib/posts.ts` / `lib/projects.ts`.
+Projects are MDX files compiled by Velite (schema in `velite.config.ts`), queried via `lib/projects.ts`.
 
 **Adding a project:** create `content/projects/<slug>.mdx` with frontmatter — `title`, `description`, `types` (array; drives the filter tabs, which are auto-generated; a project can have several), `tags` (tech stack pills), optional `cover`, optional `live` + `github` URLs, `order`. Filter tabs and cards update automatically.
 
@@ -71,10 +82,10 @@ To change a color, edit the token in `tokens.css` — don't hardcode hex/oklch i
 ## Conventions
 
 - **Content lives in `src/data/site.ts`** — name, taglines, nav, features, socials. Edit there, not in components.
-- **Blog queries go through `lib/posts.ts`** (`getPublishedPosts`, `getPostBySlug`) — don't re-inline filter/sort in pages.
+- **Project queries go through `lib/projects.ts`** (`getProjects`, `getProjectTypes`) — don't re-inline filter/sort in pages.
 - Path alias `@/*` → `src/*`. Velite output imported as `#site/content`.
 - `temp/` is gitignored (design refs, screenshots). Never commit scratch logs (`*-out.log` ignored).
-- Brand icons (GitHub/LinkedIn) are hand-drawn SVGs in `brand-icons.tsx` because lucide-react and Simple Icons both removed brand logos for trademark reasons. Don't try to re-add them from an icon library.
+- Brand icons (GitHub/LinkedIn/Bilibili) are hand-drawn SVGs in `brand-icons.tsx` because lucide-react and Simple Icons both removed brand logos for trademark reasons. Don't try to re-add them from an icon library.
 
 ## Screenshots (visual self-check)
 
