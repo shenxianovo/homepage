@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { SmartLink } from "@/components/smart-link"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
-import { navLinks } from "@/data/site"
+import { navLinks, site } from "@/data/site"
 import { cn } from "@/lib/utils"
 
 export function SiteHeader() {
@@ -18,7 +18,7 @@ export function SiteHeader() {
     <header className="relative z-20 flex items-center justify-between px-6 py-5 sm:px-10">
       <SmartLink href="/" className="flex items-center" aria-label="Home">
         <Image
-          src="/images/profile.jpg"
+          src={site.avatar}
           alt="shenxianovo"
           width={44}
           height={44}

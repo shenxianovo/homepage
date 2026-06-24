@@ -9,6 +9,7 @@ export const site = {
   name: "shenxianovo",
   url: "https://shenxianovo.com",
   blogUrl: "https://blog.shenxianovo.com",
+  avatar: "/images/profile.jpg",
   greeting: "Hi, I'm",
   taglineCn: "热爱技术，喜欢创造",
   taglineCnRest: "，追求极致体验。",
@@ -29,7 +30,7 @@ export const navLinks: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
-  { label: "Blog", href: "https://blog.shenxianovo.com" },
+  { label: "Blog", href: site.blogUrl },
 ]
 
 export const features: { title: string; description: string; icon: IconType }[] = [
