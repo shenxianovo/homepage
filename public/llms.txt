@@ -1,0 +1,19 @@
+# shenxianovo
+
+> Personal website of shenxianovo — a developer and creator building scalable, user-friendly, and delightful digital experiences. Studying AI at Wuhan University, based in Wuhan, China.
+
+## Pages
+
+- [Home](https://shenxianovo.com): Introduction, taglines, and a snapshot of what shenxianovo focuses on (code, design, performance, learning).
+- [About](https://shenxianovo.com/about): Background, interests (software, AI, ACG), and contact links.
+- [Projects](https://shenxianovo.com/projects): Things shenxianovo has designed and built, filterable by type, with links to live demos and source.
+
+## Profiles
+
+- [GitHub](https://github.com/shenxianovo): Source code and open-source work.
+- [LinkedIn](https://www.linkedin.com/in/shenxianovo): Professional profile.
+- [Bilibili](https://space.bilibili.com/446305918): Video content.
+
+## Elsewhere
+
+- [Blog](https://blog.shenxianovo.com): Writing on technology and other topics (separate site).
