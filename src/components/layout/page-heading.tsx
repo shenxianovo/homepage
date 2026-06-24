@@ -34,12 +34,7 @@ export function PageHeading({
   return (
     <div className={className}>
       <p className="font-medium text-primary text-xl">{eyebrow}</p>
-      <Tag
-        className={cn(
-          "mt-1 font-display font-extrabold tracking-tight",
-          titleSizes[size],
-        )}
-      >
+      <Tag className={cn("mt-1 font-display font-extrabold tracking-tight", titleSizes[size])}>
         {title}
         <span className="text-primary">.</span>
       </Tag>
