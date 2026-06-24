@@ -6,11 +6,23 @@ import { site, socials } from "@/data/site"
  * who shenxianovo is and which profiles belong to the same person, enabling
  * rich results and accurate attribution. Rendered once in the root layout.
  *
- * `sameAs` lists external profiles only; the mailto entry is filtered out
- * because schema.org expects URLs there, not contact protocols.
+ * `sameAs` lists external profiles and the blog (same person, helping entity
+ * disambiguation). Private app subdomains (auth, heartbeat) are deliberately
+ * excluded — they should not be associated with public search results.
  */
 export function JsonLd() {
-  const sameAs = socials.map((s) => s.href).filter((href) => /^https?:\/\//.test(href))
+  const sameAs = [
+    ...socials.map((s) => s.href).filter((href) => /^https?:\/\//.test(href)),
+    site.blogUrl,
+  ]
+
+  const blog = {
+    "@type": "Blog",
+    "@id": `${site.blogUrl}/#blog`,
+    url: site.blogUrl,
+    name: `${site.name}'s Blog`,
+    author: { "@id": `${site.url}/#person` },
+  }
 
   const graph = [
     {
@@ -36,7 +48,9 @@ export function JsonLd() {
       description: site.description,
       inLanguage: "en",
       author: { "@id": `${site.url}/#person` },
+      hasPart: { "@id": `${site.blogUrl}/#blog` },
     },
+    blog,
   ]
 
   const jsonLd = {

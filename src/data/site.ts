@@ -8,6 +8,7 @@ type IconType = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 export const site = {
   name: "shenxianovo",
   url: "https://shenxianovo.com",
+  blogUrl: "https://blog.shenxianovo.com",
   greeting: "Hi, I'm",
   taglineCn: "热爱技术，喜欢创造",
   taglineCnRest: "，追求极致体验。",
