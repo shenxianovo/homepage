@@ -1,5 +1,6 @@
 import { ArrowRight, BookOpen, MapPin } from "lucide-react"
 import Link from "next/link"
+import { PageHeading } from "@/components/layout/page-heading"
 import { Button } from "@/components/ui/button"
 import { site } from "@/data/site"
 
@@ -7,11 +8,7 @@ export function Hero() {
   return (
     <section className="px-6 py-10 sm:px-10 md:py-16">
       <div className="max-w-xl md:max-w-[46%]">
-        <p className="font-medium text-primary text-xl">{site.greeting}</p>
-        <h1 className="mt-1 break-words font-display font-extrabold text-5xl leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
-          {site.name}
-          <span className="text-primary">.</span>
-        </h1>
+        <PageHeading eyebrow={site.greeting} title={site.name} size="hero" />
 
         <p className="mt-6 font-medium text-2xl">
           <span className="text-primary">{site.taglineCn}</span>

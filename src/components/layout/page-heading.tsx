@@ -1,15 +1,48 @@
+import { cn } from "@/lib/utils"
+
+type HeadingSize = "hero" | "page" | "section"
+
+const titleSizes: Record<HeadingSize, string> = {
+  hero: "break-words text-5xl leading-[0.95] sm:text-6xl lg:text-7xl",
+  page: "text-5xl lg:text-6xl",
+  section: "text-3xl sm:text-4xl",
+}
+
+type PageHeadingProps = {
+  /** Small green line above the title. */
+  eyebrow: string
+  title: string
+  /** Heading level — `h1` for page titles, `h2` for in-page sections. */
+  as?: "h1" | "h2"
+  /** Title scale: `hero` (Home), `page` (page titles), `section` (in-page). */
+  size?: HeadingSize
+  className?: string
+}
+
 /**
- * Page heading matching the hero style: a small green eyebrow above a large
- * display title ending in a green dot.
+ * The site's title motif: a small green eyebrow above a large display title
+ * ending in a green dot. Single owner of this pattern — the Home hero, page
+ * titles, and in-page section headings all render through it.
  */
-export function PageHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
+export function PageHeading({
+  eyebrow,
+  title,
+  as: Tag = "h1",
+  size = "page",
+  className,
+}: PageHeadingProps) {
   return (
-    <div>
+    <div className={className}>
       <p className="font-medium text-primary text-xl">{eyebrow}</p>
-      <h1 className="mt-1 font-display font-extrabold text-5xl leading-[0.95] tracking-tight lg:text-6xl">
+      <Tag
+        className={cn(
+          "mt-1 font-display font-extrabold tracking-tight",
+          titleSizes[size],
+        )}
+      >
         {title}
         <span className="text-primary">.</span>
-      </h1>
+      </Tag>
     </div>
   )
 }

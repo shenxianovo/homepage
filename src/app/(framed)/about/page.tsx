@@ -33,11 +33,7 @@ export default function AboutPage() {
 
       <section id="contact" className="flex scroll-mt-24 flex-col gap-6">
         <div>
-          <p className="font-medium text-primary text-xl">Say hello</p>
-          <h2 className="mt-1 font-display font-extrabold text-3xl tracking-tight sm:text-4xl">
-            Get in touch
-            <span className="text-primary">.</span>
-          </h2>
+          <PageHeading eyebrow="Say hello" title="Get in touch" as="h2" size="section" />
           <p className="mt-3 max-w-xl text-muted-foreground leading-relaxed">
             想聊技术、合作，或者只是有番/歌想安利，都欢迎找我。
           </p>
