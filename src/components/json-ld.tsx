@@ -10,9 +10,7 @@ import { site, socials } from "@/data/site"
  * because schema.org expects URLs there, not contact protocols.
  */
 export function JsonLd() {
-  const sameAs = socials
-    .map((s) => s.href)
-    .filter((href) => /^https?:\/\//.test(href))
+  const sameAs = socials.map((s) => s.href).filter((href) => /^https?:\/\//.test(href))
 
   const graph = [
     {
