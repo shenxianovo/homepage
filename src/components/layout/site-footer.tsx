@@ -1,4 +1,5 @@
-import { site, socials } from "@/data/site"
+import { SocialLinks } from "@/components/layout/social-links"
+import { site } from "@/data/site"
 
 export function SiteFooter() {
   const year = new Date().getFullYear()
@@ -7,20 +8,7 @@ export function SiteFooter() {
       <p className="text-muted-foreground text-sm">
         © {year} &nbsp; {site.name}. All rights reserved.
       </p>
-      <div className="flex items-center gap-3">
-        {socials.map((s) => (
-          <a
-            key={s.label}
-            href={s.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={s.label}
-            className="flex size-9 items-center justify-center rounded-lg bg-muted text-foreground transition-transform hover:-translate-y-0.5"
-          >
-            <s.icon className="size-4" />
-          </a>
-        ))}
-      </div>
+      <SocialLinks variant="icon" />
     </footer>
   )
 }

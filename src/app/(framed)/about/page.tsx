@@ -1,5 +1,6 @@
 import { PageHeading } from "@/components/layout/page-heading"
-import { site, socials } from "@/data/site"
+import { SocialLinks } from "@/components/layout/social-links"
+import { site } from "@/data/site"
 
 export const metadata = {
   title: "About",
@@ -42,20 +43,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-3">
-          {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              target={s.href.startsWith("mailto:") ? undefined : "_blank"}
-              rel={s.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
-              className="flex items-center gap-3 rounded-full bg-muted px-5 py-3 font-medium text-sm transition-transform hover:-translate-y-0.5"
-            >
-              <s.icon className="size-4 text-primary" />
-              {s.label}
-            </a>
-          ))}
-        </div>
+        <SocialLinks variant="pill" />
       </section>
     </div>
   )
