@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { JsonLd } from "@/components/json-ld"
 import { ThemeProvider } from "@/components/theme-provider"
 import { site } from "@/data/site"
 import { fontVariables } from "@/lib/fonts"
@@ -42,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${fontVariables} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
+        <JsonLd />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
