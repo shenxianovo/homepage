@@ -4,7 +4,6 @@ import { site } from "@/data/site"
 import { fontVariables } from "@/lib/fonts"
 import "./globals.css"
 
-const url = "https://shenxianovo.com"
 const ogImage = {
   url: site.hero.image,
   width: 1536,
@@ -13,7 +12,7 @@ const ogImage = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} — ${site.description}`,
     template: `%s | ${site.name}`,
@@ -21,7 +20,7 @@ export const metadata: Metadata = {
   description: site.description,
   openGraph: {
     type: "website",
-    url,
+    url: site.url,
     siteName: site.name,
     title: `${site.name} — ${site.description}`,
     description: site.description,
