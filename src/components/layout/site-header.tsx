@@ -19,7 +19,7 @@ export function SiteHeader() {
       <SmartLink href="/" className="flex items-center" aria-label="Home">
         <Image
           src="/images/profile.jpg"
-          alt="Avatar"
+          alt="shenxianovo"
           width={44}
           height={44}
           priority
