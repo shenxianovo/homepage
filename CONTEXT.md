@@ -18,7 +18,7 @@
   （ずっと真夜中でいいのに。），唱的是某人的翻唱版就写那个人（ACAね）。
   不做乐队/主唱的结构化区分。
 - **status（状态）** — `learned`（会唱，默认，可省略）/ `learning`（在听/还在学）。
-  UI 上 learned 无标记（这页默认态就是会唱），learning 显示耳机图标。
+  UI 上 learned 显示话筒图标（主题绿），learning 显示耳机图标（淡色）。
 - **range（音域）** — 形如 `G3-E5`。`#` 一律解析为 +1 半音（`B#5` = `C6`），
   schema 不校验音名合法性，宽进严解析。见 `lib/vocal-range.ts`。
 - **我的音域** — `E2-E4`，常量 `myVocalRange`（`data/site.ts`）。

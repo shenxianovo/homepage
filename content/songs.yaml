@@ -87,10 +87,279 @@
   - https://www.bilibili.com/video/BV1K7411x74k
   note: 地縛少年花子くん 第一季 ED
   status: learned
-    # - title:
-    #   artist: []
-    #   lyricist:
-    #   composer:
-    #   range: ""
-    #   links:
-    #   - 
+
+- title: 心の奥
+  artist: [ ロクデナシ ]
+  lyricist: MIMI
+  composer: MIMI
+  range: "A#3-G5"
+  links:
+  - https://www.bilibili.com/video/BV1BQPqeqE3u
+  status: learning
+
+- title: 愛が灯る
+  artist: [ ロクデナシ ]
+  lyricist: MIMI
+  composer: MIMI
+  range: "G#3-F5"
+  links:
+  - https://www.bilibili.com/video/BV1ty421a7Qw
+  status: learning
+
+- title: スピカ
+  artist: [ ロクデナシ ]
+  lyricist: ナユタン星人
+  composer: ナユタン星人
+  range: "G3-F5"
+  links:
+  - https://www.bilibili.com/video/BV1np421R7bc
+  status: learning
+
+- title: へび
+  artist: [ ヨルシカ ]
+  lyricist: n-buna
+  composer: n-buna
+  range: "A3-A4"
+  links:
+  - https://www.bilibili.com/video/BV1vPwjeAEJs
+  note: チ。 ―地球の運動について― ED2
+
+- title: またおいで
+  artist: [ South&, 可不 ]
+  lyricist: South&
+  composer: South&
+  range: "C4-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1gu4teREve
+  status: learning
+
+- title: 造花の道、歩めば
+  artist: [ South&, 可不 ]
+  lyricist: South&
+  composer: South&
+  range: "G#3-E5"
+  links:
+  - https://www.bilibili.com/video/BV14fApekEPn
+  status: learning
+
+- title: ダレモ
+  artist: [ トゲナシトゲアリ ]
+  lyricist: カイザー恵理菜
+  composer: 遊部優介
+  range: "G3-D5"
+  links:
+  - https://www.bilibili.com/video/BV1HVQHYNEBg
+
+- title: さよならあの日のメロディ
+  artist: [ トゲナシトゲアリ ]
+  lyricist: 春尾ヨシダ
+  composer: 春尾ヨシダ
+  range: "G#3-D#5"
+  links:
+  - https://www.bilibili.com/video/BV1G1421b7qZ
+
+- title: 置き論破
+  artist: [ ぱりぱりさらうどん, 音街ウナ, 重音テト ]
+  lyricist: ぱりぱりさらうどん
+  composer: ぱりぱりさらうどん
+  range: "G#3-D5"
+  links:
+  - https://www.bilibili.com/video/BV16TP5euEJW
+
+- title: オーバーライド
+  artist: [ 吉田夜世, 重音テト ]
+  lyricist: 吉田夜世
+  composer: 吉田夜世
+  range: "G#3-C#5"
+  links:
+  - https://www.bilibili.com/video/BV1Rw411578b
+
+- title: あやふや
+  artist: [ ロクデナシ ]
+  range: "G3-G5"
+  links:
+  - https://www.bilibili.com/video/BV16u4m1N79r
+  status: learning
+
+- title: 虹捜索
+  artist: [ 読谷あかね 重音テト ]
+  lyricist: 読谷あかね
+  composer: 読谷あかね
+  range: "G#3-G#5"
+  links:
+  - https://www.bilibili.com/video/BV1SsPceJEut
+  status: learning
+
+- title: サイエンス
+  artist: [ MIMI, 重音テト ]
+  lyricist: MIMI
+  composer: MIMI
+  range: "A#3-G5"
+  links:
+  - https://www.bilibili.com/video/BV1SsPceJEut
+
+- title: テレパシ
+  artist: [ DECO*27, 初音ミク ]
+  lyricist: DECO*27
+  composer: DECO*27
+  range: "G3-C5"
+  links:
+  - https://www.bilibili.com/video/BV1cZw9eDERz
+
+- title: 合わせ鏡のウワサ
+  artist: [ 読谷あかね 重音テト ]
+  lyricist: 読谷あかね
+  composer: 読谷あかね
+  range: "E3-D5"
+  links:
+  - https://www.bilibili.com/video/BV1SsPceJEut
+  status: learning
+
+- title: 回る空うさぎ
+  artist: [ Orangestar, 初音ミク ]
+  lyricist: Orangestar
+  composer: Orangestar
+  range: "G#3-A#5"
+  links:
+  - https://www.bilibili.com/video/BV1Ps411W7gL
+
+- title: アマツキツネ
+  artist: [ まらしぃ, 鏡音リン ]
+  lyricist: まらしぃ
+  composer: まらしぃ
+  range: "A#3-F5"
+  links:
+  - https://www.bilibili.com/video/BV1Sb411x7Jx
+
+- title: 夜と幸せ
+  artist: [ MIMI, 詩の出素 ]
+  lyricist: MIMI
+  composer: MIMI
+  range: "G3-E5"
+  links:
+  - https://www.bilibili.com/video/BV1NHRqYdEyX
+  status: learning
+
+- title: TAIDADA
+  artist: [ ずっと真夜中でいいのに。 ]
+  lyricist: ACAね
+  composer: ACAね
+  range: "F#3-G5"
+  links:
+  - https://www.bilibili.com/video/BV1gqifYJE23
+
+- title: あの夏が飽和する
+  artist: [ カンザキイオリ, 鏡音レン, 鏡音レン ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "A3-G#5"
+  links:
+  - https://www.bilibili.com/video/BV1CGdAYoEJJ
+
+- title: あの春を返して
+  artist: [ カンザキイオリ, 鏡音レン ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "A3-A5"
+  links:
+  - https://www.bilibili.com/video/BV1aD421T7u8
+  status: learning
+
+- title: アルカテイル
+  artist: [ 鈴木このみ ]
+  lyricist: 魁
+  composer: 折戸伸治
+  range: "F3-D#5"
+  links:
+  - https://www.bilibili.com/video/BV1rtQDY7EBe
+  note: Summer Pockets OP
+
+- title: Lasting Moments
+  artist: [ 鈴木このみ ]
+  lyricist: 新島夕
+  composer: どんまる
+  range: "G#3-D5"
+  links:
+  - https://www.bilibili.com/video/BV1a6opYPEGQ
+  note: Summer Pockets ED
+
+- title: 天ノ弱
+  artist: [ '164', GUMI ]
+  lyricist: '164'
+  composer: '164'
+  range: "A3-G#5"
+  links:
+  - https://www.bilibili.com/video/BV1CK4y1Y7r1
+
+- title: 運命の華
+  artist: [ トゲナシトゲアリ ]
+  range: "G#3-D#5"
+  links:
+  - https://www.bilibili.com/video/BV1Yi421e7n7
+
+- title: 飛べない蝶は夢を見る
+  artist: [ トゲナシトゲアリ ]
+  range: "G#3-F5"
+  links:
+  - https://www.bilibili.com/video/BV1jHL2zUEDv
+
+- title: きゅびずむ
+  artist: [ 超てんちゃん ]
+  lyricist: にゃるら
+  composer: 原口沙輔
+  range: "F3-D5"
+  links:
+  - https://www.bilibili.com/video/BV17f421z774
+  note: NEEDY GIRL OVERDOSE
+
+- title: INTERNET YAMERO
+  artist: [ KOTOKO ]
+  lyricist: にゃるら
+  composer: Aiobahn
+  range: "G3-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1jb411Z7sp
+  note: NEEDY GIRL OVERDOSE
+
+- title: INTERNET OVERDOSE
+  artist: [ KOTOKO ]
+  lyricist: にゃるら
+  composer: Aiobahn
+  range: "C#4-D5"
+  links:
+  - https://www.bilibili.com/video/BV1gU4y187xA
+  note: NEEDY GIRL OVERDOSE
+
+- title: 月虹蝶
+  artist: [ KOTOKO ]
+  lyricist: にゃるら
+  composer: Aiobahn
+  range: "A#3-F5"
+  links:
+  - https://www.bilibili.com/video/BV16K4y1q7mD
+  note: NEEDY GIRL OVERDOSE
+
+- title: 熱異常
+  artist: [ いよわ, 足立レイ ]
+  lyricist: いよわ
+  composer: いよわ
+  range: "G#3-G#6"
+  links:
+  - https://www.bilibili.com/video/BV1R14y187kf
+  status: learning
+
+- title: 猛独が襲う
+  artist: [ 一二三, 初音ミク ]
+  lyricist: 一二三
+  composer: 一二三
+  range: "F#3-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1R14y187kf
+
+# - title:
+#   artist: []
+#   lyricist:
+#   composer:
+#   range: ""
+#   links:
+#   - 

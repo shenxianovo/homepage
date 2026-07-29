@@ -1,6 +1,6 @@
 "use client"
 
-import { Dices, Headphones, Search } from "lucide-react"
+import { Dices, Headphones, MicVocal, Search } from "lucide-react"
 import { useMemo, useRef, useState } from "react"
 import type { Song } from "#site/content"
 import { myVocalRange } from "@/data/site"
@@ -121,7 +121,9 @@ export function SongList({ songs }: { songs: Song[] }) {
                       className="size-3.5 shrink-0 text-muted-foreground/70"
                       aria-label="还在听"
                     />
-                  ) : null}
+                  ) : (
+                    <MicVocal className="size-3.5 shrink-0 text-primary/80" aria-label="会唱" />
+                  )}
                 </div>
                 <div className="mt-0.5 flex flex-wrap items-center gap-x-2 text-muted-foreground text-sm">
                   <span className="truncate">{song.artist.join(" × ")}</span>
