@@ -28,6 +28,25 @@ const projects = defineCollection({
     }),
 })
 
+const songs = defineCollection({
+  name: "Song",
+  pattern: "songs.yaml",
+  schema: s.object({
+    title: s.string(),
+    artist: s.array(s.string()).min(1),
+    lyricist: s.string().optional(),
+    composer: s.string().optional(),
+    // Vocal range like "G3-E5" (# = +1 semitone, so B#5 parses as C6).
+    range: s
+      .string()
+      .regex(/^[A-G]#?\d-[A-G]#?\d$/, "range must look like G3-E5")
+      .optional(),
+    links: s.array(s.string().url()).default([]),
+    note: s.string().optional(),
+    status: s.enum(["learned", "learning"]).default("learned"),
+  }),
+})
+
 export default defineConfig({
   root: "content",
   output: {
@@ -37,7 +56,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { projects },
+  collections: { projects, songs },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

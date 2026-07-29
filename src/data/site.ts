@@ -47,7 +47,8 @@ export const socials: { label: string; href: string; icon: IconType }[] = [
   { label: "Email", href: "mailto:shenxianovo@outlook.com", icon: Mail },
 ]
 
-// Future: a curated "Currently into" list (anime / music / vocaloid) for the
-// About page. Start static here when ready; consider Bangumi / Last.fm sync
-// only once manual upkeep gets annoying.
-// export const nowPlaying = [...]
+// My singable range — drives the transpose plans on /about/playlist.
+export const myVocalRange = "E2-E4"
+
+// Future: a "Currently into" list for anime lives at /about/anime one day —
+// songs already have their own page (/about/playlist, data in content/songs.yaml).

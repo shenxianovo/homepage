@@ -1,0 +1,96 @@
+# 我会唱的歌 — one entry per song, appended in any order (the page sorts by artist).
+# Fields:
+#   title      required
+#   artist     required, list — write the name(s) you'd search on a karaoke machine
+#   range      optional, like "G3-E5" — drives the transpose-plan computation
+#   links      optional URLs — platform icon is derived from the domain
+#   lyricist / composer   optional, stored but not shown on the page
+#   note       optional
+#   status: learning      optional — still learning; omit once learned
+
+- title: マーシャル・マキシマイザー
+  artist: [ 可不 ]
+  lyricist: 柊マグネタイト
+  composer: 柊マグネタイト
+  range: "C#4-F5"
+  links:
+  - https://www.bilibili.com/video/BV1W64y1q775
+
+- title: 天天天国地獄国
+  artist: [ ななひら, P丸様 ]
+  lyricist: 夕野ヨシミ (IOSYS)
+  composer: Aiobahn +81
+  range: "A3-F5"
+  links:
+  - https://www.bilibili.com/video/BV1vPP6eTEnn
+
+- title: テトリス
+  artist: [ 重音テト ]
+  lyricist: 柊マグネタイト
+  composer: 柊マグネタイト
+  range: "C4-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1GADYYmEnd
+
+- title: フロントメモリー
+  artist: [ ACAね ]
+  lyricist: の子
+  composer: の子
+  range: "A3-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1Sz4y1T7eE
+
+- title: 青く青く光る
+  artist: [ ACAね, ぬゆり ]
+  range: "G3-G5"
+  links:
+  - https://www.bilibili.com/video/BV13G4y137kk
+
+- title: 私論理
+  artist: [ 花譜 ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "G3-E5"
+  links:
+  - https://www.bilibili.com/video/BV1eJ411G7qU
+
+- title: quiz
+  artist: [ 花譜 ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "A3-A#5"
+  links:
+  - https://www.bilibili.com/video/BV1AJ41187pR
+
+- title: 不可解
+  artist: [ 花譜 ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "C4-C5"
+  links:
+  - https://www.bilibili.com/video/BV1ZJ411b752
+
+- title: それを世界と言うんだね
+  artist: [ 花譜 ]
+  lyricist: カンザキイオリ
+  composer: カンザキイオリ
+  range: "B3-B5"
+  links:
+  - https://www.bilibili.com/video/BV1fg411A7NE
+
+- title: Tiny Light
+  artist: [ 鬼頭明里 ]
+  lyricist: Saku
+  composer: Saku
+  range: "B3-E5"
+  links:
+  - https://www.bilibili.com/video/BV1K7411x74k
+  note: 地縛少年花子くん 第一季 ED
+  status: learned
+    # - title:
+    #   artist: []
+    #   lyricist:
+    #   composer:
+    #   range: ""
+    #   links:
+    #   - 
