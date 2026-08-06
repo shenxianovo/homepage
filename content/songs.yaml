@@ -711,10 +711,613 @@
   - https://www.bilibili.com/video/BV1Mq4y1z7jb
   status: learning
 
-# - title:
-#   artist: []
-#   lyricist:
-#   composer:
-#   range: ""
-#   links:
-#   - 
+- title: 袖のキルト
+  artist: [ ずっと真夜中でいいのに。 ]
+  range: "A3-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1G5411Z7BY
+  status: learning
+
+- title: ミラーチューン
+  artist: [ ずっと真夜中でいいのに。 ]
+  range: "A#3-F#5"
+  links:
+  - https://www.bilibili.com/video/BV1Eq4y1a7kx
+  status: learning
+
+- title: 最強ガール
+  artist: [ JELEE ]
+  range: C4-D5
+  links:
+  - https://www.bilibili.com/video/BV1nz421k77D
+  note: 夜のクラゲは泳げない
+
+- title: 月の温度
+  artist: [ JELEE ]
+  range: A#3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Zt421c7ha
+  note: 夜のクラゲは泳げない
+
+- title: 渋谷アクアリウム
+  artist: [ JELEE ]
+  range: A3-C5
+  links:
+  - https://www.bilibili.com/video/BV1BD421A7DW
+  note: 夜のクラゲは泳げない
+
+- title: 青一色
+  artist: [ JELEE ]
+  range: A3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1AM4m1z7Gr
+  note: 夜のクラゲは泳げない
+
+- title: 深海遊泳
+  artist: [ JELEE ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV18w4m1e7w7
+  note: 夜のクラゲは泳げない
+
+- title: 1日は25時間。
+  artist: [ JELEE ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1cF4m1K7cS
+  note: 夜のクラゲは泳げない
+
+- title: 光の中へ
+  artist: [ 結束バンド ]
+  range: G3-F4
+  links:
+  - https://www.bilibili.com/video/BV1ik4y1s7Sf
+  note: ぼっち・ざ・ろっく
+
+- title: milky way
+  artist: [ 結束バンド ]
+  range: G#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1mVpGewEfz
+  note: ぼっち・ざ・ろっく
+
+- title: 惑う星
+  artist: [ 結束バンド ]
+  range: G3-C5
+  links:
+  - https://www.bilibili.com/video/BV1izpGe5Euy
+  note: ぼっち・ざ・ろっく
+
+- title: UNITE
+  artist: [ 結束バンド ]
+  range: E3-E5
+  links:
+  - https://www.bilibili.com/video/BV18QpGeKEsy
+  note: ぼっち・ざ・ろっく
+
+- title: 夢を束ねて
+  artist: [ 結束バンド ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1krpuejEFL
+  note: ぼっち・ざ・ろっく
+
+- title: 青い春と西の空
+  artist: [ 結束バンド ]
+  range: A3-F5
+  links:
+  - https://www.bilibili.com/video/BV1qz4y1b7T9
+  note: ぼっち・ざ・ろっく
+
+- title: 青春コンプレックス
+  artist: [ 結束バンド ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1HT411N7FP
+  note: ぼっち・ざ・ろっく
+
+- title: ひとりぼっち東京
+  artist: [ 結束バンド ]
+  range: A3-C5
+  links:
+  - https://www.bilibili.com/video/BV1V84y1v766
+  note: ぼっち・ざ・ろっく
+
+- title: Distortion!!
+  artist: [ 結束バンド ]
+  range: A3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1ng411h71y
+  note: ぼっち・ざ・ろっく
+
+- title: ひみつ基地
+  artist: [ 結束バンド ]
+  range: B3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1bP4y1v7mQ
+  note: ぼっち・ざ・ろっく
+
+- title: ギータと孤独と蒼い惑星
+  artist: [ 結束バンド ]
+  range: A3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1w14y157UZ
+  note: ぼっち・ざ・ろっく
+
+- title: ラーブソングが歌えない
+  artist: [ 結束バンド ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1o24y1U7gR
+  note: ぼっち・ざ・ろっく
+
+- title: カラカラ
+  artist: [ 結束バンド ]
+  range: G#3-E5
+  links:
+  - https://www.bilibili.com/video/BV1ae4y127K5
+  note: ぼっち・ざ・ろっく
+
+- title: 小さな海
+  artist: [ 結束バンド ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV1UG4y1J7mg
+  note: ぼっち・ざ・ろっく
+
+- title: なにが悪い
+  artist: [ 結束バンド ]
+  range: A3-E5
+  links:
+  - https://www.bilibili.com/video/BV1jK411o7Q5
+  note: ぼっち・ざ・ろっく
+
+- title: 忘れてやらない
+  artist: [ 結束バンド ]
+  range: B3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1pM41117Yr
+  note: ぼっち・ざ・ろっく
+
+- title: 星座になれたら
+  artist: [ 結束バンド ]
+  range: G#3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1u8411H7yA
+  note: ぼっち・ざ・ろっく
+
+- title: フラッシュバッカー
+  artist: [ 結束バンド ]
+  range: G#3-C#5
+  links:
+  - https://www.bilibili.com/video/BV15v4y1B7ZQ
+  status: learning
+  note: ぼっち・ざ・ろっく
+
+- title: 転がる岩、君に朝が降る
+  artist: [ 結束バンド ]
+  range: G3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1nV4y1w74h
+  note: ぼっち・ざ・ろっく
+
+- title: 月並みに輝け
+  artist: [ 結束バンド ]
+  range: A#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1xx4y1J7jv
+  note: ぼっち・ざ・ろっく
+
+- title: 今、僕、アンダーグラウンドから
+  artist: [ 結束バンド ]
+  range: G3-E5
+  links:
+  - https://www.bilibili.com/video/BV1My411z73D
+  status: learning
+  note: ぼっち・ざ・ろっく
+
+- title: Tranquility
+  artist: [ 澤野弘之 ]
+  range: G#3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1iJ411w7GA
+  note: 銀河英雄傳說 Die Neue These 星亂 ED
+
+- title: Avid
+  artist: [ 澤野弘之 ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Pc411K7ag
+  note: 86―エイティシックス― ED
+
+- title: Hands Up To The Sky
+  artist: [ 澤野弘之 ]
+  range: F#3-E5
+  links:
+  - https://www.bilibili.com/video/BV191LezCEYF
+  note: 86―エイティシックス― ED
+
+- title: A/Z <MODv>
+  artist: [ 澤野弘之 ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV1L54y1R735
+
+- title: LilaS
+  artist: [ 澤野弘之 ]
+  range: A3-F5
+  links:
+  - https://www.bilibili.com/video/BV14iVEzmEVP
+  note: 86―エイティシックス― ED
+
+- title: サヨナラサヨナラサヨナラ
+  artist: [ トゲナシトゲアリ ]
+  range: F#3-D5
+  links:
+  - https://www.bilibili.com/video/BV18wQZYEEHt
+
+- title: 爆せて咲く
+  artist: [ トゲナシトゲアリ ]
+  range: D4-D5
+  links:
+  - https://www.bilibili.com/video/BV1KbQ1YGEY8
+
+- title: 碧いif
+  artist: [ トゲナシトゲアリ ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Lr421F7nc
+
+- title: 吹き消した灯火
+  artist: [ トゲナシトゲアリ ]
+  range: G3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1voxTeMEXn
+
+- title: 極私的極彩色アンサー
+  artist: [ トゲナシトゲアリ ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1RC4y1373R
+
+- title: 渇く、憂う
+  artist: [ トゲナシトゲアリ ]
+  range: A3-D#5
+  links:
+  - https://www.bilibili.com/video/BV13UpcezEEg
+
+- title: 黎明を穿つ
+  artist: [ トゲナシトゲアリ ]
+  range: F3-D#5
+  links:
+  - https://www.bilibili.com/video/BV19PQXYrED6
+
+- title: 理想的パラドクスとは
+  artist: [ トゲナシトゲアリ ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV19bQgYsExW
+
+- title: 名もなき何もかも
+  artist: [ トゲナシトゲアリ ]
+  range: G#3-E5
+  links:
+  - https://www.bilibili.com/video/BV1Kz421e7bM
+
+- title: 気鬱、白濁す
+  artist: [ トゲナシトゲアリ ]
+  range: G#3-G#5
+  links:
+  - https://www.bilibili.com/video/BV1JzQpYTEft
+
+- title: 傷つき傷つけ痛くて辛い
+  artist: [ トゲナシトゲアリ ]
+  range: A3-F5
+  links:
+  - https://www.bilibili.com/video/BV1Eu4y1c7KB
+
+- title: 生きて生きてゆく
+  artist: [ トゲナシトゲアリ ]
+  range: B3-E5
+
+- title: 声なき魚
+  artist: [ トゲナシトゲアリ ]
+  range: D4-C5
+  links:
+  - https://www.bilibili.com/video/BV1mm411m7QA
+
+- title: 視界の隅 朽ちる音
+  artist: [ トゲナシトゲアリ ]
+  range: G3-E5
+  links:
+  - https://www.bilibili.com/video/BV1kJ4m1K7sw
+
+- title: 偽りの理
+  artist: [ トゲナシトゲアリ ]
+  range: F#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1DtRLY3EoX
+
+- title: 無知のち私
+  artist: [ トゲナシトゲアリ ]
+  range: F3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1XM4m1m7Pa
+
+- title: 臆病な白夜
+  artist: [ トゲナシトゲアリ ]
+  range: G3-E5
+  links:
+  - https://www.bilibili.com/video/BV1XxzEYLEiV
+
+- title: 運命に賭けたい論理
+  artist: [ トゲナシトゲアリ ]
+  lyricist: A3-F5
+  links:
+  - https://www.bilibili.com/video/BV17i4y1a7Aq
+
+- title: 雑踏、僕らの街
+  artist: [ トゲナシトゲアリ ]
+  range: A3-E5
+  links:
+  - https://www.bilibili.com/video/BV1594nerEHv
+
+- title: 空の箱
+  artist: [ トゲナシトゲアリ ]
+  range: A3-D5
+  links:
+  - https://www.bilibili.com/video/BV1cwpnekEmG
+
+- title: 最期の禱り
+  artist: [ トゲナシトゲアリ ]
+  range: G#5-F5
+
+- title: Remember
+  artist: [ yuigot, 月見ヤチヨ ]
+  range: G3-D5
+  links:
+  - https://www.bilibili.com/video/BV1k8BYBxETC
+  note: 超かぐや姫!
+
+- title: 星降る海
+  artist: [ Aqu3ra, 月見ヤチヨ ]
+  range: A#3-F5
+  links:
+  - https://www.bilibili.com/video/BV1HLz9BJEgi
+  note: 超かぐや姫!
+
+- title: 私は、わたしの事が好き。
+  artist: [ HoneyWorks, かぐや ]
+  range: C4-D5
+  links:
+  - https://www.bilibili.com/video/BV1AbmmBdEEC
+  note: 超かぐや姫!
+
+- title: ワールドイズマイン
+  artist: [ ryo（supercell）, 初音ミク ]
+  range: A#3-F5
+  links:
+  - https://www.bilibili.com/video/BV1aY4y1z7ws
+
+- title: Ex-Otogibanashi
+  artist: [ ryo（supercell）, かぐや, 月見ヤチヨ ]
+  range: G#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1acfmBPE84
+  note: 超かぐや姫!
+
+- title: ハッピーシンセサイザ
+  artist: [ EasyPop, GUMI, 巡音ルカ ]
+  range: C4-C#5
+  links:
+  - https://www.bilibili.com/video/BV1P7411j7yX
+
+- title: 瞬間、シンフォニー。
+  artist: [ 40mP, かぐや ]
+  range: A3-E5
+  links:
+  - https://www.bilibili.com/video/BV11Dr1BgEah
+  note: 超かぐや姫!
+
+- title: Reply
+  artist: [ kz, かぐや ]
+  range: G3-E5
+  links:
+  - https://www.bilibili.com/video/BV1eaPkzKEHc
+  note: 超かぐや姫!
+
+- title: ray
+  artist: [ かぐや, 月見ヤチヨ ]
+  range: F#3-E5
+  links:
+  - https://www.bilibili.com/video/BV13p6JB6EWe
+  note: 超かぐや姫!
+
+- title: メルト
+  artist: [ ryo（supercell）, 初音ミク ]
+  range: A3-A5
+  links:
+  - https://www.bilibili.com/video/BV17s411b7eh
+
+- title: LOVE 2000
+  artist: [ 八奈見杏菜 ]
+  range: A#3-C#5
+  links:
+  - https://www.bilibili.com/video/BV1iz421q7cd
+  note: 負けヒロインが多いすぎる！ ED1
+
+- title: CRAZY FOR YOU
+  artist: [ 焼塩檸檬 ]
+  range: G#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1dy411e75j
+  note: 負けヒロインが多いすぎる！ ED2
+
+- title: feel my soul
+  artist: [ 小鞠知花 ]
+  range: B3-E5
+  links:
+  - https://www.bilibili.com/video/BV1EUsge7EJ8
+  note: 負けヒロインが多いすぎる！ ED3
+
+- title: キリトリセン
+  artist: [ 40mP, GUMI ]
+  range: A3-E5
+  links:
+  - https://www.bilibili.com/video/BV1EUsge7EJ8
+
+- title: 裏表ラバーズ
+  artist: [ wowaka, 初音ミク ]
+  range: E4-B5
+  links:
+  - https://www.bilibili.com/video/BV1xx411c7Rj
+
+- title: ローリンガール
+  artist: [ wowaka, 初音ミク ]
+  range: C#4-B5
+  links:
+  - https://www.bilibili.com/video/BV1xx411c75e
+
+- title: アンノウン・マザーグース
+  artist: [ wowaka, 初音ミク ]
+  range: F3-C#6
+  links:
+  - https://www.bilibili.com/video/BV1WeZzYKEkQ
+
+- title: トリノコシティ
+  artist: [ 40mP, 初音ミク ]
+  range: F#3-D#5
+  links:
+  - https://www.bilibili.com/video/BV1CA411i7Vz
+
+- title: 恋愛裁判
+  artist: [ 40mP, 初音ミク ]
+  range: B3-E5
+  links:
+  - https://www.bilibili.com/video/BV1hg4y1q73Q
+
+- title: からくりピエロ
+  artist: [ 40mP, 初音ミク ]
+  range: C4-D5
+  links:
+  - https://www.bilibili.com/video/BV1TD4y1Q78b
+
+- title: だんだん早くなる
+  artist: [ 40mP, 初音ミク ]
+  range: A#3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Xv411B7PG
+
+- title: 社会距離
+  artist: [ 40mP, 可不 ]
+  range: A3-E5
+  links:
+  - https://www.bilibili.com/video/BV1F5411378r
+
+- title: 千本桜
+  artist: [ 黒うさP, 初音ミク ]
+  range: G3-E5
+  links:
+  - https://www.bilibili.com/video/BV1sM4y1V7x1
+
+- title: 上弦の月
+  artist: [ 黒うさP, KAITO ]
+  range: D#3-G#4
+  links:
+  - https://www.bilibili.com/video/BV13s411f7DY
+
+- title: 深海少女
+  artist: [ ゆうゆ, 初音ミク ]
+  range: A3-F#5
+  links:
+  - https://www.bilibili.com/video/BV1s44y1b7Tw
+
+- title: モニタリング
+  artist: [ DECO*27, 初音ミク ]
+  range: A3-F5
+  links:
+  - https://www.bilibili.com/video/BV1qDUPYKEzf
+
+- title: チェリーポップ
+  artist: [ DECO*27, 初音ミク ]
+  range: C#4-E5
+  links:
+  - https://www.bilibili.com/video/BV1Jsu3zMEpY
+
+- title: 乙女解剖
+  artist: [ DECO*27, 初音ミク ]
+  range: B3-C#6
+  links:
+  - https://www.bilibili.com/video/BV1Vt411H7j8
+
+- title: ラビットホール
+  artist: [ DECO*27, 初音ミク ]
+  range: A3-A5
+  links:
+  - https://www.bilibili.com/video/BV1aa4y1u7Ct
+
+- title: 火花
+  artist: [ DECO*27, 初音ミク ]
+  range: B3-D5
+  links:
+  - https://www.bilibili.com/video/BV1wx411p73F
+
+- title: 妄想感傷代償連盟
+  artist: [ DECO*27, 初音ミク ]
+  range: C4-D#5
+  links:
+  - https://www.bilibili.com/video/BV1hs411W7uR
+
+- title: 愛言葉V
+  artist: [ DECO*27, 初音ミク ]
+  range: B3-F5
+  links:
+  - https://www.bilibili.com/video/BV1obZjBSEpT
+
+- title: 愛言葉Ⅳ
+  artist: [ DECO*27, 初音ミク ]
+  range: G#3-E5
+  links:
+  - https://www.bilibili.com/video/BV1u54y1f7mY
+
+- title: 愛言葉Ⅲ
+  artist: [ DECO*27, 初音ミク ]
+  range: G#3-E5
+  links:
+  - https://www.bilibili.com/video/BV1VW41127aW
+
+- title: 愛言葉Ⅱ
+  artist: [ DECO*27, 初音ミク ]
+  range: G#3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Ws411o7h3
+
+- title: 愛言葉
+  artist: [ DECO*27, 初音ミク ]
+  range: B3-D5
+  links:
+  - https://www.bilibili.com/video/BV1Cs41197rb
+
+- title: 弱虫モンブラン
+  artist: [ DECO*27, GUMI ]
+  range: A#3-C5
+  links:
+  - https://www.bilibili.com/video/BV1VR4y1G7N4
+
+- title: ゴストルール
+  artist: [ DECO*27, 初音ミク ]
+  range: A3-F#5
+  links:
+  - https://www.bilibili.com/video/BV1ps411R7mY
+
+- title: メランコリック
+  artist: [ Junky, 鏡音リン ]
+  range: C4-D#5
+  links:
+  - https://www.bilibili.com/video/BV1nx411D75x
+
+- title: アスノヨゾラ哨戒班
+  artist: [ Orangestar, IA ]
+  range: E3-F#5
+  links:
+  - https://www.bilibili.com/video/BV12q4y197vw
