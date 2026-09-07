@@ -22,7 +22,7 @@
   composer: Aiobahn +81
   range: "A3-F5"
   links:
-  - https://www.bilibili.com/video/BV1vPP6eTEnn
+  - https://www.bilibili.com/video/BV1QWPqedE89
 
 - title: テトリス
   artist: [ 重音テト ]
@@ -196,7 +196,7 @@
   composer: MIMI
   range: "A#3-G5"
   links:
-  - https://www.bilibili.com/video/BV1SsPceJEut
+  - https://www.bilibili.com/video/BV1nkB7YQE1z
 
 - title: テレパシ
   artist: [ DECO*27, 初音ミク ]
@@ -204,15 +204,15 @@
   composer: DECO*27
   range: "G3-C5"
   links:
-  - https://www.bilibili.com/video/BV1cZw9eDERz
+  - https://www.bilibili.com/video/BV1grPFeSEFg
 
 - title: 合わせ鏡のウワサ
-  artist: [ 読谷あかね 重音テト ]
+  artist: [ 読谷あかね, 重音テト ]
   lyricist: 読谷あかね
   composer: 読谷あかね
   range: "E3-D5"
   links:
-  - https://www.bilibili.com/video/BV1SsPceJEut
+  - https://www.bilibili.com/video/BV1PvZ8YyE9V
   status: learning
 
 - title: 回る空うさぎ
@@ -248,13 +248,13 @@
   links:
   - https://www.bilibili.com/video/BV1gqifYJE23
 
-- title: あの夏が飽和する
-  artist: [ カンザキイオリ, 鏡音レン, 鏡音レン ]
+- title: あの夏が飽和する
+  artist: [ カンザキイオリ, 鏡音レン, 鏡音リン ]
   lyricist: カンザキイオリ
   composer: カンザキイオリ
   range: "A3-G#5"
   links:
-  - https://www.bilibili.com/video/BV1CGdAYoEJJ
+  - https://www.bilibili.com/video/BV1v84y1o7Cp
 
 - title: あの春を返して
   artist: [ カンザキイオリ, 鏡音レン ]
@@ -345,7 +345,7 @@
   composer: いよわ
   range: "G#3-G#6"
   links:
-  - https://www.bilibili.com/video/BV1R14y187kf
+  - https://www.bilibili.com/video/BV1c4iEB5ECw
   status: learning
 
 - title: 猛独が襲う
@@ -354,7 +354,7 @@
   composer: 一二三
   range: "F#3-F#5"
   links:
-  - https://www.bilibili.com/video/BV1R14y187kf
+  - https://www.bilibili.com/video/BV1eh411o7md
 
 - title: 誰にもなれない私だから
   artist: [ トゲナシトゲアリ ]
@@ -562,7 +562,7 @@
   artist: [ ヨルシカ ]
   range: "C#3-D5"
   links:
-  - https://www.bilibili.com/video/BV1gz421i7EK
+  - https://www.bilibili.com/video/BV1Pa1BYvEwJ
   note: チ。 ―地球の運動について― ED
 
 - title: 千鳥
@@ -1302,7 +1302,7 @@
   artist: [ DECO*27, GUMI ]
   range: A#3-C5
   links:
-  - https://www.bilibili.com/video/BV1VR4y1G7N4
+  - https://www.bilibili.com/video/BV1SWfwY3ENK
 
 - title: ゴストルール
   artist: [ DECO*27, 初音ミク ]
@@ -1321,3 +1321,743 @@
   range: E3-F#5
   links:
   - https://www.bilibili.com/video/BV12q4y197vw
+
+- title: "エウレカ"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV17X4y1q7a8
+
+- title: "丸ノ内サディスティック"
+  artist: [ 椎名林檎 ]
+  links:
+  - https://www.bilibili.com/video/BV1Qa9uYnEAN
+
+- title: "けっかおーらい"
+  artist: [ こっちのけんと ]
+  links:
+  - https://www.bilibili.com/video/BV1ykdJY3ELK
+
+- title: "金木犀"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1mj411C7RD
+
+- title: "にわかには信じがたいものです"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1aasizeEn3
+
+- title: "ラブソング"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1Qr421g7W1
+
+- title: "セレナーデ"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1KqzLBDEGg
+
+- title: "フライデー・ナイト"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1PT411B7iv
+
+- title: "YELLOW"
+  artist: [ 神山羊 ]
+  links:
+  - https://www.bilibili.com/video/BV1YP4y1877f
+
+- title: "Overdose"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV13W4y157kf
+
+- title: "嘘月"
+  artist: [ ヨルシカ ]
+  links:
+  - https://www.bilibili.com/video/BV1BN411W7g7
+
+- title: "カトラリー"
+  artist: [ 有機酸, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1aW411t777
+
+- title: "ビバリウム"
+  artist: [ Ado ]
+  links:
+  - https://www.bilibili.com/video/BV18bAazeEEP
+
+- title: "ただ声一つ"
+  artist: [ ロクデナシ ]
+  links:
+  - https://www.bilibili.com/video/BV1Ji4y1R7Af
+
+- title: "ハロ/ハワユ"
+  artist: [ ナノウ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1Ns41187cH
+
+- title: "戸惑いテレパシー"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1og4y1i7KE
+
+- title: "わたしの線香"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1iZ4y1k7Zm
+
+- title: "Astronomy"
+  artist: [ Empty old City ]
+  links:
+  - https://www.bilibili.com/video/BV1ZgyoYBEPw
+
+- title: "例えば"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1Rb4y1f7BE
+
+- title: "エリカ"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1AJ411875W
+
+- title: "心臓と絡繰"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1cJ41187UD
+
+- title: "彷徨い"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1na4y1L7zt
+
+- title: "人を気取る"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1kA411S7Eb
+
+- title: "忘れてしまえ"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1wJ41187mP
+
+- title: "魔女"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1FJ41187QY
+
+- title: "糸"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1CJ411b7Ym
+
+- title: "夜が降り止む前に"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1wJ41187KH
+
+- title: "世惑い子"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1vF411Y7MF
+
+- title: "海に化ける"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1g54y1p7t5
+
+- title: "畢生よ"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1Nf4y197dL
+
+- title: "過去を喰らう"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1wJ41187Kd
+
+- title: "邂逅"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1oP41127kA
+
+- title: "雛鳥"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1wJ411873J
+
+- title: "そして花になる"
+  artist: [ 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1AJ41187Qi
+
+- title: "メイドノココロハ アヤツリドール"
+  artist: [ 森羅万象 ]
+  links:
+  - https://www.bilibili.com/video/BV1vjHxeCEKM
+
+- title: "それはきっと夏だった"
+  artist: [ 鹿乃 ]
+  links:
+  - https://www.bilibili.com/video/BV19V411m79M
+
+- title: "あれが恋だったのかな"
+  artist: [ くじら, にしな ]
+  links:
+  - https://www.bilibili.com/video/BV16x4y1t71N
+
+- title: "我がまま"
+  artist: [ くじら ]
+  links:
+  - https://www.bilibili.com/video/BV1tx4y1t7N7
+
+- title: "君の知らない物語"
+  artist: [ supercell ]
+  links:
+  - https://www.bilibili.com/video/BV1gR4y197M8
+
+- title: "オレンジ"
+  artist: [ トーマ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1Cx411F7EW
+
+- title: "シャルル"
+  artist: [ バルーン, flower ]
+  links:
+  - https://www.bilibili.com/video/BV1gs41147c8
+
+- title: "Little Traveler"
+  artist: [ ジミーサムP, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1ax411c7yb
+
+- title: "透明エレジー"
+  artist: [ n-buna, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV1wa4y1K7Dv
+
+- title: "向日葵"
+  artist: [ n-buna ]
+  links:
+  - https://www.bilibili.com/video/BV1JZ3gzCEUf
+
+- title: "花も騒めく"
+  artist: [ ヨルシカ ]
+  links:
+  - https://www.bilibili.com/video/BV1k5AfzZEsi
+
+- title: "薄れる"
+  artist: [ rinri, 裏命 ]
+  links:
+  - https://www.bilibili.com/video/BV1J5wNzKEPL
+
+- title: "ドーナツホール"
+  artist: [ ハチ, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV1hZGbzJE7U
+
+- title: "あんたは死んだ"
+  artist: [ カンザキイオリ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1fFTNzVExJ
+
+- title: "のろい"
+  artist: [ 黒うさぎ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1fcXbYJECj
+
+- title: "爆弾"
+  artist: [ カンザキイオリ ]
+  links:
+  - https://www.bilibili.com/video/BV1iwFqz2E9e
+
+- title: "リーパー"
+  artist: [ 読谷あかね, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV16trKBXEQU
+
+- title: "ファシネイター"
+  artist: [ MARETU, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1YNvvBzEe6
+
+- title: "アポフェニア"
+  artist: [ 黒うさぎ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV13R1vBaEjz
+
+- title: "ネオンドール"
+  artist: [ 読谷あかね, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1fb1MBeETu
+
+- title: "プロポーズ"
+  artist: [ なとり ]
+  links:
+  - https://www.bilibili.com/video/BV1tnTNzfEYg
+
+- title: "女の子になりたい"
+  artist: [ まふまふ ]
+  links:
+  - https://www.bilibili.com/video/BV1nE41117Gi
+
+- title: "闇に溶けてく"
+  artist: [ トゲナシトゲアリ ]
+  links:
+  - https://www.bilibili.com/video/BV1ZFHMehEws
+
+- title: "踊り子"
+  artist: [ Vaundy ]
+  links:
+  - https://www.bilibili.com/video/BV1u44y1Y79N
+
+- title: "転生林檎"
+  artist: [ ピノキオピー, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1EY4y1V71F
+
+- title: "鯨の落ちる街"
+  artist: [ ロクデナシ ]
+  links:
+  - https://www.bilibili.com/video/BV1tPBLBJEKC
+
+- title: "おじゃま虫"
+  artist: [ DECO*27, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV17s411Z7yU
+
+- title: "ロキ"
+  artist: [ みきとP, 鏡音リン ]
+  links:
+  - https://www.bilibili.com/video/BV17g4y177oC
+
+- title: "おじゃま虫Ⅱ"
+  artist: [ DECO*27, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1ny4y1M7Rs
+
+- title: "好き！雪！本気マジック"
+  artist: [ Mitchie M, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1Nx411N7cR
+
+- title: "海を泳ぐ月"
+  artist: [ 40mP, LUMi ]
+  links:
+  - https://www.bilibili.com/video/BV1HK411J7Hi
+
+- title: "ロミオとシンデレラ"
+  artist: [ doriko, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1dg4y1776J
+
+- title: "Heavenly Me"
+  artist: [ AIYUE, 理名 ]
+  links:
+  - https://www.bilibili.com/video/BV18JGbzjEn4
+
+- title: "夏夢ノイジー"
+  artist: [ 亜咲花 ]
+  links:
+  - https://www.bilibili.com/video/BV1oW4y1a7SA
+
+- title: "回夏"
+  artist: [ cadode ]
+  links:
+  - https://www.bilibili.com/video/BV1qa411e7SG
+
+- title: "失恋ソング沢山聴いて 泣いてばかりの私はもう。"
+  artist: [ りりあ。 ]
+  links:
+  - https://www.bilibili.com/video/BV1894y1X763
+
+- title: "Little Bouquet"
+  artist: [ Aimer ]
+  links:
+  - https://www.bilibili.com/video/BV1nm1uB3E4i
+
+- title: "鬼の居ぬ間に"
+  artist: [ 羽生まゐご ]
+  links:
+  - https://www.bilibili.com/video/BV1hJ411K799
+
+- title: "抜刀"
+  artist: [ 羽生まゐご, 花譜 ]
+  links:
+  - https://www.bilibili.com/video/BV1Mu411S7BS
+
+- title: "我愛メイデン"
+  artist: [ 羽生まゐご ]
+  links:
+  - https://www.bilibili.com/video/BV12q4Zz4E6c
+
+- title: "ぼくのかみさま"
+  artist: [ 羽生まゐご ]
+  links:
+  - https://www.bilibili.com/video/BV1mq4Zz4Eb5
+
+- title: "オノマトペ"
+  artist: [ 羽生まゐご, りりあ。 ]
+  links:
+  - https://www.bilibili.com/video/BV1q44y1z7Vg
+
+- title: "君色に染まる"
+  artist: [ TOKOTOKO（西沢さんP）, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV12b411h7e2
+
+- title: "夜もすがら君想ふ"
+  artist: [ TOKOTOKO（西沢さんP）, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV1rt42137DA
+
+- title: "少年少女"
+  artist: [ カンザキイオリ ]
+  links:
+  - https://www.bilibili.com/video/BV1rm4y1E7SN
+
+- title: "君の肺には宇宙が広がっている"
+  artist: [ カンザキイオリ ]
+  links:
+  - https://www.bilibili.com/video/BV1zpxvzyE6B
+
+- title: "Connecting"
+  artist: [ halyosy, 初音ミク, 鏡音リン, 鏡音レン, 巡音ルカ, KAITO, MEIKO ]
+  links:
+  - https://www.bilibili.com/video/BV1Mx411N7ZG
+
+- title: "ツギハギスタッカート"
+  artist: [ とあ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1vs411D7JZ
+
+- title: "帝国少女"
+  artist: [ R Sound Design, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1Ni4y1g7oN
+
+- title: "アイロニ"
+  artist: [ すこっぷ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1NNQkYwE1S
+
+- title: "Pastoral"
+  artist: [ Aimer ]
+  links:
+  - https://www.bilibili.com/video/BV1tqnuzrEfE
+
+- title: "ひとりごと"
+  artist: [ Omoinotake ]
+  links:
+  - https://www.bilibili.com/video/BV1ZdZRYKEYJ
+
+- title: "クスシキ"
+  artist: [ Mrs. GREEN APPLE ]
+  links:
+  - https://www.bilibili.com/video/BV1w1M6zWExH
+
+- title: "幸せのレシピ"
+  artist: [ 平井大 ]
+  links:
+  - https://www.bilibili.com/video/BV1PxrCYgEH2
+
+- title: "百花繚乱"
+  artist: [ 幾田りら ]
+  links:
+  - https://www.bilibili.com/video/BV1H1r6YfEwW
+
+- title: "ギフト"
+  artist: [ 内緒のピアス, 可不 ]
+  links:
+  - https://www.bilibili.com/video/BV1ii421y7SV
+
+- title: "バースデイ"
+  artist: [ 内緒のピアス, 可不 ]
+  links:
+  - https://www.bilibili.com/video/BV1bM411o71q
+
+- title: "プロポーズ"
+  artist: [ 内緒のピアス, 可不 ]
+  links:
+  - https://www.bilibili.com/video/BV1HnATeWEcz
+
+- title: "死ぬとき死ねばいい"
+  artist: [ カンザキイオリ ]
+  links:
+  - https://www.bilibili.com/video/BV1u4eWzQEU6
+
+- title: "春嵐"
+  artist: [ john, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1MqKXz8Epm
+
+- title: "メズマライザー"
+  artist: [ サツキ, 初音ミク, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV15J4m1A7qy
+
+- title: "BAD SURPRISE"
+  artist: [ 天狼群 ]
+  links:
+  - https://www.bilibili.com/video/BV1KG3vzHEW3
+
+- title: "宇宙の季節"
+  artist: [ Lanndo, Eve, suis ]
+  links:
+  - https://www.bilibili.com/video/BV1cU4y1H7PS
+
+- title: "のだ"
+  artist: [ 大漠波新, ずんだもん, 初音ミク, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1fQ4y1J7Ga
+
+- title: "抜錨"
+  artist: [ ナナホシ管弦楽団, 巡音ルカ ]
+  links:
+  - https://www.bilibili.com/video/BV1zW411w72j
+
+- title: "すーぱーびっぐらぶ！"
+  artist: [ 天狼群 ]
+  links:
+  - https://www.bilibili.com/video/BV1LBGFz6EjS
+
+- title: "God Save The Girls"
+  artist: [ 下地紫野 ]
+  links:
+  - https://www.bilibili.com/video/BV1es411s7by
+
+- title: "ウィークエンドロール"
+  artist: [ halca ]
+  links:
+  - https://www.bilibili.com/video/BV1PuLczcEWZ
+
+- title: "ハッピーラッキーチャッピー"
+  artist: [ ano ]
+  links:
+  - https://www.bilibili.com/video/BV1cT7eztE8w
+
+- title: "アンビバレント"
+  artist: [ Uru ]
+  links:
+  - https://www.bilibili.com/video/BV1Ha4y1y78W
+
+- title: "愛は薬"
+  artist: [ wacci ]
+  links:
+  - https://www.bilibili.com/video/BV1XW4y1P72K
+
+- title: "雪中花"
+  artist: [ きしかな子 ]
+  links:
+  - https://www.bilibili.com/video/BV1HQ4y1u7io
+
+- title: "明日を訪ねて"
+  artist: [ XAI ]
+  links:
+  - https://www.bilibili.com/video/BV1QQ4y1x71A
+
+- title: "CHASE!"
+  artist: [ 優木せつ菜 ]
+  links:
+  - https://www.bilibili.com/video/BV1BL4y1c7S3
+
+- title: "虹色Passions！"
+  artist: [ 虹ヶ咲学園スクールアイドル同好会 ]
+  links:
+  - https://www.bilibili.com/video/BV1Nv411C7Fk
+
+- title: "NEO SKY, NEO MAP!"
+  artist: [ 虹ヶ咲学園スクールアイドル同好会 ]
+  links:
+  - https://www.bilibili.com/video/BV1E5411P7Cb
+
+- title: "想風"
+  artist: [ 大原ゆい子 ]
+  links:
+  - https://www.bilibili.com/video/BV1184y1d7wi
+
+- title: "アイコトバ"
+  artist: [ アイナ・ジ・エンド ]
+  links:
+  - https://www.bilibili.com/video/BV1ne41197yq
+
+- title: "花になって"
+  artist: [ 緑黄色社会 ]
+  links:
+  - https://www.bilibili.com/video/BV1DQ4y1s7DE
+
+- title: "マドローム"
+  artist: [ いえぬ, 初音ミク, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1W1421C7V5
+
+- title: "愛♡スクリ～ム！"
+  artist: [ AiScReam ]
+  links:
+  - https://www.bilibili.com/video/BV1kafaY7ERC
+
+- title: "ういこうせん"
+  artist: [ しぐれうい ]
+  links:
+  - https://www.bilibili.com/video/BV1nu7pz4EoG
+
+- title: "星の奏でる歌 (Duet Ver.)"
+  artist: [ 椎名まゆり（CV. 花澤香菜）, 椎名かがり（CV. 潘めぐみ） ]
+  links:
+  - https://www.bilibili.com/video/BV15W411r7rG
+
+- title: "ライア"
+  artist: [ Zwei ]
+  links:
+  - https://www.bilibili.com/video/BV1Rq4y1P7EH
+
+- title: "ファティマ"
+  artist: [ いとうかなこ ]
+  links:
+  - https://www.bilibili.com/video/BV1cN4y137YP
+
+- title: "アマデウス"
+  artist: [ いとうかなこ ]
+  links:
+  - https://www.bilibili.com/video/BV17M4m1X7EL
+
+- title: "ゔるとぅーむ"
+  artist: [ 藤原ハガネ, flower, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1wG7PzkECc
+
+- title: "些細な幸福だけで灯っていた。"
+  artist: [ Kyiku, 星界, 永夜Minus ]
+  links:
+  - https://www.bilibili.com/video/BV1D142147hB
+
+- title: "抱きしめて欲しかったなんてね"
+  artist: [ モ葛, 可不 ]
+  links:
+  - https://www.bilibili.com/video/BV15bGqzGEtz
+
+- title: "ハイド・アンド・シーフ"
+  artist: [ ヤマギシコージ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1WC411s7TU
+
+- title: "Lie"
+  artist: [ 雨良 Amala, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1HTGdzuENx
+
+- title: "イレギュラーマン"
+  artist: [ マサラダ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1AHV7zuEkx
+
+- title: "Chimera Theater"
+  artist: [ Chromatic, 初音ミク, 重音テト, 亞北ネル ]
+  links:
+  - https://www.bilibili.com/video/BV1zKGkzaEhv
+
+- title: "散財讃歌"
+  artist: [ Adeliae, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1WH52zREvc
+
+- title: "レムニスケート"
+  artist: [ 東京真中, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1meVzzzEmp
+
+- title: "かなしばりに遭ったら"
+  artist: [ あばらや, 歌愛ユキ, ナースロボ＿タイプＴ ]
+  links:
+  - https://www.bilibili.com/video/BV1WLPieVEYy
+
+- title: "マジカル・ライブ・ストリーマー"
+  artist: [ ヤマギシコージ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1rgAyeREG5
+
+- title: "桜の戦略"
+  artist: [ MIMI, Mo Chen ]
+  links:
+  - https://www.bilibili.com/video/BV1LZGyzvE94
+
+- title: "人生はコメディ"
+  artist: [ カンザキイオリ, 鏡音リン ]
+  links:
+  - https://www.bilibili.com/video/BV1VK4y1b7Yh
+
+- title: "しねばいいのに"
+  artist: [ どぶウサギ, KAITO ]
+  links:
+  - https://www.bilibili.com/video/BV1q84y1o7d5
+
+- title: "シークレット・シーカー"
+  artist: [ ヤマギシコージ, 初音ミク ]
+  links:
+  - https://www.bilibili.com/video/BV1o4xweWEQs
+
+- title: "四畳半の天象儀"
+  artist: [ ふっち, NAKUMO ]
+  links:
+  - https://www.bilibili.com/video/BV1xGZhYEE3c
+
+- title: "わたしに花束"
+  artist: [ Ado ]
+  links:
+  - https://www.bilibili.com/video/BV12hR1YDEpV
+
+- title: "あの子の消費論"
+  artist: [ フロクロ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1XRW1eKE9t
+
+- title: "ロスト・デリュージョン"
+  artist: [ フロクロ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1Zm4y147i2
+
+- title: "チープなプロパティ"
+  artist: [ フロクロ, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1cT421v7nL
+
+- title: "オブソミート"
+  artist: [ サツキ, 初音ミク, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1BrDAYME8o
+
+- title: "Our Oath"
+  artist: [ Chinozo, flower, 可不 ]
+  links:
+  - https://www.bilibili.com/video/BV1M2ZbY7E2W
+
+- title: "ラットホープ"
+  artist: [ kemu, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV1k8RNYFEDg
+
+- title: "アンコールダンス"
+  artist: [ MIMI, 重音テト ]
+  links:
+  - https://www.bilibili.com/video/BV1JyQwYGEdA
+
+- title: "巫"
+  artist: [ 柊マグネタイト, 羽累 ]
+  links:
+  - https://www.bilibili.com/video/BV1zu4y1R7RY
+
+- title: "ユニ"
+  artist: [ 柊マグネタイト, 初音ミク, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV1sN411U7nN
+
+- title: "再見ロマネスク"
+  artist: [ 柊マグネタイト, 花隈千冬 ]
+  links:
+  - https://www.bilibili.com/video/BV1Rk4y1i7Av
+
+- title: "イカサマライフゲイム"
+  artist: [ kemu, GUMI ]
+  links:
+  - https://www.bilibili.com/video/BV14k4y177Z8
