@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils"
 type HeadingSize = "hero" | "page" | "section"
 
 const titleSizes: Record<HeadingSize, string> = {
-  hero: "break-words text-5xl leading-[0.95] sm:text-6xl lg:text-7xl",
+  hero: "whitespace-nowrap text-[clamp(1.75rem,12cqi,4.5rem)] leading-[1.05]",
   page: "text-5xl lg:text-6xl",
   section: "text-3xl sm:text-4xl",
 }
@@ -32,7 +32,7 @@ export function PageHeading({
   className,
 }: PageHeadingProps) {
   return (
-    <div className={className}>
+    <div className={cn(size === "hero" && "@container", className)}>
       <p className="font-medium text-primary text-xl">{eyebrow}</p>
       <Tag className={cn("mt-1 font-display font-extrabold tracking-tight", titleSizes[size])}>
         {title}

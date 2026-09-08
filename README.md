@@ -16,6 +16,7 @@ pnpm build        # 生产构建(先 velite build 再 next build)
 pnpm lint:fix     # 格式化 + 自动修复(Biome)
 pnpm typecheck    # 类型检查
 pnpm shoot        # 截图当前 dev 页面到 temp/shots/(桌面+移动)
+node scripts/check-home-layout.ts # 检查首页在 320–1440px 下的标题换行和文字越界
 ```
 
 > 改完代码习惯走一遍 `pnpm lint:fix` 再 `pnpm build`。Biome 会自动排序 Tailwind 类名和 import,看到它重排是正常的。
@@ -28,8 +29,8 @@ pnpm shoot        # 截图当前 dev 页面到 temp/shots/(桌面+移动)
 | 主题色 / 整套配色 | `src/styles/tokens.css`(改 token,别在组件里写死颜色) |
 | 头像 | 换 `public/images/profile.jpg` |
 | 首页主背景图(吉祥物) | 换 `public/images/hero-mascot.png` |
-| 背景图的羽化(虚化范围/位置) | `src/styles/base.css` 里 `.hero-feather` 顶部的 `--feather-*` 旋钮 |
-| 首页板块结构 | `src/app/_components/`(hero、feature-cards) |
+| 背景图的构图 / 羽化 | `src/app/(framed)/_components/mascot-background.tsx` 定义整页外框背景和倾斜椭圆遮罩；`src/styles/base.css` 的 `.hero-feather` 应用遮罩 |
+| 首页板块结构 | `src/app/(framed)/_components/`(hero、home-links)，入口文案在 `src/data/site.ts` 的 `home` 中 |
 | 页头 / 页脚 | `src/components/layout/` |
 | 字体 | `src/lib/fonts.ts`(标题 Sora,正文 Inter) |
 | 写博客 | 在 `content/posts/` 加 `.mdx` 文件 |

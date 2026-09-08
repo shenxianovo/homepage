@@ -63,7 +63,7 @@ export function MascotBackground() {
           fill
           priority
           sizes="(max-width: 768px) 100vw, 1480px"
-          className="hero-feather object-cover object-right"
+          className="hero-feather object-cover object-[60%_center] lg:object-right"
         />
       </motion.div>
     </>

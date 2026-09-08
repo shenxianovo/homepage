@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${fontVariables} h-full antialiased`}>
+    <html lang="zh-CN" suppressHydrationWarning className={`${fontVariables} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <JsonLd />
         <ThemeProvider

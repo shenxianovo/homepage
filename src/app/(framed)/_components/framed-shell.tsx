@@ -17,8 +17,8 @@ import { MascotBackground } from "./mascot-background"
  *
  * Per-page differences are derived from the pathname instead of props, since
  * a layout cannot receive props from the page it wraps:
- * - Home (`/`) gets the masked mascot backdrop and unpadded main (its Hero /
- *   FeatureCards manage their own spacing).
+ * - Home (`/`) gets the original masked backdrop across the full frame and an
+ *   unpadded main (Hero / HomeLinks manage their spacing).
  * - Every other framed page gets a padded main and no backdrop.
  */
 export function FramedShell({ children }: { children: ReactNode }) {
