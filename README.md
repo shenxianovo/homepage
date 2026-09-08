@@ -17,6 +17,7 @@ pnpm lint:fix     # 格式化 + 自动修复(Biome)
 pnpm typecheck    # 类型检查
 pnpm shoot        # 截图当前 dev 页面到 temp/shots/(桌面+移动)
 node scripts/check-home-layout.ts # 检查首页在 320–1440px 下的标题换行和文字越界
+node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方案可见性
 ```
 
 > 改完代码习惯走一遍 `pnpm lint:fix` 再 `pnpm build`。Biome 会自动排序 Tailwind 类名和 import,看到它重排是正常的。

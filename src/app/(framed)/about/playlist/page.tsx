@@ -12,14 +12,14 @@ export default function PlaylistPage() {
 
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div id="playlist-top" className="flex flex-col gap-3">
         <PageHeading eyebrow="My" title="Playlist" />
         <p className="max-w-xl text-muted-foreground leading-relaxed">
           我正在听、会唱的歌。KTV 犹豫症自救指南。
         </p>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-6 md:mt-10">
         <SongList songs={songs} />
       </div>
     </>
