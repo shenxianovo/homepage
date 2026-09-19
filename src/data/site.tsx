@@ -18,18 +18,19 @@ export const site = {
   contactLabel: "认识一下",
   hero: {
     image: "/images/hero-mascot.png",
+    alt: "背景图",
   },
   info: [
     { label: "Currently", value: <>实习ing，找工作ing</> },
     {
-      label: "Studing",
+      label: "Studying",
       value: (
         <>
           武汉大学 <s>罕见！</s> ｜ 人工智能
         </>
       ),
     },
-    { label: "Loaction", value: <>上海</> },
+    { label: "Location", value: <>上海</> },
   ],
 } as const
 
@@ -41,10 +42,12 @@ export const navLinks: { label: string; href: string }[] = [
 ]
 
 export const home = {
+  heading: "",
   links: [
     {
       id: "projects",
       title: "我的项目",
+      label: "Projects",
       description: "玩具...玩具...和神秘的玩具...",
       href: "/projects",
       icon: Code2,
@@ -53,7 +56,8 @@ export const home = {
     {
       id: "blog",
       title: "写作与笔记",
-      description: "写技术上的折腾，也写路上的想法。",
+      label: "Blog",
+      description: "似乎没什么东西呢...",
       href: site.blogUrl,
       icon: BookOpen,
       action: "去博客逛逛",
@@ -61,6 +65,7 @@ export const home = {
     {
       id: "playlist",
       title: "我的歌单",
+      label: "Playlist",
       description: "会的歌太多太散了于是...",
       href: "/about/playlist",
       icon: ListMusic,
