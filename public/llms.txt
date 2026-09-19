@@ -6,6 +6,7 @@
 
 - [Home](https://shenxianovo.com): Introduction, taglines, and a snapshot of what shenxianovo focuses on (code, design, performance, learning).
 - [About](https://shenxianovo.com/about): Background, interests (software, AI, ACG), and contact links.
+- [Resume](https://shenxianovo.com/about/resume): Conversational work, project, and education timeline with expandable details.
 - [Projects](https://shenxianovo.com/projects): Things shenxianovo has designed and built, filterable by type, with links to live demos and source.
 
 ## Profiles

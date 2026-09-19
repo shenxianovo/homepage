@@ -1,0 +1,151 @@
+---
+eyebrow: A less formal
+title: Resume
+description: 阿巴阿巴... _(:з」∠)_
+---
+
+<ResumeSection title="基本情况" description="先简单认识一下">
+
+你好，我是谢羿衡，武汉大学人工智能专业大四学生，目前在上海实习。
+
+古法学过 C# 和 Python。剩下全是用 AI 蹬的：Go、TypeScript、React、Next.js、Vue.js……
+
+- **现在：** 在字节跳动 Data-AML 实习
+- **想做的事：** 全栈、研发效能、可观测。比起被岗位角色限制，我更想围绕问题本身，把这些能力串起来。
+- **联系方式：** [shenxianovo@outlook.com](mailto:shenxianovo@outlook.com) · [GitHub](https://github.com/shenxianovo)
+
+</ResumeSection>
+
+<ResumeSection title="教育经历">
+
+<ResumeEntry
+  title="武汉大学"
+  role="人工智能 · 本科"
+  period="2023.09 — 2027.06"
+  summary=""
+  tags={["人工智能", "CET-6 602", "JLPT N2"]}
+>
+
+预计 2027 年 6 月毕业。本科毕业直接工作，不考虑读研，维护过一个校内开源课程资料仓库 [OpenWHU](https://github.com/openwhu)。
+
+</ResumeEntry>
+
+</ResumeSection>
+
+<ResumeSection title="实习经历" description="目前三段，产品和研发都干过。更想做一些不被岗位角色限制的事情">
+
+<ResumeEntry
+  title="字节跳动 Data-AML · ModelHub"
+  role="AI 应用开发实习生"
+  period="2026.08 — 现在"
+  summary="在大模型统一接入平台做安全和研发效能相关的工程工作。"
+  tags={["Go", "AI 平台", "Agent", "工程效能"]}
+>
+
+我目前在机器学习中台 Data-AML 团队，参与公司级大模型统一接入平台建设。
+
+- 负责模型供应商账号凭据的加密改造，从密文结构、加解密边界，到灰度、回滚与密钥轮换，在不中断存量服务的前提下推进凭据安全能力升级。
+- 参与意图识别与治理能力建设，分析请求语义，设计标签体系与标注方案，并探索 LLM、Embedding 与分类模型在不同阶段的适用方式。
+- 尝试让代码仓库和研发基础设施对 Agent 更友好：组织业务知识、任务状态、代码基线与验收标准，让 Agent 能在跨会话开发中延续项目上下文，而不是每次从头理解。
+
+</ResumeEntry>
+
+<ResumeEntry
+  title="哔哩哔哩 · 花生"
+  role="AI 产品经理实习生"
+  period="2026.04 — 2026.08"
+  summary="一个很有 startup 氛围的团队。实习期间主要做产品预研，也是在这里开始形成“不被岗位角色限制，围绕问题本身做事”的想法。"
+  tags={["Agent", "产品预研", "视频创作"]}
+>
+
+[花生](https://www.huasheng.cn/)是一款视频创作 Agent：用户说想做什么，Agent 负责把想法一步步变成视频。
+
+- **草稿结构与交互预研**：搭建 Demo 并调研社区方案，提出以 HTML 替代 JSON 作为统一草稿结构，让人工可视化编辑与 Agent 代码编辑作用于同一份产物，同时改善扩展性；方案被团队采纳并作为新版技术方向上线。
+- **成本治理**：围绕积分消耗与异常使用开展成本治理，识别 Agent 对话高成本问题并推动切换至低成本模型；发现并治理新用户赠送积分套利行为，基于账号等级、大会员状态、投稿记录等特征制定策略，推动业务毛利由负转正。
+- **数据分析与监控**：将上述成本与积分消耗分析沉淀为团队使用的 T+1 BI 报表，按用户类型、原子能力等维度持续跟踪积分消耗与异常变化。
+
+</ResumeEntry>
+
+<ResumeEntry
+  title="网易云音乐"
+  role="AI 音乐工程实习生"
+  period="2026.01 — 2026.04"
+  summary="规模不大的一套内部 AI 音乐生成系统，也是我第一次真正接触线上软件工程。"
+  tags={["Python", "Flask", "MySQL", "Suno"]}
+>
+
+一套给产运团队使用的内部 AI 音乐生成系统，约 20 人日常使用，每天有数百次生成请求。现在回头看规模并不大，但这是我进入 AI 应用开发这个方向的起点。
+
+- 重构 AI 写词工作流。在数据库结构不方便变更的约束下，用 JSON 扩展字段实现多维度动态分流，让新类型不需要改表或迁移历史数据就能上线。
+- 独立开发并验证了唱法迁移功能，在验证中发现“必须提供歌词”这个模型边界，进而影响了交互设计。
+- 处理过特殊字符、异常 JSON、SQL 拼接等问题。也是从这些问题开始，我第一次真正意识到“能跑”和“能稳定地在线上跑”是两回事，并逐渐建立起边界条件与防御性编程的意识。
+
+</ResumeEntry>
+
+</ResumeSection>
+
+<ResumeSection title="个人项目" description="平时做的一些玩具，也算是兴趣">
+
+<ResumeEntry
+  title="Heartbeat"
+  role="全栈个人项目"
+  period="2026.02 — 现在"
+  summary="服务可以做可观测，那么人为什么不行？于是我开始记录自己的活动，试着回答“我的时间都去了哪里”。"
+  tags={["ASP.NET", "Avalonia", "Vue.js", "Next.js", "PostgreSQL"]}
+>
+
+多源采集 → 统一投递 → 后端处理 → 前端展示
+
+一个持续采集和整理个人活动的系统：从不同设备和数据源收集活动，经统一后端处理后，在网页中还原一段时间里的活动轨迹。现在它已经成为我自己长期运行和使用的系统，也一直在被真实环境里的各种问题教育。随着使用时间变长，原有的存储与观测模型暴露出局限，目前正在重构底层模型，也开始尝试把服务可观测性中的一些思想借鉴到“观测人”这件事。
+
+- 第一次尝试将 Matt Pocock 的 SKILL 用于一个长期项目，通过结构化项目上下文与协作方式，让 Agent 能在长期项目认知与当前任务之间持续衔接。
+- 遇到并处理时间戳可信性、观测缺失、重复事件、跨设备数据关联等问题，尝试把面向服务的可观测模型迁移到个人活动建模中。
+- 最近在做面向 Agent 的自动化验证与仓库健康检查工具，按变更范围执行分层回归，拦截重复度与复杂度退化，并保留可追溯的验证证据。
+
+[源码](https://github.com/shenxianovo/Heartbeat) · [项目链接](https://heartbeat.shenxianovo.com)
+
+</ResumeEntry>
+
+<ResumeEntry
+  title="个人基础设施"
+  role="部署、认证与可观测"
+  period="2024.06 — 现在"
+  summary="3 台小鸡搭的简陋基建。"
+  tags={["Docker Compose", "GitHub Actions", "Prometheus", "Grafana"]}
+>
+
+- 在 3 台低配 Linux 服务器上运行十余个服务，全部通过 Docker 运行，通过 GitHub Actions 自动构建和发布。
+- 用 Prometheus、Grafana 和 Uptime Kuma 做指标、探活与告警（*虽然只有一个人用，但弄个看板还是很好玩吧……*）。
+- 自建认证服务，为其他项目提供 OAuth2、Refresh Token 轮换和 API Key 兑换。
+
+[服务状态](https://status.shenxianovo.com/status/public) · [服务器监控](https://monitor.shenxianovo.com/)
+
+</ResumeEntry>
+
+</ResumeSection>
+
+<ResumeSection title="其他" description="代码之外的一些事">
+
+<ResumeEntry
+  title="武汉大学动漫协会"
+  role="部长 → 社长"
+  period="2024.06 — 2026.06"
+  summary="几乎是整个大学生活的中心..."
+  tags={["社团管理", "活动组织", "内容运营"]}
+>
+
+做了一年部长，之后接任社长。两年里，从做具体事务，到开始考虑：怎样让一个学生社团不因为换届就把经验全部丢掉。
+
+- 部长：负责社团文艺活动与 B 站官号运营。优化账号投稿方式，任期内账号新增 1500+ 粉丝与 50 万+ 播放。
+- 社长：发起并维护社团网站，撰写各部门工作文档，并补充面向 Agent 的使用说明，让下一任社干能够借助 AI 快速理解已有经验与工作方式。
+
+[我的一些思考](https://whudays.org/activity/2024/project-hq.html)
+
+~~[神秘女装演出](https://www.bilibili.com/video/BV1Fq6NYsE6W)~~
+
+</ResumeEntry>
+
+- **语言：** 普通话母语、英语 CET-6（602）、日语 JLPT N2
+- **也喜欢：** 看番、VRChat、羽毛球，以及唱 J-POP、Vocaloid 和动漫歌
+
+</ResumeSection>

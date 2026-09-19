@@ -36,7 +36,7 @@ export function Hero() {
             className="h-12 rounded-full px-5 backdrop-blur-glass sm:px-6"
             nativeButton={false}
             role="link"
-            render={<Link href="/about#contact" />}
+            render={<Link href="/about" />}
           >
             {site.contactLabel}
           </Button>

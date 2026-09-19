@@ -47,6 +47,17 @@ const songs = defineCollection({
   }),
 })
 
+const resumes = defineCollection({
+  name: "Resume",
+  pattern: "resume.mdx",
+  schema: s.object({
+    eyebrow: s.string(),
+    title: s.string().max(120),
+    description: s.string().max(280),
+    content: s.mdx(),
+  }),
+})
+
 export default defineConfig({
   root: "content",
   output: {
@@ -56,7 +67,7 @@ export default defineConfig({
     name: "[name]-[hash:6].[ext]",
     clean: true,
   },
-  collections: { projects, songs },
+  collections: { projects, resumes, songs },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

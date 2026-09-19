@@ -13,13 +13,13 @@ export const metadata = {
 const interests = [
   {
     title: "Playlist",
-    description: "我在听、会唱的歌，也是我的点歌指南。",
+    description: "我的歌单",
     href: "/about/playlist",
     icon: ListMusic,
   },
   {
     title: "Resume",
-    description: "在线版简历准备中，先占个位置。",
+    description: "在线简历",
     href: "/about/resume",
     icon: FileText,
   },
@@ -37,13 +37,17 @@ export default function AboutPage() {
               <s>这网名不知道啥时候起的...有点神秘 想换一个但是本人起名废Orz</s>
             </p>
             <p>
-              大四学生，实习ing，找工作ing。 <b>本页有简历！如果感兴趣可以看看～</b> 大学还没读完，倒是完整见证了大模型从智障进化到能独立干活。。。
+              大四学生，实习ing，找工作ing。 <b>本页有简历！如果感兴趣可以看看～</b>{" "}
+              大学还没读完，倒是完整见证了大模型从智障进化到能独立干活。。。
               <s>原来我早就是天才程序员了！</s>
             </p>
             <p>
               古法学过 C# 和 Python。剩下全是用 AI 蹬的：Go、TypeScript、React、Next.js、Vue.js……
             </p>
-            <p>不写代码的时候，大概在看番，打游戏（最近沉迷VRChat... 欢迎找我玩），或者唱 J-POP Vocaloid 和动漫歌。</p>
+            <p>
+              不写代码的时候，大概在看番，打游戏（最近沉迷VRChat... 欢迎找我玩），或者唱 J-POP
+              Vocaloid 和动漫歌。
+            </p>
           </div>
         </section>
 

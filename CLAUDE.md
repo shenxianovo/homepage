@@ -31,6 +31,7 @@ Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4（`@
 - **颜色** → 只改 `src/styles/tokens.css`，组件里不硬编码（hero-feather 旋钮说明在 `base.css` 内联注释）
 - **页面专属组件** → `app/(framed)/<page>/_components/`（就地放）；跨页共享 → `src/components/`
 - **加项目** → `content/projects/<slug>.mdx`（frontmatter 见 `velite.config.ts` schema；cover 源图与 MDX 同目录）；**加歌** → `content/songs.yaml`（字段说明见文件头注释）
+- **改简历** → `content/resume.mdx`；`ResumeSection` / `ResumeEntry` 只表达内容层级，展示组件在 Resume 页面目录内
 - **内容查询** → 走 `lib/projects.ts` / `lib/songs.ts`，不在页面里重写 filter/sort
 - Path alias `@/*` → `src/*`；Velite 输出 → `#site/content`
 - `temp/` 和 `public/static/`（Velite 生成物）均 gitignored，永不提交
