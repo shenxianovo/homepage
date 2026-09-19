@@ -4,7 +4,7 @@ import { SongList } from "./_components/song-list"
 
 export const metadata = {
   title: "Playlist",
-  description: "我正在听、会唱的歌 — my karaoke repertoire.",
+  description: "KTV 选择困难症解决方案",
 }
 
 export default function PlaylistPage() {
@@ -15,7 +15,7 @@ export default function PlaylistPage() {
       <div id="playlist-top" className="flex flex-col gap-3">
         <PageHeading eyebrow="My" title="Playlist" />
         <p className="max-w-xl text-muted-foreground leading-relaxed">
-          我正在听、会唱的歌。KTV 犹豫症自救指南。
+          KTV 选择困难症解决方案 不定时更新（<s>其实是懒得录入 嘻嘻</s>。。
         </p>
       </div>
 

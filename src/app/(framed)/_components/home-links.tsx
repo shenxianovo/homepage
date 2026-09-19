@@ -8,7 +8,7 @@ export function HomeLinks() {
   const counts = {
     projects: `${getProjects().length} 个项目`,
     playlist: `${getSongs().length} 首歌`,
-    blog: "技术与记录",
+    blog: "技术与随笔",
   }
 
   return (

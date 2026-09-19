@@ -1,7 +1,7 @@
 import type { LucideIcon } from "lucide-react"
 import { BookOpen, Code2, ListMusic, Mail } from "lucide-react"
 import type { ComponentType, SVGProps } from "react"
-import { BilibiliIcon, GithubIcon, LinkedinIcon } from "@/components/brand-icons"
+import { BilibiliIcon, GithubIcon, LinkedinIcon, XIcon } from "@/components/brand-icons"
 
 type IconType = LucideIcon | ComponentType<SVGProps<SVGSVGElement>>
 
@@ -10,39 +10,42 @@ export const site = {
   url: "https://shenxianovo.com",
   blogUrl: "https://blog.shenxianovo.com",
   avatar: "/images/profile.jpg",
-  greeting: "Hi, I'm",
+  greeting: "你好，我是",
   taglineCn: "把想法做成",
-  taglineCnRest: "真正能用的东西。",
-  description:
-    "武汉大学人工智能在读。喜欢动手做工具，也喜欢 ACG 和 J-POP。这里放着我的作品、笔记，以及写代码之外的生活。",
-  projectsLabel: "看看我的项目",
-  contactLabel: "打个招呼",
+  taglineCnRest: "能用的东西。",
+  description: "欢迎光临小站～随便看看，这里什么都有一点 Orz",
+  projectsLabel: "我的项目",
+  contactLabel: "认识一下",
   hero: {
     image: "/images/hero-mascot.png",
-    alt: "Mascot peeking over a grassy hill among butterflies",
   },
   info: [
-    { label: "Currently", value: "正在实习 · 寻找工作机会" },
-    { label: "Studying", value: "武汉大学 · 人工智能" },
-    { label: "Location", value: "中国，武汉" },
+    { label: "Currently", value: <>实习ing，找工作ing</> },
+    {
+      label: "Studing",
+      value: (
+        <>
+          武汉大学 <s>罕见！</s> ｜ 人工智能
+        </>
+      ),
+    },
+    { label: "Loaction", value: <>上海</> },
   ],
 } as const
 
 export const navLinks: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Blog", href: site.blogUrl },
+  { label: "首页", href: "/" },
+  { label: "关于", href: "/about" },
+  { label: "项目", href: "/projects" },
+  { label: "博客", href: site.blogUrl },
 ]
 
 export const home = {
-  heading: "一些作品，也有生活",
   links: [
     {
       id: "projects",
       title: "我的项目",
-      label: "Projects",
-      description: "从统一登录到电脑使用记录，做自己用得上的工具。",
+      description: "玩具...玩具...和神秘的玩具...",
       href: "/projects",
       icon: Code2,
       action: "查看项目",
@@ -50,8 +53,7 @@ export const home = {
     {
       id: "blog",
       title: "写作与笔记",
-      label: "Blog",
-      description: "记录技术探索，也把一路上的思考留在这里。",
+      description: "写技术上的折腾，也写路上的想法。",
       href: site.blogUrl,
       icon: BookOpen,
       action: "去博客逛逛",
@@ -59,8 +61,7 @@ export const home = {
     {
       id: "playlist",
       title: "我的歌单",
-      label: "Playlist",
-      description: "二次元、J-POP、虚拟歌姬。也是我的 KTV 点歌指南。",
+      description: "会的歌太多太散了于是...",
       href: "/about/playlist",
       icon: ListMusic,
       action: "找一首歌",
@@ -70,9 +71,10 @@ export const home = {
 
 export const socials: { label: string; href: string; icon: IconType }[] = [
   { label: "GitHub", href: "https://github.com/shenxianovo", icon: GithubIcon },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/shenxianovo", icon: LinkedinIcon },
+  { label: "X", href: "https://x.com/shenxianovo", icon: XIcon },
   { label: "Bilibili", href: "https://space.bilibili.com/446305918", icon: BilibiliIcon },
-  { label: "Email", href: "mailto:shenxianovo@outlook.com", icon: Mail },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shenxianovo", icon: LinkedinIcon },
+  { label: "邮箱", href: "mailto:shenxianovo@outlook.com", icon: Mail },
 ]
 
 // My singable range — drives the transpose plans on /about/playlist.

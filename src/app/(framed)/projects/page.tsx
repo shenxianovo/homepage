@@ -4,7 +4,7 @@ import { ProjectGrid } from "./_components/project-grid"
 
 export const metadata = {
   title: "Projects",
-  description: "Things I've built — web apps, tools, and open-source work.",
+  description: "做过的一些小玩意～",
 }
 
 export default function ProjectsPage() {
@@ -16,7 +16,7 @@ export default function ProjectsPage() {
       <div className="flex flex-col gap-3">
         <PageHeading eyebrow="My" title="Projects" />
         <p className="max-w-xl text-muted-foreground leading-relaxed">
-          热爱构建，乐于分享。A collection of things I've designed and built.
+          做过的一些小玩意～
         </p>
       </div>
 

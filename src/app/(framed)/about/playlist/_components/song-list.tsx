@@ -182,7 +182,7 @@ export function SongList({ songs }: { songs: Song[] }) {
                   {song.status === "learning" ? (
                     <Headphones
                       className="mt-1 size-3.5 shrink-0 text-muted-foreground/70"
-                      aria-label="还在听"
+                      aria-label="在听"
                     />
                   ) : (
                     <MicVocal
@@ -244,7 +244,7 @@ export function SongList({ songs }: { songs: Song[] }) {
       </ul>
 
       {visible.length === 0 ? (
-        <p className="mt-8 text-muted-foreground">没有匹配的歌 — 换个关键词试试。</p>
+        <p className="mt-8 text-muted-foreground">没有匹配的歌，换个关键词试试。</p>
       ) : null}
     </div>
   )
