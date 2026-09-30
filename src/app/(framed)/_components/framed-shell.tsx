@@ -28,7 +28,7 @@ export function FramedShell({ children }: { children: ReactNode }) {
   return (
     <div className="flex min-h-dvh justify-center p-4 sm:p-8">
       {/* Clip rounded corners without creating a scroll container that traps sticky controls. */}
-      <div className="relative mx-auto flex min-h-[calc(100dvh-2rem)] w-full max-w-[1480px] flex-col overflow-clip rounded-[28px] bg-card/60 shadow-md ring-1 ring-border backdrop-blur-sm sm:min-h-[calc(100dvh-4rem)]">
+      <div className="relative mx-auto flex min-h-[calc(100dvh-2rem)] w-full max-w-[1480px] flex-col overflow-clip rounded-frame bg-card/60 shadow-md ring-1 ring-border backdrop-blur-sm sm:min-h-[calc(100dvh-4rem)]">
         {isHome ? <MascotBackground /> : null}
         <div className="relative z-10 flex flex-1 flex-col">
           <SiteHeader />

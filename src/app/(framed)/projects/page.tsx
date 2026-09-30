@@ -15,9 +15,7 @@ export default function ProjectsPage() {
     <>
       <div className="flex flex-col gap-3">
         <PageHeading eyebrow="My" title="Projects" />
-        <p className="max-w-xl text-muted-foreground leading-relaxed">
-          做过的一些小玩意～
-        </p>
+        <p className="max-w-xl text-muted-foreground leading-relaxed">做过的一些小玩意～</p>
       </div>
 
       <div className="mt-10">

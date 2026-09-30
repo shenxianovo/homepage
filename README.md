@@ -15,6 +15,7 @@ pnpm dev          # 开发服务器 + 内容监听,默认 http://localhost:3000
 pnpm build        # 生产构建(先 velite build 再 next build)
 pnpm lint:fix     # 格式化 + 自动修复(Biome)
 pnpm typecheck    # 类型检查
+pnpm check:ui     # build 后检查产物：token、字体、简历默认折叠、首页入口和项目卡片
 pnpm shoot        # 截图当前 dev 页面到 temp/shots/(桌面+移动)
 node scripts/check-home-layout.ts # 检查首页在 320–1440px 下的标题换行和文字越界
 node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方案可见性
@@ -45,6 +46,14 @@ node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方�
 - **博客**:Markdown(MDX)放 `content/posts/`,Velite 在构建时编译成数据,页面通过 `src/lib/posts.ts` 查询。
 
 目录结构和更细的约定见 `CLAUDE.md`。
+
+### 样式约定
+
+- 正文使用 Inter，`h1`–`h3` 和 `font-display` 使用 Sora；两者预加载 Latin 子集，中文和日文由系统可用字体回退。歌单音域的 `font-mono` 使用 Tailwind 的系统等宽字体栈。
+- 卡片用 `rounded-lg`，大面板用 `rounded-panel`，页面外框用 `rounded-frame`，均从全局 `--radius` 派生。默认仍为 16 / 24 / 28px；胶囊和圆形保留 `rounded-full`。
+- 颜色和悬停配色在 `tokens.css` 定义，经 `theme.css` 暴露为工具类。SVG 遮罩的白色表示遮罩透明度，manifest 的颜色是独立浏览器元数据，不使用页面 CSS 变量。
+- 布局专属的宽度、断点、图片比例、椭圆遮罩参数及动画时长保持在对应组件中，不为一次性几何值添加全局 token。
+- `shadcn` 仅保留为开发时的组件生成 CLI；当前界面不依赖其附带的 CSS 或 `tw-animate-css`。
 
 ## 部署
 

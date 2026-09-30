@@ -21,7 +21,7 @@ export function HomeLinks() {
           <li key={item.id}>
             <SmartLink
               href={item.href}
-              className="group grid h-full grid-cols-[auto_1fr] items-start gap-x-4 rounded-2xl border border-border bg-glass p-5 transition-colors hover:border-primary/40 hover:bg-card focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4 sm:p-6 md:flex md:flex-col md:gap-5 md:p-5 lg:p-6"
+              className="group grid h-full grid-cols-[auto_1fr] items-start gap-x-4 rounded-lg border border-border bg-glass p-5 transition-colors hover:border-primary/40 hover:bg-card focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-4 sm:p-6 md:flex md:flex-col md:gap-5 md:p-5 lg:p-6"
             >
               <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary-soft text-primary">
                 <item.icon className="size-5" />
