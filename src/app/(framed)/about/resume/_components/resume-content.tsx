@@ -22,7 +22,7 @@ const bodyClasses =
 
 function ResumeSection({ title, description, children }: ResumeSectionProps) {
   return (
-    <details className="group/section overflow-hidden rounded-3xl border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow open:shadow-md">
+    <details className="group/section overflow-hidden rounded-panel border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow open:shadow-md">
       <summary className="flex cursor-pointer list-none items-center gap-4 p-5 marker:content-none sm:p-6 [&::-webkit-details-marker]:hidden">
         <span className="flex min-w-0 flex-1 flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-3">
           <span className="shrink-0 font-bold font-display text-2xl">{title}</span>
@@ -42,7 +42,7 @@ function ResumeSection({ title, description, children }: ResumeSectionProps) {
 
 function ResumeEntry({ title, role, period, summary, tags = [], children }: ResumeEntryProps) {
   return (
-    <details className="group/entry overflow-hidden rounded-2xl border border-border bg-card/45 transition-colors open:bg-card/70">
+    <details className="group/entry overflow-hidden rounded-lg border border-border bg-card/45 transition-colors open:bg-card/70">
       <summary className="flex cursor-pointer list-none items-start gap-4 p-4 marker:content-none sm:p-5 [&::-webkit-details-marker]:hidden">
         <span className="min-w-0 flex-1">
           {period ? (

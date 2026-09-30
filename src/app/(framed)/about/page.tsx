@@ -57,9 +57,9 @@ export default function AboutPage() {
             <SmartLink
               key={item.href}
               href={item.href}
-              className="group flex items-start gap-4 rounded-3xl border border-glass-border bg-glass p-5 shadow-md backdrop-blur-glass transition-shadow hover:shadow-glow"
+              className="group flex items-start gap-4 rounded-panel border border-glass-border bg-glass p-5 shadow-md backdrop-blur-glass transition-shadow hover:shadow-glow"
             >
-              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary-soft text-primary">
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-primary-soft text-primary">
                 <item.icon className="size-5" />
               </span>
               <span className="min-w-0">

@@ -7,7 +7,7 @@ export function ProjectCard({ project }: { project: Project }) {
   const { title, description, types, tags, cover, live, github } = project
 
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow hover:shadow-md">
+    <article className="group flex flex-col overflow-hidden rounded-lg border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow hover:shadow-md">
       {/* Cover slot — image if provided, otherwise a soft branded placeholder */}
       <div className="relative aspect-[16/10] overflow-hidden bg-primary-soft">
         {cover ? (

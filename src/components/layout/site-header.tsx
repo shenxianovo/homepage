@@ -27,7 +27,7 @@ export function SiteHeader() {
         />
       </SmartLink>
 
-      <nav className="-translate-x-1/2 absolute left-1/2 hidden items-center gap-1 md:flex">
+      <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex">
         {navLinks.map((link) => {
           const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)
 
@@ -66,7 +66,7 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="absolute inset-x-4 top-full z-30 mt-2 flex flex-col gap-1 rounded-2xl border border-border bg-popover p-3 shadow-md md:hidden">
+        <div className="absolute inset-x-4 top-full z-30 mt-2 flex flex-col gap-1 rounded-lg border border-border bg-popover p-3 shadow-md md:hidden">
           {navLinks.map((link) => (
             <SmartLink
               key={link.href}
