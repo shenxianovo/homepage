@@ -54,3 +54,6 @@ _Avoid_: 卡片、时间线节点
   含 hero-feather 遮罩，旋钮说明见文件内注释）。改色只改 tokens.css。
 - **品牌图标** — GitHub/LinkedIn/Bilibili 等品牌 SVG 手绘在
   `brand-icons.tsx`（icon 库因商标原因移除了品牌图标，别试图从库里引）。
+- **应用显示边界** — `SiteViewport` 集中处理手机电脑模式的可读性。页面组件用
+  `site-sm` / `site-md` / `site-lg` 查询应用容器宽度，通用 Tailwind 断点保持原语义。
+  适用边界和取舍见 `docs/adr/0001-readable-phone-desktop-mode.md`。

@@ -19,7 +19,7 @@ export default function PlaylistPage() {
         </p>
       </div>
 
-      <div className="mt-6 md:mt-10">
+      <div className="mt-6 site-md:mt-10">
         <SongList songs={songs} />
       </div>
     </>

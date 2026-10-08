@@ -52,7 +52,7 @@ try {
       )
       assert.equal(await random.isDisabled(), true, "Random cannot pick a song still being learned")
       await learned.click()
-      await page.getByText("没有匹配的歌 — 换个关键词试试。", { exact: true }).waitFor()
+      await page.getByText("没有匹配的歌，换个关键词试试。", { exact: true }).waitFor()
       assert.equal(await learned.getAttribute("aria-pressed"), "true")
       assert.equal(await random.isDisabled(), true)
 

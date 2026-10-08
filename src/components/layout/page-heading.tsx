@@ -4,8 +4,8 @@ type HeadingSize = "hero" | "page" | "section"
 
 const titleSizes: Record<HeadingSize, string> = {
   hero: "whitespace-nowrap text-[clamp(1.75rem,12cqi,4.5rem)] leading-[1.05]",
-  page: "text-5xl lg:text-6xl",
-  section: "text-3xl sm:text-4xl",
+  page: "text-5xl site-lg:text-6xl",
+  section: "text-3xl site-sm:text-4xl",
 }
 
 type PageHeadingProps = {

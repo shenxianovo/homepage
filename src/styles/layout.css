@@ -1,0 +1,29 @@
+/* Site layout uses its available space, including readable phone mode.
+   These opt-in variants leave Tailwind's sm/md/lg media queries untouched. */
+@custom-variant site-sm {
+  @container site (min-width: 40rem) {
+    @slot;
+  }
+}
+
+@custom-variant site-md {
+  @container site (min-width: 48rem) {
+    @slot;
+  }
+}
+
+@custom-variant site-lg {
+  @container site (min-width: 64rem) {
+    @slot;
+  }
+}
+
+.site-viewport {
+  /* Compensate for the browser fitting a desktop viewport to a phone. Zoom
+     recalculates layout, unlike transform: scale(). The viewport policy uses
+     the display span (visual width * scale), which stays stable during pinch
+     zoom, so the user's own zoom remains independent of this policy. */
+  zoom: var(--site-scale, 1);
+  --site-viewport-height: calc(100dvh / var(--site-scale, 1));
+  min-height: var(--site-viewport-height);
+}

@@ -11,7 +11,7 @@ import { site } from "@/data/site"
  * opacity-only — animating transforms here would re-rasterise the blur
  * every frame. A one-time fade on mount, no replay on route changes.
  *
- * Hidden below `md`: on narrow screens the mascot is cropped to a sliver on
+ * Hidden below 48rem of site space: on narrow screens the mascot is cropped to a sliver on
  * the right and reads as visual noise, so mobile drops the backdrop entirely.
  */
 export function MascotBackground() {
@@ -51,7 +51,7 @@ export function MascotBackground() {
       {/* Mascot scene, feathered to transparent on the left via the SVG mask.
           Hidden on mobile — see component note. */}
       <motion.div
-        className="absolute inset-0 z-0 hidden md:block"
+        className="absolute inset-0 z-0 site-md:block hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -63,7 +63,7 @@ export function MascotBackground() {
           fill
           priority
           sizes="(max-width: 768px) 100vw, 1480px"
-          className="hero-feather object-cover object-[60%_center] lg:object-right"
+          className="hero-feather object-cover object-[60%_center] site-lg:object-right"
         />
       </motion.div>
     </>

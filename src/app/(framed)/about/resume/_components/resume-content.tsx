@@ -23,8 +23,8 @@ const bodyClasses =
 function ResumeSection({ title, description, children }: ResumeSectionProps) {
   return (
     <details className="group/section overflow-hidden rounded-panel border border-glass-border bg-glass shadow-sm backdrop-blur-glass transition-shadow open:shadow-md">
-      <summary className="flex cursor-pointer list-none items-center gap-4 p-5 marker:content-none sm:p-6 [&::-webkit-details-marker]:hidden">
-        <span className="flex min-w-0 flex-1 flex-col gap-1 sm:flex-row sm:flex-wrap sm:items-baseline sm:gap-x-3">
+      <summary className="flex cursor-pointer list-none items-center gap-4 p-5 site-sm:p-6 marker:content-none [&::-webkit-details-marker]:hidden">
+        <span className="flex min-w-0 flex-1 site-sm:flex-row flex-col site-sm:flex-wrap site-sm:items-baseline gap-1 site-sm:gap-x-3">
           <span className="shrink-0 font-bold font-display text-2xl">{title}</span>
           {description ? (
             <span className="text-muted-foreground text-sm">{description}</span>
@@ -35,7 +35,7 @@ function ResumeSection({ title, description, children }: ResumeSectionProps) {
         </span>
       </summary>
 
-      <div className={`border-border border-t p-5 sm:p-6 ${bodyClasses}`}>{children}</div>
+      <div className={`border-border border-t p-5 site-sm:p-6 ${bodyClasses}`}>{children}</div>
     </details>
   )
 }
@@ -43,12 +43,12 @@ function ResumeSection({ title, description, children }: ResumeSectionProps) {
 function ResumeEntry({ title, role, period, summary, tags = [], children }: ResumeEntryProps) {
   return (
     <details className="group/entry overflow-hidden rounded-lg border border-border bg-card/45 transition-colors open:bg-card/70">
-      <summary className="flex cursor-pointer list-none items-start gap-4 p-4 marker:content-none sm:p-5 [&::-webkit-details-marker]:hidden">
+      <summary className="flex cursor-pointer list-none items-start gap-4 p-4 site-sm:p-5 marker:content-none [&::-webkit-details-marker]:hidden">
         <span className="min-w-0 flex-1">
           {period ? (
             <span className="font-medium text-primary text-xs tracking-wide">{period}</span>
           ) : null}
-          <span className="mt-1 flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-3">
+          <span className="mt-1 flex site-sm:flex-row flex-col site-sm:items-baseline gap-1 site-sm:gap-3">
             <span className="font-bold font-display text-foreground text-xl">{title}</span>
             {role ? <span className="text-muted-foreground text-sm">{role}</span> : null}
           </span>
@@ -71,7 +71,9 @@ function ResumeEntry({ title, role, period, summary, tags = [], children }: Resu
         </span>
       </summary>
 
-      <div className={`border-border border-t px-4 py-5 sm:px-5 ${bodyClasses}`}>{children}</div>
+      <div className={`border-border border-t px-4 site-sm:px-5 py-5 ${bodyClasses}`}>
+        {children}
+      </div>
     </details>
   )
 }

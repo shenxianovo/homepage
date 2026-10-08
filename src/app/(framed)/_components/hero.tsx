@@ -6,11 +6,11 @@ import { site } from "@/data/site"
 
 export function Hero() {
   return (
-    <section className="relative isolate pt-6 pb-8 sm:pt-10 md:min-h-[35rem] md:pt-16 md:pb-12">
-      <div className="relative z-10 mx-6 sm:mx-10 md:w-[46%]">
+    <section className="relative isolate site-md:min-h-[35rem] pt-6 site-md:pt-16 site-sm:pt-10 pb-8 site-md:pb-12">
+      <div className="relative z-10 mx-6 site-sm:mx-10 site-md:w-[46%]">
         <PageHeading eyebrow={site.greeting} title={site.name} size="hero" />
 
-        <p className="mt-5 text-balance font-medium text-xl leading-relaxed sm:text-2xl">
+        <p className="mt-5 text-balance font-medium site-sm:text-2xl text-xl leading-relaxed">
           <span className="inline-block text-primary">{site.taglineCn}</span>{" "}
           <span className="inline-block">{site.taglineCnRest}</span>
         </p>
@@ -19,10 +19,10 @@ export function Hero() {
           {site.description}
         </p>
 
-        <div className="mt-6 flex flex-wrap gap-3 sm:mt-8">
+        <div className="mt-6 site-sm:mt-8 flex flex-wrap gap-3">
           <Button
             size="lg"
-            className="h-12 rounded-full px-5 shadow-glow sm:px-6"
+            className="h-12 rounded-full px-5 site-sm:px-6 shadow-glow"
             nativeButton={false}
             role="link"
             render={<Link href="/projects" />}
@@ -33,7 +33,7 @@ export function Hero() {
           <Button
             size="lg"
             variant="outline"
-            className="h-12 rounded-full px-5 backdrop-blur-glass sm:px-6"
+            className="h-12 rounded-full px-5 site-sm:px-6 backdrop-blur-glass"
             nativeButton={false}
             role="link"
             render={<Link href="/about" />}
@@ -43,8 +43,8 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 mx-6 mt-8 sm:mx-10 md:w-[46%]">
-        <dl className="flex max-w-xl flex-wrap gap-x-6 gap-y-3 border-border border-t pt-5 lg:max-w-md">
+      <div className="relative z-10 mx-6 site-sm:mx-10 mt-8 site-md:w-[46%]">
+        <dl className="flex max-w-xl site-lg:max-w-md flex-wrap gap-x-6 gap-y-3 border-border border-t pt-5">
           {site.info.map((item) => (
             <div key={item.label} className="flex items-center gap-3 first:w-full">
               <span className="flex w-4 shrink-0 justify-center text-primary">

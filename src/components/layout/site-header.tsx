@@ -15,7 +15,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="relative z-20 flex items-center justify-between px-6 py-5 sm:px-10">
+    <header className="relative z-20 flex items-center justify-between px-6 site-sm:px-10 py-5">
       <SmartLink href="/" className="flex items-center" aria-label="Home">
         <Image
           src={site.avatar}
@@ -27,7 +27,7 @@ export function SiteHeader() {
         />
       </SmartLink>
 
-      <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex">
+      <nav className="absolute left-1/2 site-md:flex hidden -translate-x-1/2 items-center gap-1">
         {navLinks.map((link) => {
           const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)
 
@@ -59,14 +59,14 @@ export function SiteHeader() {
           type="button"
           aria-label="Toggle menu"
           onClick={() => setOpen((v) => !v)}
-          className="flex size-9 items-center justify-center rounded-full border border-border md:hidden"
+          className="flex site-md:hidden size-9 items-center justify-center rounded-full border border-border"
         >
           {open ? <X className="size-4" /> : <Menu className="size-4" />}
         </button>
       </div>
 
       {open ? (
-        <div className="absolute inset-x-4 top-full z-30 mt-2 flex flex-col gap-1 rounded-lg border border-border bg-popover p-3 shadow-md md:hidden">
+        <div className="absolute inset-x-4 top-full z-30 mt-2 flex site-md:hidden flex-col gap-1 rounded-lg border border-border bg-popover p-3 shadow-md">
           {navLinks.map((link) => (
             <SmartLink
               key={link.href}

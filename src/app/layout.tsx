@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { JsonLd } from "@/components/json-ld"
+import { SiteViewport } from "@/components/layout/site-viewport"
 import { ThemeProvider } from "@/components/theme-provider"
 import { site } from "@/data/site"
 import { fontVariables } from "@/lib/fonts"
@@ -50,7 +51,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <SiteViewport>{children}</SiteViewport>
         </ThemeProvider>
       </body>
     </html>

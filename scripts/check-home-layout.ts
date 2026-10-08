@@ -43,6 +43,7 @@ try {
           (edge) => Math.abs(imageBounds[edge] - frameBounds[edge]) <= 1,
         )
         return {
+          availableWidth: document.querySelector(".site-viewport")?.clientWidth ?? innerWidth,
           lines: lines.size,
           headingOverflow,
           overflow: document.documentElement.scrollWidth > innerWidth,
@@ -55,8 +56,12 @@ try {
       assert.equal(layout.headingOverflow, false, "Name must fit its content column")
       assert.equal(layout.overflow, false, "Page must fit the viewport")
       assert.deepEqual(layout.escaped, [], "Card headings must fit within their own cards")
-      assert.equal(layout.artworkVisible, width >= 768, "Artwork must be hidden on phones")
-      if (width >= 768) {
+      assert.equal(
+        layout.artworkVisible,
+        layout.availableWidth >= 768,
+        "Artwork must follow the site's available space",
+      )
+      if (layout.artworkVisible) {
         assert.equal(layout.artworkMatchesFrame, true, "Ellipse must use the full page frame")
       }
       console.log(`PASS homepage layout at ${width}px`)
