@@ -4,8 +4,11 @@
 
 @theme inline {
   /* --- fonts --- */
-  --font-sans: var(--font-sans);
-  --font-display: var(--font-display);
+  --font-inter: "Inter Variable";
+  --font-sora: "Sora Variable";
+  --font-cjk: "Noto Sans SC Variable";
+  --font-sans: var(--font-inter), var(--font-cjk), sans-serif;
+  --font-display: var(--font-sora), var(--font-cjk), sans-serif;
 
   /* --- semantic colors (shadcn) --- */
   --color-background: var(--background);

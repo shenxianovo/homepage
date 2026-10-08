@@ -49,6 +49,10 @@ _Avoid_: 卡片、时间线节点
 
 ## Styling
 
+- **字体** — 英文正文 Inter、英文标题 Sora，中文统一 Noto Sans SC。
+  `fonts.css` 引入 Fontsource 字体包，字体栈集中在 `theme.css`。字体随站点自托管，
+  中文按 Unicode 范围按需加载，不预加载整套字库，也不依赖构建时的 Google 下载。
+  系统字体仅作为加载期间或缺失字形时的回退。
 - **Token 三层** — `tokens.css`（oklch 原始变量，颜色唯一来源）→
   `theme.css`（映射成 Tailwind utilities）→ `base.css`（重置 + 特效，
   含 hero-feather 遮罩，旋钮说明见文件内注释）。改色只改 tokens.css。

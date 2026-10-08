@@ -72,7 +72,13 @@ for (const [name, token] of [
 }
 
 assert.ok(css.includes("background-color:var(--secondary-hover)"), "Secondary hover uses its token")
-assert.ok(css.includes("html{font-family:var(--font-sans)"), "Body text inherits the sans font")
-assert.ok(css.includes("h1,h2,h3{font-family:var(--font-display)"), "Headings use the display font")
+assert.ok(
+  /html\{font-family:var\(--font-inter\),\s*var\(--font-cjk\),\s*sans-serif/.test(css),
+  "Body text uses Inter and the shared Chinese font",
+)
+assert.ok(
+  /h1,h2,h3\{font-family:var\(--font-sora\),\s*var\(--font-cjk\),\s*sans-serif/.test(css),
+  "Headings use Sora and the shared Chinese font",
+)
 
 console.log("PASS: token utilities, fonts, collapsed resume, home links and project cards")

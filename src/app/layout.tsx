@@ -3,7 +3,6 @@ import { JsonLd } from "@/components/json-ld"
 import { SiteViewport } from "@/components/layout/site-viewport"
 import { ThemeProvider } from "@/components/theme-provider"
 import { site } from "@/data/site"
-import { fontVariables } from "@/lib/fonts"
 import "./globals.css"
 
 const ogImage = {
@@ -42,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning className={`${fontVariables} h-full antialiased`}>
+    <html lang="zh-CN" suppressHydrationWarning className="h-full antialiased">
       <body className="flex min-h-full flex-col">
         <JsonLd />
         <ThemeProvider

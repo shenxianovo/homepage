@@ -1,0 +1,5 @@
+/* Font files are installed with the project and served from this site.
+   Unicode ranges keep Chinese downloads limited to the glyphs a page uses. */
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/sora";
+@import "@fontsource-variable/noto-sans-sc";
