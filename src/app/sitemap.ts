@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next"
 import { site } from "@/data/site"
 
+export const dynamic = "force-static"
+
 /**
  * Static sitemap for the three indexable routes. The blog lives on a separate
  * Astro site (blog.shenxianovo.com) with its own sitemap, so it is not listed

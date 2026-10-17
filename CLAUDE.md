@@ -21,7 +21,7 @@ shenxianovo.com 个人网站 —— Next.js App Router（Home / About / Projects
 
 ## 技术栈
 
-Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4（`@theme`，无配置文件）· shadcn/ui on **Base UI**（不是 Radix）· next-themes · Velite · Biome（不是 ESLint/Prettier）· Docker.
+Next.js 16 (App Router, Turbopack, static export) · React 19 · TypeScript · Tailwind v4（`@theme`，无配置文件）· shadcn/ui on **Base UI**（不是 Radix）· next-themes · Velite · Biome（不是 ESLint/Prettier）· Cloudflare Workers Static Assets.
 
 ## 目录 —— 动手前先看这里
 
@@ -44,4 +44,6 @@ Next.js 16 (App Router, Turbopack) · React 19 · TypeScript · Tailwind v4（`@
 
 ## 部署
 
-Docker 多阶段构建 → `compose.yml`，CI 在 `.github/workflows/deploy.yml`。Next 配置 `output: standalone`（Dockerfile 负责把 `.next/static` 和 `public/` 拷到 standalone server 旁边）。
+构建导出 `out/`，通过 `wrangler.jsonc` 上传到 Cloudflare Workers Static Assets；CI 在 `.github/workflows/deploy.yml`。发布方式见 `README.md` 的部署章节。
+
+图片由 `scripts/build-images.ts` 在构建时生成，多尺寸设置与 `next/image` 共用 `src/lib/image-settings.ts`。添加或替换图片后运行 `pnpm content`；`.generated/`、`public/optimized/`、`out/` 都是生成物。构建后运行 `pnpm check:ui` 和 `pnpm check:static`；路由与缓存验证加本地预览 URL：`pnpm check:static http://localhost:3000`。

@@ -27,3 +27,22 @@
   --site-viewport-height: calc(100dvh / var(--site-scale, 1));
   min-height: var(--site-viewport-height);
 }
+
+/* Content remains visible without JavaScript; reduced motion skips the fade. */
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-enter {
+    animation: enter 0.2s ease-out;
+  }
+  .mascot-enter {
+    animation: enter 0.8s ease-out;
+  }
+}

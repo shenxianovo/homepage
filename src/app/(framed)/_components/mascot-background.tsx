@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "motion/react"
 import Image from "next/image"
 import { site } from "@/data/site"
 
@@ -50,22 +49,16 @@ export function MascotBackground() {
 
       {/* Mascot scene, feathered to transparent on the left via the SVG mask.
           Hidden on mobile — see component note. */}
-      <motion.div
-        className="absolute inset-0 z-0 site-md:block hidden"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        style={{ willChange: "opacity" }}
-      >
+      <div className="mascot-enter absolute inset-0 z-0 site-md:block hidden">
         <Image
           src={site.hero.image}
           alt={site.hero.alt}
           fill
-          priority
+          loading="lazy"
           sizes="(max-width: 768px) 100vw, 1480px"
           className="hero-feather object-cover object-[60%_center] site-lg:object-right"
         />
-      </motion.div>
+      </div>
     </>
   )
 }

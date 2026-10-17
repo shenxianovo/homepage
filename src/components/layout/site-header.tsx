@@ -1,8 +1,9 @@
 "use client"
 
-import { Menu, X } from "lucide-react"
+import { LoaderCircle, Menu, X } from "lucide-react"
 import { motion } from "motion/react"
 import Image from "next/image"
+import { useLinkStatus } from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { SmartLink } from "@/components/smart-link"
@@ -10,9 +11,31 @@ import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { navLinks, site } from "@/data/site"
 import { cn } from "@/lib/utils"
 
+function NavigationLabel({ label }: { label: string }) {
+  const { pending } = useLinkStatus()
+
+  return (
+    <>
+      <span className="relative z-10" aria-busy={pending}>
+        {label}
+      </span>
+      {pending ? (
+        <span role="status" className="absolute top-1/2 right-0.5 -translate-y-1/2">
+          <LoaderCircle aria-hidden="true" className="size-3 motion-safe:animate-spin" />
+          <span className="sr-only">正在加载{label}</span>
+        </span>
+      ) : null}
+    </>
+  )
+}
+
 export function SiteHeader() {
   const pathname = usePathname()
-  const [open, setOpen] = useState(false)
+  // Keep the clicked mobile link visible while its destination loads. A
+  // committed route change clears it, including before returning via Back.
+  const [menuPath, setMenuPath] = useState<string | null>(null)
+  const open = menuPath === pathname
+  if (menuPath !== null && menuPath !== pathname) setMenuPath(null)
 
   return (
     <header className="relative z-20 flex items-center justify-between px-6 site-sm:px-10 py-5">
@@ -47,7 +70,11 @@ export function SiteHeader() {
                   transition={{ type: "spring", stiffness: 380, damping: 32 }}
                 />
               ) : null}
-              <span className="relative z-10">{link.label}</span>
+              {link.href.startsWith("/") ? (
+                <NavigationLabel label={link.label} />
+              ) : (
+                <span className="relative z-10">{link.label}</span>
+              )}
             </SmartLink>
           )
         })}
@@ -58,7 +85,8 @@ export function SiteHeader() {
         <button
           type="button"
           aria-label="Toggle menu"
-          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          onClick={() => setMenuPath(open ? null : pathname)}
           className="flex site-md:hidden size-9 items-center justify-center rounded-full border border-border"
         >
           {open ? <X className="size-4" /> : <Menu className="size-4" />}
@@ -71,10 +99,12 @@ export function SiteHeader() {
             <SmartLink
               key={link.href}
               href={link.href}
-              onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
+              onClick={() => {
+                if (link.href === pathname || !link.href.startsWith("/")) setMenuPath(null)
+              }}
+              className="relative rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
             >
-              {link.label}
+              {link.href.startsWith("/") ? <NavigationLabel label={link.label} /> : link.label}
             </SmartLink>
           ))}
         </div>

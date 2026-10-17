@@ -10,6 +10,15 @@ const resume = await readFile(path.join(app, "about", "resume.html"), "utf8")
 const projects = await readFile(path.join(app, "projects.html"), "utf8")
 const { cn } = await import(new URL("../src/lib/utils.ts", import.meta.url).href)
 
+// Server-rendered text must be visible even when JavaScript is delayed.
+const mainWrapper = home.match(/<main\b[^>]*>\s*<div\b[^>]*>/)?.[0]
+assert.ok(mainWrapper, "Home has a main content wrapper")
+assert.equal(
+  /opacity:\s*0(?:;|")/.test(mainWrapper),
+  false,
+  "Home content is visible before hydration",
+)
+
 for (const name of ["panel", "frame", "control-xs", "control-sm"]) {
   const radius = `rounded-${name}`
   assert.equal(cn("rounded-lg", radius), radius, "Custom radii override component defaults")

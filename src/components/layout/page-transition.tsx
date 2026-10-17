@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "motion/react"
 import { usePathname } from "next/navigation"
 import type { ReactNode } from "react"
 
@@ -9,22 +8,15 @@ import type { ReactNode } from "react"
  * navigating remounts the inner content and replays the entrance.
  * The surrounding shell (header, footer, card) stays put.
  *
- * Only animates opacity — no transforms — to avoid backdrop-blur
- * re-rasterisation jank.
+ * CSS starts the fade as soon as HTML and styles arrive, without waiting
+ * for hydration. Only opacity animates, avoiding backdrop-blur repainting.
  */
 export function PageTransition({ children }: { children: ReactNode }) {
   const pathname = usePathname()
 
   return (
-    <motion.div
-      key={pathname}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
-      style={{ willChange: "opacity" }}
-      className="flex flex-1 flex-col"
-    >
+    <div key={pathname} className="page-enter flex flex-1 flex-col">
       {children}
-    </motion.div>
+    </div>
   )
 }

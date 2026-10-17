@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "shenxianovo-homepage",
+  "account_id": "ba32e8519e14ea84c86a52b0c4bd7b31",
+  "compatibility_date": "2026-10-17",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "shenxianovo.com",
+      "custom_domain": true,
+      "zone_name": "shenxianovo.com"
+    },
+    {
+      "pattern": "www.shenxianovo.com",
+      "custom_domain": true,
+      "zone_name": "shenxianovo.com"
+    },
+    {
+      "pattern": "homepage-preview.shenxianovo.com",
+      "custom_domain": true,
+      "zone_name": "shenxianovo.com"
+    }
+  ],
+  "assets": {
+    "directory": "./out",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
