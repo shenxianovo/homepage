@@ -6,16 +6,6 @@
   "workers_dev": true,
   "routes": [
     {
-      "pattern": "shenxianovo.com",
-      "custom_domain": true,
-      "zone_name": "shenxianovo.com"
-    },
-    {
-      "pattern": "www.shenxianovo.com",
-      "custom_domain": true,
-      "zone_name": "shenxianovo.com"
-    },
-    {
       "pattern": "homepage-preview.shenxianovo.com",
       "custom_domain": true,
       "zone_name": "shenxianovo.com"

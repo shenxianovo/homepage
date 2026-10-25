@@ -87,7 +87,8 @@ Cloudflare 只管理 DNS；主站 `shenxianovo.com` 和 `www` 的网站记录使
 
 `pnpm preview` 继续用 Wrangler 本地运行时查看导出结果，不会发布到 Cloudflare。
 运行后可用 `pnpm check:static http://localhost:3000` 检查页面和资源。
-`wrangler.jsonc` 暂留作迁移回退配置；持续部署已不再使用它。
+`wrangler.jsonc` 暂留预览域名 `homepage-preview.shenxianovo.com` 作为迁移回退入口；
+持续部署已不再使用它，根域名与 `www` 不再绑定 Worker。
 
 ### 持续部署
 
