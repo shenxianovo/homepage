@@ -29,7 +29,7 @@ assert.ok(
   "Pages use optimized images",
 )
 for (const resource of resources) await access(path.join("out", resource))
-for (const file of ["404.html", "robots.txt", "sitemap.xml", "manifest.webmanifest", "_headers"]) {
+for (const file of ["404.html", "robots.txt", "sitemap.xml", "manifest.webmanifest", ".nojekyll"]) {
   await access(path.join("out", file))
 }
 
@@ -42,7 +42,7 @@ for (const file of await readdir("out/_next/static/chunks")) {
   }
 }
 
-// Optional: run against `pnpm preview` to check the actual Cloudflare router.
+// Optional: run against the published site to check GitHub Pages routing.
 const baseUrl = process.argv[2]
 if (baseUrl) {
   const get = (pathname: string) =>
@@ -59,7 +59,6 @@ if (baseUrl) {
   const response = await get(image)
   assert.equal(response.status, 200)
   assert.match(response.headers.get("content-type") ?? "", /image\/webp/)
-  assert.match(response.headers.get("cache-control") ?? "", /immutable/)
 }
 console.log(
   `PASS: ${routes.length} static pages, ${resources.size} referenced assets, metadata and fonts${baseUrl ? ", live routes and caching" : ""}`,

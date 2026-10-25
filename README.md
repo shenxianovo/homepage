@@ -13,8 +13,7 @@ pnpm dev          # 开发服务器 + 内容监听,默认 http://localhost:3000
 
 ```bash
 pnpm build        # 内容编译、WebP 图片生成、静态导出到 out/
-pnpm preview      # 用 Cloudflare 本地运行时预览 out/，默认 http://localhost:3000
-pnpm deploy       # 构建、检查后部署 Cloudflare（首次需要 wrangler login）
+pnpm preview      # 用本地静态资源运行时预览 out/，默认 http://localhost:3000
 pnpm lint:fix     # 格式化 + 自动修复(Biome)
 pnpm typecheck    # 类型检查
 pnpm check:ui     # build 后检查产物：token、字体、简历默认折叠、首页入口和项目卡片
@@ -73,30 +72,28 @@ node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方�
 - 布局专属的宽度、断点、图片比例、椭圆遮罩参数及动画时长保持在对应组件中，不为一次性几何值添加全局 token。
 - `shadcn` 仅保留为开发时的组件生成 CLI；当前界面不依赖其附带的 CSS 或 `tw-animate-css`。
 
-## 部署到 Cloudflare
+## 部署到 GitHub Pages
 
-Next.js 静态导出 → Cloudflare Workers Static Assets。页面、脚本、字体和图片全部由
-Cloudflare 托管，不需要 Node.js 服务、Docker、Tunnel、R2 或数据库。
+Next.js 静态导出到 `out/`，由 GitHub Actions 发布到 GitHub Pages。
+Cloudflare 只管理 DNS；主站 `shenxianovo.com` 和 `www` 的网站记录使用“仅 DNS”，
+浏览器直接连接 GitHub Pages。博客 `blog.shenxianovo.com` 是独立仓库，配置不变。
 
 `next/image` 使用 `src/lib/static-image-loader.ts`：构建时由 Sharp 生成多尺寸 WebP，
 输出到 `public/optimized/`，文件名含内容哈希，可长期缓存。原图仍保留用于分享卡片等。
 添加或替换图片后运行 `pnpm content`（开发服务器首次启动也会执行）；生成物不提交。
 所有用于 `next/image` 的源图放在 `public/images/` 或 Velite 生成的 `public/static/`。
 
-### 本地预览与手动部署
+### 本地预览
 
-首次运行 `pnpm deploy` 前执行 `pnpm exec wrangler login`。`wrangler.jsonc` 管理
-`shenxianovo-homepage` 及根域名、`www`、`homepage-preview.shenxianovo.com` 的绑定。
-本地运行 `pnpm preview` 后，可用 `pnpm check:static http://localhost:3000` 检查路由与缓存。
-预览域名与正式域名使用同一部署。
+`pnpm preview` 继续用 Wrangler 本地运行时查看导出结果，不会发布到 Cloudflare。
+运行后可用 `pnpm check:static http://localhost:3000` 检查页面和资源。
+`wrangler.jsonc` 暂留作迁移回退配置；持续部署已不再使用它。
 
 ### 持续部署
 
-沿用 GitHub Actions，推送 `main` 后执行构建、检查及 Cloudflare 部署。
-在仓库 Settings → Secrets and variables → Actions 添加 `CLOUDFLARE_API_TOKEN`。
-此 token 需要该账号的 Workers 部署权限；修改自定义域名绑定时还需要对应 zone 的权限。
-账号 ID 已在 `wrangler.jsonc` 中。旧 `SERVER_*` secrets 不再被工作流使用。
+推送 `main` 后，`.github/workflows/deploy.yml` 会构建、检查并发布 `out/`。
+仓库 Settings → Pages 的发布来源为 GitHub Actions，自定义域名为 `shenxianovo.com`。
+部署使用 GitHub 自带令牌，不需要 Cloudflare API secret。
 
-参考：[Workers 静态资源](https://developers.cloudflare.com/workers/static-assets/)、
-[GitHub Actions 部署](https://developers.cloudflare.com/workers/ci-cd/external-cicd/github-actions/)、
-[Custom Domains](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/)。
+参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、
+[自定义域名](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)。

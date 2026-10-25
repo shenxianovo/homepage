@@ -7,7 +7,6 @@
     "dev": "pnpm content && concurrently -n velite,next -c blue,green \"velite dev\" \"next dev\"",
     "build": "pnpm content && next build",
     "preview": "wrangler dev --port 3000",
-    "deploy": "pnpm build && pnpm check:ui && pnpm check:static && wrangler deploy",
     "content": "velite build && node scripts/build-images.ts",
     "typecheck": "pnpm content && tsc --noEmit",
     "check:ui": "node scripts/check-ui-contracts.ts",
