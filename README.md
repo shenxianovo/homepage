@@ -72,6 +72,16 @@ node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方�
 - 布局专属的宽度、断点、图片比例、椭圆遮罩参数及动画时长保持在对应组件中，不为一次性几何值添加全局 token。
 - `shadcn` 仅保留为开发时的组件生成 CLI；当前界面不依赖其附带的 CSS 或 `tw-animate-css`。
 
+## Google Analytics
+
+主站使用 GA4：账号 `Orisumi`，资源 `shenxianovo.com`，Web 数据流
+`shenxianovo.com —— Homepage`，测量 ID `G-VZL6X98PE1`，报表时区为北京时间。
+接入代码在 `src/components/google-analytics.tsx`，由根布局加载。
+只在生产构建的 `shenxianovo.com` / `www.shenxianovo.com` 上发送统计；
+本地开发和预览域名不发送。未启用 Google signals 和广告个性化信号。
+GA4 数据流的增强型衡量负责初次访问和浏览器历史变化时的页面浏览，
+无需额外手动发送 `page_view`。独立博客不在此次接入范围内。
+
 ## 部署到 GitHub Pages
 
 Next.js 静态导出到 `out/`，由 GitHub Actions 发布到 GitHub Pages。
