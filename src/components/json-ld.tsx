@@ -7,7 +7,7 @@ import { site, socials } from "@/data/site"
  * rich results and accurate attribution. Rendered once in the root layout.
  *
  * `sameAs` lists external profiles and the blog (same person, helping entity
- * disambiguation). Private app subdomains (auth, heartbeat) are deliberately
+ * disambiguation). Private app subdomains (e.g. auth) are deliberately
  * excluded — they should not be associated with public search results.
  */
 export function JsonLd() {
