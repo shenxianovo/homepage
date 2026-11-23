@@ -4,6 +4,7 @@ import { SongList } from "./_components/song-list"
 
 export const metadata = {
   title: "Playlist",
+  alternates: { canonical: "/about/playlist" },
   description: "KTV 选择困难症解决方案",
 }
 

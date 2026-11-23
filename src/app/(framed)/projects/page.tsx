@@ -4,6 +4,7 @@ import { ProjectGrid } from "./_components/project-grid"
 
 export const metadata = {
   title: "Projects",
+  alternates: { canonical: "/projects" },
   description: "做过的一些小玩意～",
 }
 

@@ -1,6 +1,8 @@
 import Script from "next/script"
+import { site } from "@/data/site"
 
 const measurementId = "G-VZL6X98PE1"
+const hostname = new URL(site.url).hostname
 
 export function GoogleAnalytics() {
   if (process.env.NODE_ENV !== "production") return null
@@ -8,7 +10,7 @@ export function GoogleAnalytics() {
   return (
     <Script id="google-analytics" strategy="afterInteractive">
       {`(() => {
-        if (!["shenxianovo.com", "www.shenxianovo.com"].includes(window.location.hostname)) return;
+        if (!${JSON.stringify([hostname, `www.${hostname}`])}.includes(window.location.hostname)) return;
 
         window.dataLayer = window.dataLayer || [];
         window.gtag = function () { window.dataLayer.push(arguments); };

@@ -6,6 +6,7 @@ import { site } from "@/data/site"
 
 export const metadata = {
   title: "About",
+  alternates: { canonical: "/about" },
   description: "一点关于 shenxianovo：学生、开发者、二次元爱好者。",
 }
 

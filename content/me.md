@@ -23,7 +23,7 @@ language: "zh-CN"
 
 - **职业方向**：软件研发，关注后端、AI Infra、研发工具、可观测性，以及人和 Agent 怎样协作。
 - **语言**：中文母语；英语 CET-6 602；日语 JLPT N2。
-- **链接**：[个人网站](https://shenxianovo.com) · [简历](https://shenxianovo.com/about/resume) · [GitHub](https://github.com/shenxianovo) · [博客](https://blog.shenxianovo.com)
+- **链接**：[个人网站](https://pwq.cat) · [简历](https://pwq.cat/about/resume) · [GitHub](https://github.com/shenxianovo) · [博客](https://blog.shenxianovo.com)
 
 ## 经历
 
@@ -75,7 +75,7 @@ language: "zh-CN"
 - **2026.04—08，哔哩哔哩「花生」**：岗位叫 AI 产品经理实习生，实际是半个研发（预研、做 Demo）、半个数据分析（BI 报表）、半个产品（调研）。这个团队的 JD 里有一句「我们不会区分你是产品还是研发，我们都叫 Agent 工程师」，入职后发现确实如此。
 - **2026.08—现在，字节跳动 ModelHub**：大模型统一接入平台，主要做模型账号凭据加密。
 
-这几段让我确认：我还是更想 build some stuff，亲手把想法变成能跑的系统。详细内容见[简历](https://shenxianovo.com/about/resume)。
+这几段让我确认：我还是更想 build some stuff，亲手把想法变成能跑的系统。详细内容见[简历](https://pwq.cat/about/resume)。
 
 ### 2026—现在：Orisumi
 
@@ -97,7 +97,7 @@ language: "zh-CN"
 ## 技术之外
 
 - **名字**：`shenxianovo` 大概是初中玩游戏时起的名字，后来一直沿用。`-QuQ-` 原本是高中的 B 站账号名，进漫协要起圈名，我不擅长起名，就直接用了这个颜文字。
-- **唱歌**：小时候学钢琴留下了绝对音感，钢琴忘光了，音感还在。喜欢唱 J-POP、Vocaloid 和动漫歌，现在常在 VRChat 里唱。会唱和在学的歌整理在[歌单](https://shenxianovo.com/about/playlist)里。
+- **唱歌**：小时候学钢琴留下了绝对音感，钢琴忘光了，音感还在。喜欢唱 J-POP、Vocaloid 和动漫歌，现在常在 VRChat 里唱。会唱和在学的歌整理在[歌单](https://pwq.cat/about/playlist)里。
 - **日语**：因为想听懂歌词和台词，高三学了五十音，后来考了 N2。语感主要来自听歌、唱歌和看动画，现在想补语法，在 VRChat 里能更自然地交流。
 - **VRChat**：2026 年开始玩，Meta Quest 3。VR 本身就吸引我。
 - **游戏**：大学里主要玩红警 2、Minecraft 和 Valorant，后两个常和漫协的朋友一起。

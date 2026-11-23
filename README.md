@@ -1,6 +1,6 @@
 # 个人主页
 
-shenxianovo.com — Next.js + MDX 博客的个人站点。
+个人站点 [pwq.cat](https://pwq.cat) 使用 Next.js 和 MDX。
 
 ## 跑起来
 
@@ -62,7 +62,7 @@ node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方�
 - **样式**:三个 CSS 文件(`src/styles/`)——`tokens.css` 定义颜色变量(oklch),`theme.css` 把变量接到 Tailwind,`base.css` 放重置和背景效果。改色只动 `tokens.css`。
 - **博客**:Markdown(MDX)放 `content/posts/`,Velite 在构建时编译成数据,页面通过 `src/lib/posts.ts` 查询。
 
-目录结构和更细的约定见 `CLAUDE.md`。
+目录结构和更细的约定见 `AGENTS.md`。
 
 ### 样式约定
 
@@ -74,19 +74,19 @@ node scripts/check-playlist-mobile.ts # 检查手机端搜索吸顶和降调方�
 
 ## Google Analytics
 
-主站使用 GA4：账号 `Orisumi`，资源 `shenxianovo.com`，Web 数据流
-`shenxianovo.com —— Homepage`，测量 ID `G-VZL6X98PE1`，报表时区为北京时间。
+主站使用 GA4 账号 `shenxianovo` 下的 `shenxianovo.com` 资源，Web 数据流
+`pwq.cat —— Homepage` 的网址为 `https://pwq.cat`，测量 ID 为 `G-VZL6X98PE1`，报表时区为北京时间。
 接入代码在 `src/components/google-analytics.tsx`，由根布局加载。
-只在生产构建的 `shenxianovo.com` / `www.shenxianovo.com` 上发送统计；
-本地开发和预览域名不发送。未启用 Google signals 和广告个性化信号。
+只有 `pwq.cat` 和 `www.pwq.cat` 上的生产构建会发送统计。未启用 Google signals 和广告个性化信号。
 GA4 数据流的增强型衡量负责初次访问和浏览器历史变化时的页面浏览，
 无需额外手动发送 `page_view`。独立博客不在此次接入范围内。
 
 ## 部署到 GitHub Pages
 
 Next.js 静态导出到 `out/`，由 GitHub Actions 发布到 GitHub Pages。
-Cloudflare 只管理 DNS；主站 `shenxianovo.com` 和 `www` 的网站记录使用“仅 DNS”，
-浏览器直接连接 GitHub Pages。博客 `blog.shenxianovo.com` 是独立仓库，配置不变。
+Cloudflare 上 `pwq.cat` 和 `www.pwq.cat` 的网站记录使用“仅 DNS”，浏览器直接连接 GitHub Pages。
+`shenxianovo.com` 和 `www.shenxianovo.com` 由 Cloudflare 以 301 跳转到 `https://pwq.cat`，保留路径和查询参数。
+博客 `blog.shenxianovo.com` 由独立仓库发布。
 
 `next/image` 使用 `src/lib/static-image-loader.ts`：构建时由 Sharp 生成多尺寸 WebP，
 输出到 `public/optimized/`，文件名含内容哈希，可长期缓存。原图仍保留用于分享卡片等。
@@ -103,7 +103,7 @@ Cloudflare 只管理 DNS；主站 `shenxianovo.com` 和 `www` 的网站记录使
 ### 持续部署
 
 推送 `main` 后，`.github/workflows/deploy.yml` 会构建、检查并发布 `out/`。
-仓库 Settings → Pages 的发布来源为 GitHub Actions，自定义域名为 `shenxianovo.com`。
+`shenxianovo/homepage` 的 Settings → Pages 发布来源为 GitHub Actions，自定义域名为 `pwq.cat`。
 部署使用 GitHub 自带令牌，不需要 Cloudflare API secret。
 
 参考：[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、

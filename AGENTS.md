@@ -1,10 +1,10 @@
-# CLAUDE.md
+# AGENTS.md
 
 AI agent 工作指引。保持准确 —— 结构或约定变化时同步更新。本文件只是**目录**，细节放 `CONTEXT.md` 和源文件内联注释。
 
 ## 这是什么
 
-shenxianovo.com 个人网站 —— Next.js App Router（Home / About / Projects + About 兴趣子页），共享一个持久 framed shell。项目内容经 Velite 用 MDX 驱动。Blog 是独立的 Astro 站（blog.shenxianovo.com），导航外链，**不在本仓库**。
+pwq.cat 个人网站 —— Next.js App Router（Home / About / Projects + About 兴趣子页），共享一个持久 framed shell。项目内容经 Velite 用 MDX 驱动。Blog 是独立的 Astro 站（blog.shenxianovo.com），导航外链，**不在本仓库**。
 
 ## 命令
 

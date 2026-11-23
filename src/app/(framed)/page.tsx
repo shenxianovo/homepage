@@ -3,6 +3,7 @@ import { HomeLinks } from "./_components/home-links"
 
 export const metadata = {
   title: "Home",
+  alternates: { canonical: "/" },
 }
 
 export default function Home() {

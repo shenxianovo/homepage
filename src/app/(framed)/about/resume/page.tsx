@@ -6,6 +6,7 @@ const resume = getResume()
 
 export const metadata = {
   title: resume.title,
+  alternates: { canonical: "/about/resume" },
   description: resume.description,
 }
 
