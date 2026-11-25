@@ -44,7 +44,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`${title} source on GitHub`}
+                aria-label={`${title} 源码 (GitHub)`}
                 className="flex size-8 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
               >
                 <GithubIcon className="size-4" />
@@ -55,7 +55,7 @@ export function ProjectCard({ project }: { project: Project }) {
                 href={live}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`Open ${title}`}
+                aria-label={`访问 ${title}`}
                 className="flex size-8 items-center justify-center rounded-full bg-primary text-primary-foreground transition-colors hover:bg-primary/80"
               >
                 <ArrowUpRight className="size-4" />

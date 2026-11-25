@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { GoogleAnalytics } from "@/components/google-analytics"
 import { JsonLd } from "@/components/json-ld"
-import { SiteViewport } from "@/components/layout/site-viewport"
 import { ThemeProvider } from "@/components/theme-provider"
 import { site } from "@/data/site"
 import "./globals.css"
@@ -51,7 +50,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SiteViewport>{children}</SiteViewport>
+          {children}
         </ThemeProvider>
         <GoogleAnalytics />
       </body>

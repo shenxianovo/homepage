@@ -43,7 +43,6 @@ export function SongList({ songs }: { songs: Song[] }) {
   }, [songs, query, learnedOnly, inRangeOnly, plans])
 
   const pickable = visible.filter((song) => song.status === "learned")
-  const pickedSong = visible.find((song) => songKey(song) === picked)
 
   const pickRandom = () => {
     if (pickable.length === 0) return
@@ -59,7 +58,7 @@ export function SongList({ songs }: { songs: Song[] }) {
 
   const toggleClass = (active: boolean) =>
     cn(
-      "min-h-11 rounded-full px-3 site-md:px-4 py-2 font-medium text-sm transition-colors focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2",
+      "min-h-11 rounded-full px-3 py-2 font-medium text-sm transition-colors focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 md:px-4",
       active
         ? "bg-primary text-primary-foreground shadow-glow"
         : "border border-border text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -69,10 +68,10 @@ export function SongList({ songs }: { songs: Song[] }) {
     <div>
       <search
         aria-label="搜索和筛选歌单"
-        className="site-md:static sticky top-0 z-20 -mx-3 site-md:mx-0 flex site-md:flex-row flex-col site-md:flex-wrap site-md:items-center gap-2 border-border site-md:border-0 border-b bg-card site-md:bg-transparent site-md:p-0 px-3 py-3"
+        className="sticky top-0 z-20 -mx-3 flex flex-col gap-2 border-border border-b bg-card px-3 py-3 md:static md:mx-0 md:flex-row md:flex-wrap md:items-center md:border-0 md:bg-transparent md:p-0"
       >
-        <div className="flex site-md:contents min-w-0 items-center gap-2">
-          <label className="relative min-w-0 site-md:min-w-56 site-md:max-w-xs flex-1">
+        <div className="flex min-w-0 items-center gap-2 md:contents">
+          <label className="relative min-w-0 flex-1 md:min-w-56 md:max-w-xs">
             <span className="sr-only">搜歌名或歌手</span>
             <Search
               aria-hidden="true"
@@ -87,7 +86,7 @@ export function SongList({ songs }: { songs: Song[] }) {
               }}
               aria-controls="playlist-songs"
               placeholder="搜歌名 / 歌手…"
-              className="h-11 w-full rounded-full border border-border bg-background py-2 pr-4 pl-10 site-md:text-sm text-base outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-ring"
+              className="h-11 w-full rounded-full border border-border bg-background py-2 pr-4 pl-10 text-base outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-ring md:text-sm"
             />
           </label>
           <button
@@ -95,11 +94,10 @@ export function SongList({ songs }: { songs: Song[] }) {
             onClick={pickRandom}
             disabled={pickable.length === 0}
             aria-label="随机来一首"
-            title="从当前结果中随机选一首会唱的歌"
-            className="site-md:order-last flex size-11 site-md:w-auto shrink-0 items-center justify-center gap-1.5 rounded-full border border-border site-md:px-4 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-40"
+            className="flex size-11 shrink-0 items-center justify-center gap-1.5 rounded-full border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-40 md:order-last md:w-auto md:px-4"
           >
-            <Dices aria-hidden="true" className="site-md:size-4 size-5" />
-            <span className="site-md:inline hidden text-sm">随机来一首</span>
+            <Dices aria-hidden="true" className="size-5 md:size-4" />
+            <span className="hidden text-sm md:inline">随机来一首</span>
           </button>
         </div>
         <div className="flex items-center gap-2">
@@ -130,8 +128,7 @@ export function SongList({ songs }: { songs: Song[] }) {
           <a
             href="#playlist-top"
             aria-label="返回顶部"
-            title="返回顶部"
-            className="ml-auto flex site-md:hidden size-11 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
+            className="ml-auto flex size-11 shrink-0 items-center justify-center rounded-full text-muted-foreground hover:bg-muted focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 md:hidden"
           >
             <ArrowUp aria-hidden="true" className="size-4" />
           </a>
@@ -139,10 +136,7 @@ export function SongList({ songs }: { songs: Song[] }) {
       </search>
 
       <div className="mt-4 flex flex-wrap items-center justify-between gap-2 text-muted-foreground text-sm">
-        <p role="status">
-          {visible.length} 首
-          {pickedSong ? <span className="sr-only">，随机选中：{pickedSong.title}</span> : null}
-        </p>
+        <p role="status">{visible.length} 首</p>
         <p className="flex items-center gap-3">
           <span className="flex items-center gap-1">
             <MicVocal aria-hidden="true" className="size-3.5 text-primary" />
@@ -154,11 +148,6 @@ export function SongList({ songs }: { songs: Song[] }) {
           </span>
         </p>
       </div>
-      {inRangeOnly ? (
-        <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
-          按我的音域 {myVocalRange} 筛选，含可移调的歌；未标音域的歌仍会显示。
-        </p>
-      ) : null}
 
       <ul id="playlist-songs" aria-label="歌单" className="mt-2 divide-y divide-border">
         {visible.map((song) => {
@@ -172,7 +161,7 @@ export function SongList({ songs }: { songs: Song[] }) {
                 else rowRefs.current.delete(key)
               }}
               className={cn(
-                "-mx-3 site-md:flex grid scroll-mt-40 site-md:scroll-mt-4 grid-cols-[minmax(0,1fr)_auto] items-start site-md:items-center site-md:gap-3 gap-x-2 gap-y-1 rounded-xl px-3 py-4 site-md:py-3 transition-colors",
+                "-mx-3 grid scroll-mt-40 grid-cols-[minmax(0,1fr)_auto] items-start gap-x-2 gap-y-1 rounded-xl px-3 py-4 transition-colors md:flex md:scroll-mt-4 md:items-center md:gap-3 md:py-3",
                 picked === key && "bg-primary-soft",
               )}
             >
@@ -202,10 +191,8 @@ export function SongList({ songs }: { songs: Song[] }) {
               </div>
 
               {song.range ? (
-                <span className="col-span-2 row-start-2 flex site-md:shrink-0 flex-wrap items-center site-md:justify-end gap-2 site-md:text-xs text-muted-foreground text-sm">
-                  <span>
-                    原曲 <span className="font-mono">{song.range}</span>
-                  </span>
+                <span className="col-span-2 row-start-2 flex flex-wrap items-center gap-2 text-muted-foreground text-sm md:shrink-0 md:justify-end md:text-xs">
+                  <span className="font-mono">{song.range}</span>
                   {plan ? (
                     <span
                       className={cn(
@@ -230,7 +217,7 @@ export function SongList({ songs }: { songs: Song[] }) {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${song.title} — ${platform.label}`}
-                        className="flex site-md:size-8 size-11 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
+                        className="flex size-11 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 md:size-8"
                       >
                         <platform.icon className="size-4" />
                       </a>

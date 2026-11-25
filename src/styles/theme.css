@@ -21,7 +21,6 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary-hover: var(--secondary-hover);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
@@ -45,8 +44,6 @@
   --radius-xl: calc(var(--radius) + 6px);
   --radius-panel: var(--panel-radius);
   --radius-frame: var(--frame-radius);
-  --radius-control-xs: var(--control-radius-xs);
-  --radius-control-sm: var(--control-radius-sm);
 
   /* --- elevation + glow --- */
   --shadow-sm: var(--shadow-sm);

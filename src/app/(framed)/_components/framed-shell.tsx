@@ -27,25 +27,20 @@ export function FramedShell({ children }: { children: ReactNode }) {
   const isHome = pathname === "/"
 
   return (
-    <div className="flex min-h-[var(--site-viewport-height)] justify-center p-4 site-sm:p-8">
+    <div className="flex min-h-dvh justify-center p-4 sm:p-8">
       {/* Clip rounded corners without creating a scroll container that traps sticky controls. */}
       <div
         className={cn(
           "relative mx-auto flex w-full max-w-[1480px] flex-col overflow-clip rounded-frame bg-card/60 shadow-md ring-1 ring-border backdrop-blur-sm",
           isHome
-            ? "min-h-[min(calc(var(--site-viewport-height)-2rem),60rem)] site-sm:min-h-[min(calc(var(--site-viewport-height)-4rem),60rem)] self-start"
-            : "min-h-[calc(var(--site-viewport-height)-2rem)] site-sm:min-h-[calc(var(--site-viewport-height)-4rem)]",
+            ? "min-h-[min(calc(100dvh-2rem),60rem)] self-start sm:min-h-[min(calc(100dvh-4rem),60rem)]"
+            : "min-h-[calc(100dvh-2rem)] sm:min-h-[calc(100dvh-4rem)]",
         )}
       >
         {isHome ? <MascotBackground /> : null}
         <div className="relative z-10 flex flex-1 flex-col">
           <SiteHeader />
-          <main
-            className={cn(
-              "flex flex-1 flex-col",
-              !isHome && "px-6 site-sm:px-10 py-10 site-md:py-14",
-            )}
-          >
+          <main className={cn("flex flex-1 flex-col", !isHome && "px-6 py-10 sm:px-10 md:py-14")}>
             <PageTransition>{children}</PageTransition>
           </main>
           <SiteFooter />

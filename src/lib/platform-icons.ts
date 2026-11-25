@@ -18,5 +18,5 @@ export function platformFor(url: string): { label: string; icon: PlatformIcon } 
   } catch {
     /* fall through to generic */
   }
-  return PLATFORMS.find((p) => p.pattern.test(host)) ?? { label: "Link", icon: ExternalLink }
+  return PLATFORMS.find((p) => p.pattern.test(host)) ?? { label: "链接", icon: ExternalLink }
 }

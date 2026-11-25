@@ -27,7 +27,7 @@ Next.js 16 (App Router, Turbopack, static export) · React 19 · TypeScript · T
 
 - **领域概念与约定** → `CONTEXT.md`（站点结构、Playlist 规则、内容管道、styling 分层、品牌图标）
 - **架构决策** → `docs/adr/`（目前为空；重要决策落这里）
-- **文案 / 导航 / socials** → `src/data/site.ts`，不写在组件里
+- **文案 / 导航 / socials** → `src/data/site.tsx`，不写在组件里
 - **颜色** → 只改 `src/styles/tokens.css`，组件里不硬编码（hero-feather 旋钮说明在 `base.css` 内联注释）
 - **页面专属组件** → `app/(framed)/<page>/_components/`（就地放）；跨页共享 → `src/components/`
 - **加项目** → `content/projects/<slug>.mdx`（frontmatter 见 `velite.config.ts` schema；cover 源图与 MDX 同目录）；**加歌** → `content/songs.yaml`（字段说明见文件头注释）

@@ -1,20 +1,18 @@
 # shenxianovo
 
-> Personal website of shenxianovo — a developer and creator building scalable, user-friendly, and delightful digital experiences. Studying AI at Wuhan University, based in Wuhan, China.
+> 个人网站 pwq.cat —— 武汉大学人工智能专业本科生，目前在上海实习。
 
-## Pages
+## 页面
 
-- [Home](https://pwq.cat): Introduction, taglines, and a snapshot of what shenxianovo focuses on (code, design, performance, learning).
-- [About](https://pwq.cat/about): Background, interests (software, AI, ACG), and contact links.
-- [Resume](https://pwq.cat/about/resume): Conversational work, project, and education timeline with expandable details.
-- [Projects](https://pwq.cat/projects): Things shenxianovo has designed and built, filterable by type, with links to live demos and source.
+- [首页](https://pwq.cat): 简介与站点导航（项目、博客、歌单）。
+- [About](https://pwq.cat/about): 个人近况、兴趣入口与联系方式。
+- [Resume](https://pwq.cat/about/resume): 在线简历（教育、实习、个人项目与其他经历）。
+- [Playlist](https://pwq.cat/about/playlist): KTV 歌单与按个人音域计算的降调方案。
+- [Projects](https://pwq.cat/projects): 个人项目列表（Orisumi、WHUDAYS、AuthService、Homepage）。
 
-## Profiles
+## 外部链接
 
-- [GitHub](https://github.com/shenxianovo): Source code and open-source work.
-- [LinkedIn](https://www.linkedin.com/in/shenxianovo): Professional profile.
-- [Bilibili](https://space.bilibili.com/446305918): Video content.
-
-## Elsewhere
-
-- [Blog](https://blog.shenxianovo.com): Writing on technology and other topics (separate site).
+- [Blog](https://blog.shenxianovo.com): 独立博客站点。
+- [GitHub](https://github.com/shenxianovo): 开源代码与个人仓库（更完整背景见 `shenxianovo/me`）。
+- [Bilibili](https://space.bilibili.com/446305918)
+- [LinkedIn](https://www.linkedin.com/in/shenxianovo)

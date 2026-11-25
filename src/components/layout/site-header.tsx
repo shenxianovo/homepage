@@ -1,9 +1,8 @@
 "use client"
 
-import { LoaderCircle, Menu, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { motion } from "motion/react"
 import Image from "next/image"
-import { useLinkStatus } from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { SmartLink } from "@/components/smart-link"
@@ -11,38 +10,16 @@ import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { navLinks, site } from "@/data/site"
 import { cn } from "@/lib/utils"
 
-function NavigationLabel({ label }: { label: string }) {
-  const { pending } = useLinkStatus()
-
-  return (
-    <>
-      <span className="relative z-10" aria-busy={pending}>
-        {label}
-      </span>
-      {pending ? (
-        <span role="status" className="absolute top-1/2 right-0.5 -translate-y-1/2">
-          <LoaderCircle aria-hidden="true" className="size-3 motion-safe:animate-spin" />
-          <span className="sr-only">正在加载{label}</span>
-        </span>
-      ) : null}
-    </>
-  )
-}
-
 export function SiteHeader() {
   const pathname = usePathname()
-  // Keep the clicked mobile link visible while its destination loads. A
-  // committed route change clears it, including before returning via Back.
-  const [menuPath, setMenuPath] = useState<string | null>(null)
-  const open = menuPath === pathname
-  if (menuPath !== null && menuPath !== pathname) setMenuPath(null)
+  const [open, setOpen] = useState(false)
 
   return (
-    <header className="relative z-20 flex items-center justify-between px-6 site-sm:px-10 py-5">
-      <SmartLink href="/" className="flex items-center" aria-label="Home">
+    <header className="relative z-20 flex items-center justify-between px-6 py-5 sm:px-10">
+      <SmartLink href="/" className="flex items-center" aria-label="首页">
         <Image
           src={site.avatar}
-          alt="shenxianovo"
+          alt={site.name}
           width={44}
           height={44}
           priority
@@ -50,7 +27,7 @@ export function SiteHeader() {
         />
       </SmartLink>
 
-      <nav className="absolute left-1/2 site-md:flex hidden -translate-x-1/2 items-center gap-1">
+      <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex">
         {navLinks.map((link) => {
           const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href)
 
@@ -70,11 +47,7 @@ export function SiteHeader() {
                   transition={{ type: "spring", stiffness: 380, damping: 32 }}
                 />
               ) : null}
-              {link.href.startsWith("/") ? (
-                <NavigationLabel label={link.label} />
-              ) : (
-                <span className="relative z-10">{link.label}</span>
-              )}
+              <span className="relative z-10">{link.label}</span>
             </SmartLink>
           )
         })}
@@ -84,27 +57,25 @@ export function SiteHeader() {
         <ThemeToggle />
         <button
           type="button"
-          aria-label="Toggle menu"
+          aria-label={open ? "关闭菜单" : "打开菜单"}
           aria-expanded={open}
-          onClick={() => setMenuPath(open ? null : pathname)}
-          className="flex site-md:hidden size-9 items-center justify-center rounded-full border border-border"
+          onClick={() => setOpen((v) => !v)}
+          className="flex size-9 items-center justify-center rounded-full border border-border md:hidden"
         >
           {open ? <X className="size-4" /> : <Menu className="size-4" />}
         </button>
       </div>
 
       {open ? (
-        <div className="absolute inset-x-4 top-full z-30 mt-2 flex site-md:hidden flex-col gap-1 rounded-lg border border-border bg-popover p-3 shadow-md">
+        <div className="absolute inset-x-4 top-full z-30 mt-2 flex flex-col gap-1 rounded-lg border border-border bg-popover p-3 shadow-md md:hidden">
           {navLinks.map((link) => (
             <SmartLink
               key={link.href}
               href={link.href}
-              onClick={() => {
-                if (link.href === pathname || !link.href.startsWith("/")) setMenuPath(null)
-              }}
-              className="relative rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
+              onClick={() => setOpen(false)}
+              className="rounded-xl px-4 py-2.5 font-medium text-sm hover:bg-muted"
             >
-              {link.href.startsWith("/") ? <NavigationLabel label={link.label} /> : link.label}
+              {link.label}
             </SmartLink>
           ))}
         </div>

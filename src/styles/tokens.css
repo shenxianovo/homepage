@@ -28,7 +28,6 @@
   /* --- secondary / muted / accent (shadcn semantic) --- */
   --secondary: oklch(0.96 0.012 130);
   --secondary-foreground: oklch(0.3 0.05 150);
-  --secondary-hover: color-mix(in oklch, var(--secondary), var(--foreground) 5%);
   --muted: oklch(0.96 0.008 130);
   --muted-foreground: oklch(0.55 0.046 257); /* slate-500 #64748b */
   --accent: oklch(0.95 0.035 132);
@@ -44,10 +43,8 @@
 
   /* --- radius: one scale for controls, cards, panels and the outer frame --- */
   --radius: 1rem;
-  --panel-radius: calc(var(--radius) + 8px); /* 24px, previously rounded-3xl */
+  --panel-radius: calc(var(--radius) + 8px); /* 24px */
   --frame-radius: calc(var(--radius) + 12px); /* 28px */
-  --control-radius-xs: min(calc(var(--radius) - 3px), 10px);
-  --control-radius-sm: min(calc(var(--radius) - 3px), 12px);
 
   /* --- elevation: hazy float, never heavy black --- */
   --shadow-sm: 0 2px 8px oklch(0.21 0.042 265 / 0.04);
@@ -94,7 +91,6 @@
 
   --secondary: oklch(0.28 0.025 150);
   --secondary-foreground: oklch(0.95 0.01 120);
-  --secondary-hover: color-mix(in oklch, var(--secondary), var(--foreground) 5%);
   --muted: oklch(0.28 0.025 150);
   --muted-foreground: oklch(0.72 0.02 150);
   --accent: oklch(0.3 0.035 150);

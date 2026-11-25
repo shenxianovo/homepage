@@ -29,9 +29,9 @@ const interests = [
 export default function AboutPage() {
   return (
     <div className="flex flex-col gap-12">
-      <div className="grid site-lg:grid-cols-2 gap-12 site-lg:gap-16">
+      <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <section className="flex flex-col gap-6">
-          <PageHeading eyebrow="A bit" title="About" />
+          <PageHeading title="About" />
           <div className="max-w-xl space-y-4 text-muted-foreground leading-relaxed">
             <p>
               どもども〜，我是 {site.name}{" "}
@@ -52,7 +52,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-4 site-lg:pt-20">
+        <section className="flex flex-col gap-4 lg:pt-14">
           <h2 className="font-medium text-primary text-sm tracking-wider">还有这些</h2>
           {interests.map((item) => (
             <SmartLink
@@ -78,7 +78,7 @@ export default function AboutPage() {
 
       <section id="contact" className="flex scroll-mt-24 flex-col gap-6">
         <div>
-          <PageHeading eyebrow="Say hello" title="Get in touch" as="h2" size="section" />
+          <PageHeading title="Contact" as="h2" size="section" />
           <p className="mt-3 max-w-xl text-muted-foreground leading-relaxed">
             聊技术、合作，或者单纯想安利一部番、一首歌，都欢迎来找我～
           </p>

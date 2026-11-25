@@ -48,15 +48,16 @@ export function MascotBackground() {
       </svg>
 
       {/* Mascot scene, feathered to transparent on the left via the SVG mask.
-          Hidden on mobile — see component note. */}
-      <div className="mascot-enter absolute inset-0 z-0 site-md:block hidden">
+          Hidden on narrow or portrait viewports (including mobile browsers in
+          desktop mode, which present a ~980×1960 portrait viewport). */}
+      <div className="mascot-enter absolute inset-0 z-0 hidden md:block portrait:hidden">
         <Image
           src={site.hero.image}
           alt={site.hero.alt}
           fill
           loading="lazy"
           sizes="(max-width: 768px) 100vw, 1480px"
-          className="hero-feather object-cover object-[60%_center] site-lg:object-right"
+          className="hero-feather object-cover object-[60%_center] lg:object-right"
         />
       </div>
     </>

@@ -20,7 +20,6 @@ const projects = defineCollection({
       featured: s.boolean().default(false),
       order: s.number().default(0),
       draft: s.boolean().default(false),
-      content: s.mdx(),
     })
     .transform((data) => {
       const slug = data.path.replace(/^projects\//, "")
@@ -51,7 +50,6 @@ const resumes = defineCollection({
   name: "Resume",
   pattern: "resume.mdx",
   schema: s.object({
-    eyebrow: s.string(),
     title: s.string().max(120),
     description: s.string().max(280),
     content: s.mdx(),

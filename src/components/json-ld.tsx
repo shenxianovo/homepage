@@ -30,7 +30,7 @@ export function JsonLd() {
       "@id": `${site.url}/#person`,
       name: site.name,
       url: site.url,
-      image: `${site.url}${site.hero.image}`,
+      image: `${site.url}${site.avatar}`,
       description: site.description,
       jobTitle: "Developer",
       alumniOf: {
@@ -46,7 +46,7 @@ export function JsonLd() {
       url: site.url,
       name: site.name,
       description: site.description,
-      inLanguage: "en",
+      inLanguage: "zh-CN",
       author: { "@id": `${site.url}/#person` },
       hasPart: { "@id": `${site.blogUrl}/#blog` },
     },

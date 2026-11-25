@@ -5,7 +5,7 @@ import type { Project } from "#site/content"
 import { cn } from "@/lib/utils"
 import { ProjectCard } from "./project-card"
 
-const ALL = "All"
+const ALL = "全部"
 
 export function ProjectGrid({ projects, types }: { projects: Project[]; types: string[] }) {
   const [active, setActive] = useState(ALL)
@@ -36,7 +36,7 @@ export function ProjectGrid({ projects, types }: { projects: Project[]; types: s
         ))}
       </div>
 
-      <div className="mt-8 grid site-lg:grid-cols-3 site-sm:grid-cols-2 gap-6">
+      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}

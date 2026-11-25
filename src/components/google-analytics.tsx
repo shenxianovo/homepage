@@ -1,17 +1,13 @@
 import Script from "next/script"
-import { site } from "@/data/site"
 
 const measurementId = "G-VZL6X98PE1"
-const hostname = new URL(site.url).hostname
 
 export function GoogleAnalytics() {
   if (process.env.NODE_ENV !== "production") return null
 
   return (
     <Script id="google-analytics" strategy="afterInteractive">
-      {`(() => {
-        if (!${JSON.stringify([hostname, `www.${hostname}`])}.includes(window.location.hostname)) return;
-
+      {`if (location.hostname === "pwq.cat" || location.hostname === "www.pwq.cat") {
         window.dataLayer = window.dataLayer || [];
         window.gtag = function () { window.dataLayer.push(arguments); };
         window.gtag("js", new Date());
@@ -19,12 +15,11 @@ export function GoogleAnalytics() {
           allow_google_signals: false,
           allow_ad_personalization_signals: false
         });
-
         const script = document.createElement("script");
         script.async = true;
         script.src = "https://www.googletagmanager.com/gtag/js?id=${measurementId}";
         document.head.appendChild(script);
-      })();`}
+      }`}
     </Script>
   )
 }

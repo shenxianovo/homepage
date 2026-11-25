@@ -6,7 +6,7 @@ import { extendTailwindMerge } from "tailwind-merge"
 const twMerge = extendTailwindMerge({
   extend: {
     theme: {
-      radius: ["panel", "frame", "control-xs", "control-sm"],
+      radius: ["panel", "frame"],
     },
   },
 })
